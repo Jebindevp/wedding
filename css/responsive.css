@@ -1,0 +1,1390 @@
+@media (max-width:1366px) {
+
+    .container,
+    .block .contianer {
+        width: 1170px !important;
+    }
+
+    .for-contact {
+        font-size: 14px;
+        line-height: 55px;
+    }
+
+    .logomenu-sec>ul>li,
+    header.sticky .logomenu-sec>ul>li {
+        font-size: 15px;
+    }
+
+    nav ul ul li {
+        font-size: 14px;
+    }
+
+    .title>h4 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .wed-comsoon-counter>span {
+        font-size: 18px;
+    }
+
+    .topbar {
+        max-height: 55px;
+    }
+
+    .social-btns>li {
+        margin-top: 13px;
+    }
+
+    .logomenu-sec>ul>li {
+        line-height: 80px;
+    }
+
+    .countdown>li span {
+        font-size: 35px;
+    }
+
+    .countdown>li p {
+        font-size: 14px;
+    }
+
+    .wed-comsoon-eventdetail>p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .btn1 {
+        font-size: 18px;
+        line-height: 56px;
+    }
+
+    .btn1>i {
+        font-size: 15px;
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
+    }
+
+    .intro>h4 {
+        font-size: 25px;
+    }
+
+    .intro>p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .sign {
+        font-size: 25px;
+    }
+
+    .stories-detail>h2 {
+        font-size: 25px;
+    }
+
+    .stories-detail>i {
+        font-size: 18px;
+    }
+
+    .stories-detail>p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .storiesnav {
+        right: 110px;
+    }
+
+    .gallery-info>h2 {
+        font-size: 25px;
+    }
+
+    .gallery-info>span {
+        font-size: 17px;
+    }
+
+    .event-title>ul>li {
+        font-size: 15px;
+    }
+
+    .event-title>ul>li a i {
+        font-size: 18px;
+        height: 50px;
+        line-height: 55px;
+        margin-top: 10px;
+        width: 50px;
+    }
+
+    .ti1>h4 {
+        font-size: 18px;
+    }
+
+    .event-loc>h2 {
+        font-size: 18px;
+    }
+
+    .event-time>span {
+        font-size: 18px;
+    }
+
+    .event-time>h2 {
+        font-size: 23px;
+    }
+
+    .event-time>i {
+        font-size: 16px;
+    }
+
+    .event-time .time {
+        font-size: 18px;
+    }
+
+    .event-address>li {
+        font-size: 14px;
+    }
+
+    .venu-bottom {
+        padding: 30px;
+    }
+
+    .venu-bottom>strong {
+        font-size: 18px;
+    }
+
+    .venu-bottom>span {
+        font-size: 15px;
+    }
+
+    .event-detail-inner>span {
+        padding: 15px;
+    }
+
+    .event-detail-inner>h2 {
+        font-size: 18px;
+    }
+
+    .rating>li {
+        font-size: 15px;
+    }
+
+    .event-detail-inner>p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .inner-title {
+        font-size: 15px;
+    }
+
+    .hotel-view>span.inner-title {
+        margin-bottom: 20px;
+    }
+
+    .event-play ul li a {
+        font-size: 15px;
+    }
+
+    .event-title>a {
+        margin-bottom: 110px;
+    }
+
+    .wedplan-info::before {
+        border-left-width: 195px;
+        border-right-width: 196px;
+        border-top-width: 190px;
+        bottom: -119px;
+    }
+
+    .wedplan-post.style2 .wedplan-info::before {
+        border-left-width: 211px;
+        border-right-width: 210px;
+        border-top-width: 230px;
+        bottom: -102px;
+    }
+
+    .wedplan-post.style2 {
+        margin-top: -797px;
+    }
+
+    .wedplan-post.style2>img {
+        margin-top: -163%;
+    }
+
+    .wedplan-info>i {
+        font-size: 40px;
+        height: 90px;
+        width: 90px;
+    }
+
+    .wedplan-info>h2,
+    .wedplan-post.active .wedplan-info>h2 {
+        font-size: 22px;
+    }
+
+    .wedplan-info>span {
+        font-size: 18px;
+    }
+
+    .ratings>li {
+        font-size: 15px;
+    }
+
+    .func-timing>span {
+        font-size: 18px;
+    }
+
+    .func-timing>strong {
+        font-size: 25px;
+    }
+
+    .func-timing>i {
+        font-size: 18px;
+    }
+
+    .wedplan-post.style2 .wedplan-info::after {
+        top: 214px;
+    }
+
+    .event-gallery {
+        margin-top: 30px;
+    }
+
+    .loc-carousel .owl-dots {
+        bottom: -50px;
+    }
+
+    .people>h2 {
+        font-size: 18px;
+    }
+
+    .blog-post.intro-div {
+        padding: 47px 10%;
+    }
+
+    .blog-post>a.btn2 {
+        padding: 13px 30px;
+    }
+
+    .blog-post-padd {
+        padding: 35px;
+    }
+
+    .post-author>strong {
+        font-size: 18px;
+    }
+
+    .post-author>span {
+        font-size: 13px;
+    }
+
+    .post-detail>a {
+        padding: 13px 25px;
+    }
+
+    .post-detail>p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .post-detail>h2 {
+        font-size: 22px;
+    }
+
+    .blog-post-padd-inner {
+        padding: 45px;
+    }
+
+    .gift-info>a {
+        font-size: 12px;
+    }
+
+    .gift-info1>p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .attending-div>p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .contact-mockup {
+        left: -160px;
+    }
+
+    .bottom-links>ul>li {
+        font-size: 18px;
+    }
+
+    .bottom-line>p {
+        font-size: 17px;
+    }
+
+    .services-list {
+        bottom: 30px;
+        left: 30px;
+        padding: 45px 45px 65px;
+        right: 30px;
+        top: 30px;
+    }
+
+    .service-box>i {
+        height: 80px;
+        line-height: 80px;
+        width: 80px;
+    }
+
+    .service-box>h2 {
+        font-size: 18px;
+    }
+
+    .services-list .owl-dots {
+        bottom: 10px;
+    }
+
+    .thinkabout-thumb {
+        padding: 40px;
+    }
+
+    .title2 {
+        max-width: 500px;
+        padding: 45px;
+    }
+
+    .pricing>span {
+        font-size: 18px;
+    }
+
+    .pricing>span i {
+        font-size: 17px;
+    }
+
+    .pricing>i {
+        font-size: 35px;
+        height: 90px;
+        line-height: 90px;
+        width: 90px;
+    }
+
+    .pricing>h2 {
+        font-size: 20px;
+    }
+
+    .pricing>ul>li {
+        font-size: 17px;
+    }
+
+    .pricing-btn>a {
+        font-size: 15px;
+    }
+
+    .video .stories-thumb>a {
+        font-size: 110px;
+    }
+
+    .video .stories-detail>p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .video .stories-detail>h2 {
+        font-size: 25px;
+    }
+
+    .video .title {
+        margin-bottom: 55px;
+    }
+
+    .wedplan-post:hover .wedplan-info,
+    .wedplan-post.active .wedplan-info {
+        padding-top: 115px;
+    }
+
+    .wedplan-info>i {
+        font-size: 35px;
+        height: 80px;
+        line-height: 90px;
+        width: 80px;
+    }
+
+    .wedplan-info>h2 {
+        font-size: 18px;
+    }
+
+    .wedplan-info>h2,
+    .wedplan-post.active .wedplan-info>h2 {
+        font-size: 20px;
+    }
+
+    .wedplan-info>p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .wedplan-info>a {
+        font-size: 17px;
+    }
+
+    .ceo-message-list {
+        bottom: 55px;
+        left: 55px;
+        right: 55px;
+        top: 55px;
+    }
+
+    .ceo-message>strong {
+        font-size: 18px;
+    }
+
+    .ceo-message>p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .attending-sec.style2 .attending-div>p {
+        font-size: 15px;
+    }
+
+    .post-detail.style2 {
+        padding: 65px;
+    }
+
+    .post-detail.style2 .post-meta {
+        width: auto;
+    }
+
+    .post-detail.style2>h2 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .post-detail.style2 .post-meta>li {
+        font-size: 15px;
+        margin-left: 30px;
+    }
+
+    .post-detail.style2>img {
+        float: left;
+    }
+
+    .post-detail.style2>p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 64px;
+    }
+
+    .post-detail.style2 .post-author {
+        max-width: 220px;
+    }
+
+    .post-detail.style2>a {
+        font-size: 15px;
+        margin-top: 8px;
+        padding: 13px 45px;
+    }
+
+    .singlepost-info>h1 {
+        font-size: 60px;
+    }
+
+    blockquote>p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .singlepost-detail>p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .tagcloud>a {
+        font-size: 15px;
+    }
+
+    .comment>h2 {
+        font-size: 20px;
+    }
+
+    .comment-date {
+        font-size: 15px;
+    }
+
+    .comment>p {
+        font-size: 17px;
+    }
+
+    .loc-desc>p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .loc-carousel .owl-dots {
+        bottom: 0;
+    }
+
+    .about-intro>h4 {
+        font-size: 30px;
+    }
+
+    .about-intro>span {
+        font-size: 25px;
+    }
+
+    .about-intro>p,
+    .about-introcontent>p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .gallery-info {
+        padding: 10px 0;
+        bottom: 55px;
+    }
+
+    #map-canvas2,
+    #map-canvas3 {
+        min-height: 707px;
+    }
+}
+
+
+@media (max-width:1200px) {}
+
+
+@media (max-width:980px) {
+    header {
+        display: none;
+    }
+
+    .responsive-header {
+        display: block;
+    }
+
+    .container,
+    .block .container {
+        padding: 0 15px;
+        width: 970px !important;
+    }
+
+    .storiesnav {
+        bottom: -30px;
+        float: left;
+        position: relative;
+        right: -200px;
+    }
+
+    .stories-thumb {
+        margin-bottom: 30px;
+    }
+
+    .event-tabs {
+        padding-left: 100px;
+    }
+
+    .event-tabs::before {
+        width: 100px;
+    }
+
+    .event-title .title.style3 {
+        margin-left: 14px;
+    }
+
+    .event-title>a {
+        font-size: 15px;
+        margin-left: 20%;
+        padding: 15px 45px;
+    }
+
+    .event-time {
+        margin-top: 40px;
+    }
+
+    .event-time .time {
+        margin-top: 40px;
+    }
+
+    .event-address {
+        padding-bottom: 36px;
+    }
+
+    .event-detail-inner {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .hotel-view {
+        margin-top: 23px;
+    }
+
+    .gift-carousel {
+        margin-bottom: 90px;
+        margin-top: 0;
+    }
+
+    .contect-form {
+        margin-top: 30px;
+    }
+
+    .contact-mockup {
+        left: auto;
+        right: -120px;
+    }
+
+    .wed-plan>.row>div {
+        float: left;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .wedplan-info::before {
+        border-left-width: 236px;
+        border-right-width: 235px;
+    }
+
+    .wedplan-info::after {
+        bottom: 70px;
+    }
+
+    .service-item>.row>div {
+        float: left;
+        width: 25%;
+    }
+
+    .pricing-table>.row>div {
+        float: left;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .ceo-message-list {
+        bottom: 0;
+        float: left;
+        left: 0;
+        margin-top: 30px;
+        padding-bottom: 60px;
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .ceo-message {
+        max-width: 60%;
+    }
+
+    .attending-sec.overlape.style2 {
+        margin-bottom: 0;
+    }
+
+    .style2 .contect-form {
+        margin-top: 70px;
+    }
+
+    .blog-thumb {
+        text-align: center;
+        width: 100%;
+    }
+
+    .post-detail.style2>p {
+        max-width: 100%;
+    }
+
+    .blog-post2.rev .blog-thumb {
+        margin-left: 0;
+    }
+
+    .pagetop-inner {
+        margin: -60px 0 0;
+    }
+
+    .pagetop-inner>strong {
+        font-size: 45px;
+    }
+
+    .blog-post2 {
+        margin-bottom: 50px;
+    }
+
+    .blog-post2:last-child {
+        margin-bottom: 0;
+    }
+
+    .singlepost-info>h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .singlepost-detail {
+        padding: 0 30px;
+    }
+
+    blockquote>p {
+        font-size: 18px;
+    }
+
+    .singlepost-detail>p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .comments-thread {
+        padding: 0 30px;
+    }
+
+    .comments-reply {
+        padding: 0 30px;
+    }
+
+    .comment>p {
+        font-size: 14px;
+    }
+
+    .comment-date {
+        font-size: 13px;
+    }
+
+    .replyform>form input[type="text"] {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .replyform>form input {
+        border-right: 0 none;
+    }
+
+    .replyform>form textarea,
+    .replyform>form input {
+        font-size: 15px;
+    }
+
+    .location .col-md-5 {
+        float: right;
+        width: 50%;
+    }
+
+    .loc-item>.row>div {
+        float: left;
+        width: 50%;
+    }
+
+    .loc-carousel .owl-dots {
+        margin-bottom: -30px;
+    }
+
+    .no-overlape .pagetop-inner {
+        margin: 0;
+    }
+
+    .about-thumb.overlape {
+        margin-top: -60px;
+    }
+}
+
+
+@media (max-width:767px) {
+
+    .container,
+    .block .container {
+        width: 100% !important;
+    }
+
+    .couple {
+        padding: 0 100px;
+    }
+
+    .intro>h4 {
+        font-size: 22px;
+    }
+
+    .storiesnav {
+        right: -120px;
+    }
+
+    .event-title {
+        width: 20%;
+    }
+
+    .attending {
+        padding: 75px;
+    }
+
+    .contect-form form>.row>div {
+        float: left;
+        width: 100%;
+    }
+
+    .contact-mockup {
+        right: -50px;
+    }
+
+    .bottom-line {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .bottom-links>ul>li {
+        font-size: 13px;
+    }
+
+    .wed-plan.overlap {
+        margin-top: -60px;
+    }
+
+    .wedplan-info::before {
+        border-left-width: 184px;
+        border-right-width: 185px;
+    }
+
+    .wedplan-info::after {
+        bottom: 49px;
+    }
+
+    .title2>h4 {
+        font-size: 35px;
+    }
+
+    .service-item>.row>div {
+        width: 33.334%;
+    }
+
+    .gift-carousel {
+        padding-right: 0;
+    }
+
+    .your-gifts {
+        padding-right: 60px;
+    }
+
+    .singlepost-info>h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .singlepost-share>span {
+        font-size: 23px;
+        height: 60px;
+        line-height: 60px;
+        width: 60px;
+    }
+
+    .singlepost-share>ul>li>a {
+        font-size: 15px;
+        height: 35px;
+        line-height: 35px;
+        width: 35px;
+    }
+
+    blockquote>p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .singlepost-detail>p,
+    .comment>p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .wedplan-post.style2 .wedplan-info::before {
+        border-left-width: 152px;
+        border-right-width: 152px;
+    }
+
+    .style2 .wedplan-info {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .wedplan-info>span {
+        font-size: 15px;
+    }
+
+    .func-timing>span {
+        font-size: 14px;
+    }
+
+    .func-timing>strong {
+        font-size: 22px;
+    }
+
+    .wedplan-post.style2 .wedplan-info::after {
+        top: 200px;
+    }
+
+    .event-tabs {
+        padding-left: 0;
+    }
+
+    .event-tabs::before {
+        display: none;
+    }
+
+    .event-title {
+        width: 100%;
+    }
+
+    .event-tabs .tab-content {
+        width: 100%;
+    }
+
+    .event-title>ul {
+        margin-left: 30px;
+    }
+
+    .social-btn>li {
+        font-size: 18px;
+    }
+
+    .event-tabs .event-title,
+    .event-tabs .event-venue,
+    .event-tabs .ceremony-details {
+        min-height: initial;
+    }
+}
+
+
+@media (max-width:480px) {
+    .responsive-header .for-contact {
+        font-size: 13px;
+        line-height: 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .responsive-header .social-btns {
+        width: 100%;
+    }
+
+    .responsive-header .social-btns>li {
+        display: inline-block;
+        float: none;
+    }
+
+    .menu-btn {
+        height: 40px;
+        line-height: 40px;
+        margin-top: -50px;
+        width: 40px;
+    }
+
+    .wed-comsoon.overlap {
+        margin-top: -20px;
+    }
+
+    .wed-comsoon {
+        padding: 50px 20px;
+    }
+
+    .wed-comsoon-thumb {
+        padding-right: 0;
+    }
+
+    .title>h4 {
+        font-size: 20px;
+        line-height: initial;
+    }
+
+    .title::before {
+        height: 80px;
+        left: 30px;
+        width: 80px;
+    }
+
+    .wed-comsoon-counter>span {
+        float: left;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .countdown {
+        float: left;
+        width: 100%;
+    }
+
+    .countdown>li span {
+        font-size: 25px
+    }
+
+    .countdown>li p {
+        font-size: 12px;
+    }
+
+    .couple {
+        padding: 0;
+    }
+
+    .title.style2::before {
+        height: 80px;
+        margin-left: -40px;
+        width: 80px;
+    }
+
+    .intro {
+        margin-bottom: 30px;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .couple::before {
+        display: none;
+    }
+
+    .intro:last-child {
+        margin-bottom: 0;
+    }
+
+    .stories-sec {
+        padding: 40px 20px;
+    }
+
+    .stories-post {
+        float: left;
+        width: 100%;
+    }
+
+    .storiesnav {
+        right: 0;
+    }
+
+    .stories-thumb>img {
+        border-width: 15px;
+    }
+
+    .stories-detail {
+        padding-left: 0;
+    }
+
+    .carousel-post>h2 {
+        font-size: 50px;
+    }
+
+    .carousel-post>span {
+        font-size: 25px;
+    }
+
+    .blog-post-padd {
+        float: left;
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .blog-post-padd-inner {
+        float: left;
+        padding: 30px;
+        width: 100%;
+    }
+
+    .your-gifts {
+        padding: 50px 30px;
+    }
+
+    .gift-carousel {
+        padding-right: 0;
+    }
+
+    .attending-sec {
+        padding: 50px 15px;
+    }
+
+    .attending {
+        padding: 0 15px;
+    }
+
+    .contect-form {
+        padding: 25px 15px;
+    }
+
+    .contect-form form input {
+        font-size: 13px;
+    }
+
+    .bottom-links>img {
+        float: left;
+        width: 100%;
+    }
+
+    .bottom-links>ul {
+        float: left;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .bottom-line {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .bottom-line>p {
+        width: 100%;
+    }
+
+    .envelop-btn {
+        bottom: -20px;
+        font-size: 13px;
+        height: 40px;
+        left: -20px;
+        line-height: 40px;
+        width: 40px;
+    }
+
+    .envelop-btn::before {
+        height: 70px;
+        left: -15px;
+        top: -15px;
+        width: 70px;
+    }
+
+    .contect-form form button {
+        font-size: 13px;
+        padding: 12px 25px;
+    }
+
+    .gallery-carousel .owl-item.center .gallery-post {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    .wed-plan>.row>div {
+        width: 100%;
+    }
+
+    .wed-plan.overlap {
+        margin-top: 40px;
+    }
+
+    .wedplan-post:hover>img,
+    .wedplan-post.active>img {
+        margin-top: -180%;
+    }
+
+    .wedplan-info {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* .wedplan-info::before {
+        border-left-width: 145px;
+        border-right-width: 145px;
+    } */
+
+    .video .stories-thumb>a {
+        font-size: 50px;
+    }
+
+    .title2>h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .title2 {
+        max-width: 70%;
+        padding: 15px;
+    }
+
+    .thinkabout-thumb {
+        padding: 30px 15px;
+    }
+
+    .services-list {
+        bottom: 0;
+        left: 0;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    .service-item>.row>div {
+        width: 100%;
+    }
+
+    .pricing-table>.row>div {
+        width: 100%;
+    }
+
+    .pricing>h2>strong::before {
+        width: 100%;
+    }
+
+    .pricing>ul>li {
+        font-size: 13px;
+    }
+
+    .pricing>h2>strong {
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .ceo-message {
+        max-width: 100%;
+    }
+
+    .ourextream-progress .wed-comsoon-counter {
+        padding: 20px 15px;
+    }
+
+    .style2 .contect-form {
+        margin-bottom: 30px;
+    }
+
+    .pagetop-inner {
+        margin: 0;
+    }
+
+    .pagetop-inner>strong {
+        font-size: 25px;
+    }
+
+    .blog-sec.overlape {
+        margin-top: 50px;
+    }
+
+    .post-detail.style2 {
+        padding: 30px;
+    }
+
+    .post-detail.style2 .post-meta>li {
+        float: left;
+        font-size: 13px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .post-detail.style2>h2 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .post-detail.style2>p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    blockquote {
+        margin-top: 50px;
+        padding: 0 40px;
+    }
+
+    .blog-single.overlape {
+        margin-top: 0;
+    }
+
+    .singlepost-info {
+        bottom: 0;
+        float: left;
+        margin-top: 30px;
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .singlepost-info>h1 {
+        font-size: 25px;
+        line-height: 30px;
+        max-width: 100%;
+    }
+
+    .singlepost-info .post-meta {
+        margin-bottom: 40px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .singlepost-info .post-meta>li {
+        font-size: 12px;
+        width: auto;
+    }
+
+    .singlepost-share {
+        right: 20px;
+    }
+
+    .innr-gallery>span {
+        font-size: 13px;
+    }
+
+    .author-info {
+        max-width: 100%;
+    }
+
+    .blog-single .post-author {
+        padding: 20px 10%;
+    }
+
+    .location .col-md-5 {
+        width: 100%;
+    }
+
+    .wedplan-post.style2.active {
+        margin-bottom: 150px;
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .loc-item>.row>div {
+        width: 100%;
+    }
+
+    .loc-desc>h2 {
+        font-size: 25px;
+    }
+
+    .about-sec {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .about-thumb>img {
+        border-width: 15px;
+    }
+
+    .per {
+        padding: 10px 80px;
+        right: 0;
+        width: 100%;
+        margin: 50px;
+    }
+
+    .about-intro>h4 {
+        font-size: 25px;
+    }
+
+    .about-intro>span {
+        font-size: 20px;
+    }
+
+    .about-intro>p,
+    .about-introcontent>p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .event-venue {
+        width: 100%;
+    }
+
+    .ceremony-details {
+        width: 100%;
+    }
+
+    .forever-flowers {
+        opacity: 0;
+    }
+
+    .layer2 {
+        font-size: 9px !important;
+        -webkit-text-shadow: none !important;
+        -moz-text-shadow: none !important;
+        -ms-text-shadow: none !important;
+        -o-text-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+
+}

@@ -1,0 +1,143 @@
+/*========== Background Color ==========*/
+.wed-comsoon-counter > span,
+.btn1,
+.btn1:hover > span:before,
+.socials > a:hover,
+.stories-nav .owl-dots > div.active,
+.gallery-info::before,
+.event-title,
+.time,
+.ceremony-details .ti1,
+.people .socials::before,
+.blog-post > a.btn2,
+.blog-post-padd-inner:before,
+.envelop-btn,
+.gift-info > a,
+.contect-form form button,
+.envelop-btn:before,
+.bottom-line,
+.post-detail.style2 > a,
+.load-more > a:hover,
+.singlepost-share > span,
+.singlepost-share > ul > li > a:hover,
+.tagcloud > a:hover,
+.post-author > a,
+.comment-reply-link:hover,
+.replyform > form button,
+.wedplan-info > a,
+.stories-detail > a,
+.service-box > i,
+.owl-dots > div.active,
+.topbar:before,
+.logomenu-sec > ul > li:before,
+.pricing-btn > a,
+.pricing.active > i,
+.square,
+.heartR,
+.heartL,
+.menu-btn:hover,
+.audio-play > i,
+.color-picker > h3::before,
+.social-btn > li > a,
+.tp-bullets > div.selected
+{
+	background: #c2a772;
+}
+
+/*========== Font Color ==========*/
+.logomenu-sec > ul > li:hover > a,
+.title > h4 span,
+.countdown > li p,
+.btn1:hover,
+.intro:before,
+.stories-detail > h2 a:hover,
+.event-loc > i span,
+.inner-title,
+.event-address > li a:hover,
+.event-play > ul li a:hover,
+.event-title > ul > li.active a i,
+.people-info > h2 a:hover,
+.blog-post > a.btn2:hover,
+.post-carousel .owl-nav > div:hover:before,
+.post-detail > a,
+.contect-form form button:hover,
+.bottom-links > ul > li:hover > a,
+.layer4,
+.people .socials > a,
+.pagetop-inner > strong span,
+.about-intro > h4 span,
+.post-meta > li a:hover,
+.post-detail.style2 > h2,
+.post-detail.style2 .post-author > strong span,
+.cate > a:hover,
+.singlepost-share > ul > li > a,
+.author-info > strong span,
+.post-author > a:hover,
+.comment > h2 span,
+.comment-like,
+.wedplan-info > i,
+.wedplan-info > h2,
+.wedplan-info > a:hover,
+.video .stories-thumb > a:hover,
+.stories-detail > a:hover,
+.title2 > h4 span,
+.service-box > h2 span,
+.wedplan-post .wedplan-info > a:hover,
+.ceo-message > strong span,
+.social-btns > li > a:hover,
+.pricing > i,
+.pricing-btn > a:hover,
+.func-timing > span i,
+nav ul ul li:hover > a,
+.responsive-menu ul li.active > a,
+.responsive-menu ul li.active > i,
+.responsive-menu ul li:hover > a,
+.responsive-menu ul li:hover > i,
+.close-btn:hover
+{
+	color: #c2a772;
+}
+
+/*========== Border Color ==========*/
+.btn1,
+.btn1:hover > i,
+.blog-post > a.btn2,
+.post-carousel .owl-nav > div:hover,
+.contect-form form button,
+.post-author > a,
+.comment-reply-link:hover,
+.wedplan-info > a,
+.stories-detail > a,
+.pricing-btn > a,
+.square,
+.heartR,
+.heartL
+{
+	border-color: #c2a772;
+}
+
+/*========== Border Left Color ==========*/
+
+{
+	border-left-color: #c2a772;
+}
+
+/*========== Border Right Color ==========*/
+
+{
+	border-right-color: #c2a772;
+}
+
+/*========== Border Top Color ==========*/
+.wedplan-post:hover,
+.wedplan-post.active,
+.pricing.active
+{
+	border-top-color: #c2a772;
+}
+
+/*========== Border Bottom Color ==========*/
+
+{
+	border-bottom-color: #c2a772;
+}
