@@ -60,6 +60,269 @@
 		.image-grid img:hover {
 			transform: scale(1.05);
 		}
+
+
+		/* === Wedding Plan Section === */
+		.wed-plan {
+			margin: 60px 0;
+			text-align: center;
+		}
+
+		.wedplan-post {
+			background: #fff;
+			border-radius: 18px;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			margin-bottom: 30px;
+			transition: all .4s ease;
+			position: relative;
+		}
+
+		.wedplan-post:hover {
+			transform: translateY(-10px) scale(1.03);
+			box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+		}
+
+		.wedplan-thumb {
+			width: 100%;
+			height: 260px;
+			overflow: hidden;
+			border-radius: 18px 18px 0 0;
+		}
+
+		.wedplan-thumb img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform .5s ease;
+		}
+
+		.wedplan-post:hover .wedplan-thumb img {
+			transform: scale(1.08);
+		}
+
+		.wedplan-info {
+			padding: 22px;
+		}
+
+		.wedplan-info i {
+			font-size: 32px;
+			color: #ff4081;
+			margin-bottom: 14px;
+			display: block;
+		}
+
+		.wedplan-info h2 {
+			font-size: 22px;
+			font-weight: 700;
+			margin-bottom: 12px;
+			text-transform: capitalize;
+			color: #333;
+		}
+
+		.wedplan-info p {
+			font-size: 15px;
+			line-height: 1.6;
+			margin-bottom: 18px;
+			color: #555;
+		}
+
+		.wedplan-info a {
+			display: inline-block;
+			padding: 10px 20px;
+			background: #ff4081;
+			color: #fff;
+			font-size: 14px;
+			border-radius: 25px;
+			transition: background .3s ease;
+			text-decoration: none;
+		}
+
+		.wedplan-info a:hover {
+			background: #e73370;
+		}
+
+		/* Active post highlight */
+		.wedplan-post.active {
+			border: 2px solid #ff4081;
+			transform: scale(1.05);
+			box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+		}
+
+		/* Responsive */
+		@media (max-width: 991px) {
+			.wedplan-thumb {
+				height: 220px;
+			}
+
+			.wedplan-info h2 {
+				font-size: 20px;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.wedplan-post {
+				margin-bottom: 25px;
+			}
+
+			.wedplan-thumb {
+				height: 200px;
+			}
+		}
+
+
+		/* === Wedding Coming Soon Section === */
+		.wed-comsoon {
+			margin: 80px 0;
+			display: flex;
+			align-items: center;
+		}
+
+		.wed-comsoon-thumb {
+			position: relative;
+			border-radius: 18px;
+			overflow: hidden;
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+		}
+
+		.wed-comsoon-thumb img {
+			width: 100%;
+			height: auto;
+			border-radius: 18px;
+			object-fit: cover;
+			transition: transform 0.6s ease;
+		}
+
+		.wed-comsoon-thumb:hover img {
+			transform: scale(1.05);
+		}
+
+		/* Title Styling */
+		.wed-comsoon-eventdetail .title h4 {
+			font-size: 36px;
+			font-weight: 700;
+			line-height: 1.3;
+			margin-bottom: 20px;
+			color: #333;
+		}
+
+		.wed-comsoon-eventdetail .title span {
+			color: #ff4081;
+			font-size: 40px;
+			font-weight: 800;
+		}
+
+		/* Countdown Timer */
+		.wed-comsoon-counter {
+			margin: 25px 0;
+			text-align: center;
+		}
+
+		.wed-comsoon-counter span {
+			display: block;
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 20px;
+			color: #444;
+		}
+
+		.wed-comsoon-counter ul {
+			display: flex;
+			justify-content: center;
+			gap: 18px;
+			padding: 0;
+			list-style: none;
+		}
+
+		.wed-comsoon-counter ul li {
+			background: #fff;
+			border-radius: 14px;
+			padding: 15px 20px;
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease;
+		}
+
+		.wed-comsoon-counter ul li:hover {
+			transform: translateY(-6px);
+		}
+
+		.wed-comsoon-counter ul li span {
+			font-size: 30px;
+			font-weight: 700;
+			color: #ff4081;
+			display: block;
+		}
+
+		.wed-comsoon-counter ul li p {
+			font-size: 14px;
+			color: #666;
+			margin: 5px 0 0;
+		}
+
+		/* Description */
+		.wed-comsoon-eventdetail p {
+			margin: 20px 0;
+			font-size: 15px;
+			line-height: 1.7;
+			color: #555;
+		}
+
+		/* RSVP Button */
+		.wed-comsoon-eventdetail .btn1 {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			padding: 12px 28px;
+			background: #ff4081;
+			color: #fff;
+			border-radius: 30px;
+			font-size: 16px;
+			font-weight: 600;
+			text-decoration: none;
+			box-shadow: 0 6px 20px rgba(255, 64, 129, 0.4);
+			transition: all 0.3s ease;
+		}
+
+		.wed-comsoon-eventdetail .btn1:hover {
+			background: #e73370;
+			transform: translateY(-4px);
+		}
+
+		/* Responsive */
+		@media (max-width: 991px) {
+			.wed-comsoon {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.wed-comsoon-eventdetail {
+				margin-top: 30px;
+			}
+
+			.wed-comsoon-eventdetail .title h4 {
+				font-size: 28px;
+			}
+
+			.wed-comsoon-eventdetail .title span {
+				font-size: 32px;
+			}
+		}
+
+		@media (max-width: 575px) {
+			.wed-comsoon-counter ul {
+				flex-wrap: wrap;
+				gap: 12px;
+			}
+
+			.wed-comsoon-counter ul li {
+				flex: 1 1 45%;
+				padding: 12px;
+			}
+
+			.wed-comsoon-counter ul li span {
+				font-size: 24px;
+			}
+		}
 	</style>
 
 </head>
@@ -67,6 +330,7 @@
 <body>
 
 	<div class="theme-layout">
+
 		<header class="stick">
 
 			<div class="container">
@@ -75,13 +339,13 @@
 						<li class="menu-item-has-children"><a href="index.html" title="">Home</a>
 
 						</li>
-						<li class="menu-item-has-children"><a href="#" title="">Couple</a>
+						<li class="menu-item-has-children"><a href="about-her.html" title="">Couple</a>
 							<ul>
 								<li><a href="about-her.html" title="">About Her</a></li>
 								<li><a href="about-him.html" title="">About Him</a></li>
 							</ul>
 						</li>
-						<li class="menu-item-has-children"><a href="#" title="">Pages</a>
+						<li class="menu-item-has-children"><a href="blog.html" title="">Pages</a>
 							<ul>
 								<li><a href="blog.html" title="">Blog</a></li>
 								<li><a href="single-blog.html" title="">Single Blog</a></li>
@@ -89,8 +353,11 @@
 						</li>
 
 					</ul>
-					<!-- <div class="logo"><a href="index.html" title=""><img src="images/logo.png" alt="" /></a></div> -->
+					<a href="images/new/love8.gif" target="_blank">
+						<img src="images/new/love8.gif" alt="Heart GIF" height="100px" width="100px" />
+					</a>
 					<ul>
+
 						<li class="menu-item-has-children"><a class="custom-scroll" href="#scroll-blog-section"
 								title="">Event</a>
 							<ul>
@@ -98,21 +365,23 @@
 								<li><a href="reception-event.html" title="">Reception Event</a></li>
 							</ul>
 						</li>
+
 						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
-						<li><a class="custom-scroll" href="#scroll-rsvp-section" title="">RSVP</a></li>
+						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
 
 					</ul>
 
 				</nav>
 			</div>
-		</header><!-- Header -->
+		</header>
+		<!-- Header -->
 
 
 		<div class="responsive-header">
 
 			<div class="logo-menu">
-				<div class="logo"> <a href="images/new/heart.gif" target="_blank">
-						<img src="images/new/heart.gif" alt="Heart GIF" height="100px" width="100px" />
+				<div class="logo"> <a href="images/new/love3.gif" target="_blank">
+						<img src="images/new/love3.gif" alt="Heart GIF" height="100px" width="100px" />
 					</a></div>
 				<span class="menu-btn"><i class="fa fa-align-center"></i></span>
 				<div class="responsive-menu">
@@ -136,21 +405,22 @@
 								<li><a href="reception-event.html" title="">Reception Event</a></li>
 							</ul>
 						</li>
-
-						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
-						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
-						<li class="menu-item-has-children"><a href="#" title="">Pages</a><i
+						<li class="menu-item-has-children"><a href="blog.html" title="">Pages</a><i
 								class="fa fa-angle-down"></i>
 							<ul>
 								<li><a href="blog.html" title="">Blog</a></li>
 								<li><a href="single-blog.html" title="">Single Blog</a></li>
 							</ul>
 						</li>
+						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
+						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
+
 
 					</ul>
 				</div>
 			</div>
 		</div><!-- Responsive Header -->
+
 
 		<section class="scroll-sction" id="scroll-gallery-section">
 			<div class="block pattern less-spacing">
@@ -287,6 +557,8 @@
 										<div class="wed-comsoon-thumb fromleft">
 											<img src="images/new/bb2.jpg" alt="" />
 										</div>
+										<img src="images/new/love7.gif" alt="Loading..." height="300px" width="300px">
+
 									</div>
 									<div class="col-md-6">
 										<div class="wed-comsoon-eventdetail fromright">
@@ -676,10 +948,9 @@
 						<div class="col-md-12">
 							<div class="bottom-links overlape2 fromdown" style="height: 100px;">
 
-								<div class="logo"><a href="images/new/heart.gif" target="_blank">
-										<img src="images/new/heart.gif" alt="Heart GIF" height="150px" width="150px" />
-									</a></div>
 								<ul>
+									<img src="images/new/love6.gif" alt="Heart GIF" height="100px" width="100px" />
+
 									<li><a href="index.html" title="">Home</a></li>
 									<li><a href="about-her.html" title="">Couple</a></li>
 									<li><a href="wedding-event.html" title="">Event</a></li>
@@ -754,7 +1025,7 @@
 	</div><!-- Theme Layout -->
 
 
-<script>
+	<script>
 		// Set the date we're counting down to
 		const targetDate = new Date("October 26, 2025 00:00:00").getTime();
 

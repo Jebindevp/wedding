@@ -29,12 +29,194 @@
 	<link rel="alternate stylesheet" type="text/css" href="css/colors/color11.css" title="color11" /> <!-- Color11 -->
 	<link rel="alternate stylesheet" type="text/css" href="css/colors/color12.css" title="color12" /> <!-- Color12 -->
 
+	<style>
+		/* About Section Wrapper */
+		.about-sec {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			padding: 60px 0;
+			background: linear-gradient(135deg, #fdf6f0, #fff0f5);
+		}
 
+		/* About Image */
+		.about-thumb {
+			position: relative;
+			overflow: hidden;
+			border-radius: 20px;
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+			transition: transform 0.5s ease;
+		}
+
+		.about-thumb img {
+			width: 100%;
+			height: auto;
+			display: block;
+			transition: transform 0.5s ease;
+		}
+
+		.about-thumb:hover img {
+			transform: scale(1.1) rotate(1deg);
+		}
+
+		/* Intro Content */
+		.about-intro {
+			padding: 20px 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.about-intro .per {
+			font-size: 1rem;
+			color: #ff4081;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		.about-intro h4 {
+			font-size: 2rem;
+			margin: 10px 0;
+			color: #333;
+		}
+
+		.about-intro h4 span {
+			color: #ff4081;
+		}
+
+		.about-intro span {
+			font-size: 1rem;
+			color: #666;
+			display: block;
+			margin-bottom: 15px;
+		}
+
+		.about-intro img {
+			margin: 15px 0;
+			max-width: 80px;
+		}
+
+		/* Social Buttons */
+		.social-btn {
+			display: flex;
+			gap: 10px;
+			margin-bottom: 15px;
+		}
+
+		.social-btn li {
+			list-style: none;
+		}
+
+		.social-btn li a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			background: #ff4081;
+			color: #fff;
+			border-radius: 50%;
+			transition: all 0.3s ease;
+		}
+
+		.social-btn li a:hover {
+			background: #ff7043;
+			transform: scale(1.2);
+		}
+
+		/* About Detailed Content */
+		.about-introcontent {
+			margin-top: 30px;
+			padding: 25px 30px;
+			background: #fff;
+			border-radius: 20px;
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+			font-size: 0.95rem;
+			line-height: 1.6;
+			color: #555;
+			transition: transform 0.5s ease, box-shadow 0.5s ease;
+		}
+
+		.about-introcontent:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+		}
+
+		/* Animation Effects */
+		.fromleft {
+			opacity: 0;
+			transform: translateX(-50px);
+			animation: slideInLeft 1s forwards;
+		}
+
+		.fromright {
+			opacity: 0;
+			transform: translateX(50px);
+			animation: slideInRight 1s forwards;
+		}
+
+		.fromdown {
+			opacity: 0;
+			transform: translateY(50px);
+			animation: slideInUp 1s forwards;
+		}
+
+		@keyframes slideInLeft {
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		@keyframes slideInRight {
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		@keyframes slideInUp {
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		/* Responsive Grid */
+		@media (max-width: 991px) {
+			.about-sec {
+				flex-direction: column;
+			}
+
+			.about-intro,
+			.about-thumb {
+				width: 100%;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.about-intro h4 {
+				font-size: 1.6rem;
+			}
+
+			.about-intro span,
+			.about-introcontent {
+				font-size: 0.9rem;
+			}
+
+			.social-btn li a {
+				width: 35px;
+				height: 35px;
+			}
+		}
+	</style>
 </head>
 
 <body>
-	
+
 	<div class="theme-layout">
+
 		<header class="stick">
 
 			<div class="container">
@@ -43,13 +225,13 @@
 						<li class="menu-item-has-children"><a href="index.html" title="">Home</a>
 
 						</li>
-						<li class="menu-item-has-children"><a href="#" title="">Couple</a>
+						<li class="menu-item-has-children"><a href="about-her.html" title="">Couple</a>
 							<ul>
 								<li><a href="about-her.html" title="">About Her</a></li>
 								<li><a href="about-him.html" title="">About Him</a></li>
 							</ul>
 						</li>
-						<li class="menu-item-has-children"><a href="#" title="">Pages</a>
+						<li class="menu-item-has-children"><a href="blog.html" title="">Pages</a>
 							<ul>
 								<li><a href="blog.html" title="">Blog</a></li>
 								<li><a href="single-blog.html" title="">Single Blog</a></li>
@@ -57,8 +239,11 @@
 						</li>
 
 					</ul>
-					<!-- <div class="logo"><a href="index.html" title=""><img src="images/logo.png" alt="" /></a></div> -->
+					<a href="images/new/love8.gif" target="_blank">
+						<img src="images/new/love8.gif" alt="Heart GIF" height="100px" width="100px" />
+					</a>
 					<ul>
+
 						<li class="menu-item-has-children"><a class="custom-scroll" href="#scroll-blog-section"
 								title="">Event</a>
 							<ul>
@@ -66,20 +251,22 @@
 								<li><a href="reception-event.html" title="">Reception Event</a></li>
 							</ul>
 						</li>
+
 						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
-						<li><a class="custom-scroll" href="#scroll-rsvp-section" title="">RSVP</a></li>
+						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
 
 					</ul>
 
 				</nav>
 			</div>
-		</header><!-- Header -->
+		</header>
+		<!-- Header -->
 
 		<div class="responsive-header">
 
 			<div class="logo-menu">
-				<div class="logo"> <a href="images/new/heart.gif" target="_blank">
-						<img src="images/new/heart.gif" alt="Heart GIF" height="100px" width="100px" />
+				<div class="logo"> <a href="images/new/love3.gif" target="_blank">
+						<img src="images/new/love3.gif" alt="Heart GIF" height="100px" width="100px" />
 					</a></div>
 				<span class="menu-btn"><i class="fa fa-align-center"></i></span>
 				<div class="responsive-menu">
@@ -103,21 +290,22 @@
 								<li><a href="reception-event.html" title="">Reception Event</a></li>
 							</ul>
 						</li>
-
-						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
-						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
-						<li class="menu-item-has-children"><a href="#" title="">Pages</a><i
+						<li class="menu-item-has-children"><a href="blog.html" title="">Pages</a><i
 								class="fa fa-angle-down"></i>
 							<ul>
 								<li><a href="blog.html" title="">Blog</a></li>
 								<li><a href="single-blog.html" title="">Single Blog</a></li>
 							</ul>
 						</li>
+						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
+						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
+
 
 					</ul>
 				</div>
 			</div>
 		</div><!-- Responsive Header -->
+
 
 		<div class="page-top">
 			<div class="block bluish1">
@@ -149,11 +337,11 @@
 												<li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
 												<li><a href="#" title=""><i class="fa fa-linkedin-square"></i></a></li>
 											</ul>
-											<strong class="per">Groom</strong>
-											<h4> Deva <span>Jebin</span></h4>
+
+											<h4> King<span>Garudan</span></h4>
 											<span>Handsome and Genius!</span>
 											<img src="images/design.png" alt="" />
-											<p>Name: Jebin <br>
+											<p>Name: Garudan <br>
 												Date of Birth: 15th October 1998<br>
 												Birth Place: Kochi, Kerala<br>
 												Current Residence: Chennai, Tamil Nadu</p><br>
@@ -170,7 +358,8 @@
 												🎸 Enjoys playing musical instruments and listening to melodic worship
 												songs<br>
 
-												📸 Enthusiastic about photography, especially nature and candid moments<br>
+												📸 Enthusiastic about photography, especially nature and candid
+												moments<br>
 
 												🏞️ Loves traveling, exploring beaches, and trekking through hill
 												stations<br>
@@ -207,6 +396,7 @@
 			</div>
 		</section>
 
+
 		<footer>
 			<div class="block pattern remove-bottom">
 				<div class="container">
@@ -214,10 +404,9 @@
 						<div class="col-md-12">
 							<div class="bottom-links overlape2 fromdown" style="height: 100px;">
 
-								<div class="logo"><a href="images/new/heart.gif" target="_blank">
-										<img src="images/new/heart.gif" alt="Heart GIF" height="150px" width="150px" />
-									</a></div>
 								<ul>
+									<img src="images/new/love6.gif" alt="Heart GIF" height="100px" width="100px" />
+
 									<li><a href="index.html" title="">Home</a></li>
 									<li><a href="about-her.html" title="">Couple</a></li>
 									<li><a href="wedding-event.html" title="">Event</a></li>

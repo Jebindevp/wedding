@@ -30,14 +30,202 @@
 	<link rel="alternate stylesheet" type="text/css" href="css/colors/color12.css" title="color12" /> <!-- Color12 -->
 
 	<style>
+		/* ===== About Section Common ===== */
+		.about-sec {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			padding: 60px 0;
+			background: linear-gradient(135deg, #fff8f8, #fdf6f9);
+		}
 
+		/* ===== Image (Thumb) ===== */
+		.about-thumb {
+			position: relative;
+			overflow: hidden;
+			border-radius: 20px;
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+			transition: transform 0.6s ease;
+		}
+
+		.about-thumb img {
+			width: 100%;
+			height: auto;
+			display: block;
+			transition: transform 0.6s ease;
+		}
+
+		.about-thumb:hover img {
+			transform: scale(1.1) rotate(1deg);
+		}
+
+		/* ===== About Intro Text ===== */
+		.about-intro {
+			padding: 20px 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: left;
+		}
+
+		.about-intro .per {
+			font-size: 1rem;
+			color: #e91e63;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		.about-intro h4 {
+			font-size: 2rem;
+			margin: 10px 0;
+			color: #333;
+			font-weight: 700;
+		}
+
+		.about-intro h4 span {
+			color: #e91e63;
+		}
+
+		.about-intro span {
+			font-size: 1rem;
+			color: #666;
+			display: block;
+			margin-bottom: 15px;
+		}
+
+		.about-intro img {
+			margin: 15px 0;
+			max-width: 80px;
+		}
+
+		/* ===== Social Buttons ===== */
+		.social-btn {
+			display: flex;
+			gap: 12px;
+			margin-bottom: 15px;
+		}
+
+		.social-btn li {
+			list-style: none;
+		}
+
+		.social-btn li a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 42px;
+			height: 42px;
+			background: #e91e63;
+			color: #fff;
+			border-radius: 50%;
+			font-size: 1.2rem;
+			transition: all 0.3s ease;
+			box-shadow: 0 6px 12px rgba(233, 30, 99, 0.3);
+		}
+
+		.social-btn li a:hover {
+			background: #ff7043;
+			transform: scale(1.2) rotate(8deg);
+		}
+
+		/* ===== Detailed Content Box ===== */
+		.about-introcontent {
+			margin-top: 30px;
+			padding: 25px 30px;
+			background: #fff;
+			border-radius: 20px;
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+			font-size: 0.95rem;
+			line-height: 1.7;
+			color: #444;
+			transition: transform 0.5s ease, box-shadow 0.5s ease;
+		}
+
+		.about-introcontent:hover {
+			transform: translateY(-8px);
+			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+		}
+
+		/* ===== Animations ===== */
+		.fromleft {
+			opacity: 0;
+			transform: translateX(-50px);
+			animation: slideInLeft 1s forwards;
+		}
+
+		.fromright {
+			opacity: 0;
+			transform: translateX(50px);
+			animation: slideInRight 1s forwards;
+		}
+
+		.fromdown {
+			opacity: 0;
+			transform: translateY(50px);
+			animation: slideInUp 1s forwards;
+		}
+
+		@keyframes slideInLeft {
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		@keyframes slideInRight {
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		@keyframes slideInUp {
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		/* ===== Responsive ===== */
+		@media (max-width: 991px) {
+			.about-sec {
+				flex-direction: column;
+			}
+
+			.about-intro,
+			.about-thumb {
+				width: 100%;
+			}
+
+			.about-intro {
+				text-align: center;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.about-intro h4 {
+				font-size: 1.6rem;
+			}
+
+			.about-intro span,
+			.about-introcontent {
+				font-size: 0.9rem;
+			}
+
+			.social-btn li a {
+				width: 36px;
+				height: 36px;
+				font-size: 1rem;
+			}
+		}
 	</style>
 
 </head>
 
 <body>
-	
-	
+
+
 	<div class="theme-layout">
 
 		<header class="stick">
@@ -48,13 +236,13 @@
 						<li class="menu-item-has-children"><a href="index.html" title="">Home</a>
 
 						</li>
-						<li class="menu-item-has-children"><a href="#" title="">Couple</a>
+						<li class="menu-item-has-children"><a href="about-her.html" title="">Couple</a>
 							<ul>
 								<li><a href="about-her.html" title="">About Her</a></li>
 								<li><a href="about-him.html" title="">About Him</a></li>
 							</ul>
 						</li>
-						<li class="menu-item-has-children"><a href="#" title="">Pages</a>
+						<li class="menu-item-has-children"><a href="blog.html" title="">Pages</a>
 							<ul>
 								<li><a href="blog.html" title="">Blog</a></li>
 								<li><a href="single-blog.html" title="">Single Blog</a></li>
@@ -62,8 +250,8 @@
 						</li>
 
 					</ul>
-					<a href="images/new/heart.gif" target="_blank">
-						<img src="images/new/heart.gif" alt="Heart GIF" height="100px" width="100px" />
+					<a href="images/new/love8.gif" target="_blank">
+						<img src="images/new/love8.gif" alt="Heart GIF" height="100px" width="100px" />
 					</a>
 					<ul>
 
@@ -76,30 +264,30 @@
 						</li>
 
 						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
-						<li><a class="custom-scroll" href="#scroll-rsvp-section" title="">RSVP</a></li>
+						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
 
 					</ul>
 
 				</nav>
 			</div>
-		</header><!-- Header -->
+		</header>
+		<!-- Header -->
 
 		<div class="responsive-header">
-
+		
 			<div class="logo-menu">
-				<div class="logo"> <a href="images/new/heart.gif" target="_blank">
-						<img src="images/new/heart.gif" alt="Heart GIF" height="100px" width="100px" />
+				<div class="logo"> <a href="images/new/love3.gif" target="_blank">
+						<img src="images/new/love3.gif" alt="Heart GIF" height="100px" width="100px" />
 					</a></div>
 				<span class="menu-btn"><i class="fa fa-align-center"></i></span>
 				<div class="responsive-menu">
 					<span class="close-btn"><i class="fa fa-times"></i></span>
 					<ul>
 						<li><a href="index.html" title="">Home</a></li>
-
-
+		
+		
 						</li>
-						<li class="menu-item-has-children"><a href="#" title="">Couple</a><i
-								class="fa fa-angle-down"></i>
+						<li class="menu-item-has-children"><a href="#" title="">Couple</a><i class="fa fa-angle-down"></i>
 							<ul>
 								<li><a href="about-her.html" title="">About Her</a></li>
 								<li><a href="about-him.html" title="">About Him</a></li>
@@ -112,17 +300,17 @@
 								<li><a href="reception-event.html" title="">Reception Event</a></li>
 							</ul>
 						</li>
-
-						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
-						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
-						<li class="menu-item-has-children"><a href="#" title="">Pages</a><i
+						<li class="menu-item-has-children"><a href="blog.html" title="">Pages</a><i
 								class="fa fa-angle-down"></i>
 							<ul>
 								<li><a href="blog.html" title="">Blog</a></li>
 								<li><a href="single-blog.html" title="">Single Blog</a></li>
 							</ul>
 						</li>
-
+						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
+						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
+		
+		
 					</ul>
 				</div>
 			</div>
@@ -158,7 +346,7 @@
 												<li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
 												<li><a href="#" title=""><i class="fa fa-linkedin-square"></i></a></li>
 											</ul>
-											<strong class="per">Bride</strong>
+
 											<h4>Sherling <span>Sumi</span></h4>
 											<span>True &amp; Heart</span>
 											<img src="images/design.png" alt="" />
@@ -212,6 +400,8 @@
 				</div>
 			</div>
 		</section>
+
+
 		<footer>
 			<div class="block pattern remove-bottom">
 				<div class="container">
@@ -219,10 +409,9 @@
 						<div class="col-md-12">
 							<div class="bottom-links overlape2 fromdown" style="height: 100px;">
 
-								<div class="logo"><a href="images/new/heart.gif" target="_blank">
-										<img src="images/new/heart.gif" alt="Heart GIF" height="150px" width="150px" />
-									</a></div>
 								<ul>
+									<img src="images/new/love6.gif" alt="Heart GIF" height="100px" width="100px" />
+
 									<li><a href="index.html" title="">Home</a></li>
 									<li><a href="about-her.html" title="">Couple</a></li>
 									<li><a href="wedding-event.html" title="">Event</a></li>
@@ -235,6 +424,7 @@
 				</div>
 			</div>
 		</footer>
+
 
 		<div class="bottom-line">
 			<p> 2025. Create in Marrige couples </p>

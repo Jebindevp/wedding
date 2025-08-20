@@ -189,528 +189,265 @@
 
 
 
+		/* === Wedding Coming Soon Section === */
+		.wed-comsoon {
+			margin: 80px 0;
+			display: flex;
+			align-items: center;
+		}
 
-
-		/* ===== Wedding Coming Soon Section ===== */
-		section {
-			padding: 100px 0;
-			background: linear-gradient(135deg, #fff5f7, #fefefe);
+		.wed-comsoon-thumb {
 			position: relative;
+			border-radius: 18px;
 			overflow: hidden;
-			font-family: 'Poppins', sans-serif;
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 		}
 
-		/* Decorative Glow Circles */
-		section::before,
-		section::after {
-			content: "";
-			position: absolute;
-			width: 300px;
-			height: 300px;
-			border-radius: 50%;
-			background: radial-gradient(circle, rgba(230, 57, 70, 0.3), transparent 70%);
-			animation: float 10s infinite alternate ease-in-out;
-			z-index: 0;
-		}
-
-		section::before {
-			top: -80px;
-			left: -100px;
-		}
-
-		section::after {
-			bottom: -80px;
-			right: -100px;
-			animation-delay: 5s;
-		}
-
-		.block.pattern {
-			position: relative;
-			z-index: 1;
-		}
-
-		/* ===== Image Styling ===== */
 		.wed-comsoon-thumb img {
 			width: 100%;
-			border-radius: 25px;
-			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-			transition: transform 0.6s ease, filter 0.6s ease;
+			height: auto;
+			border-radius: 18px;
+			object-fit: cover;
+			transition: transform 0.6s ease;
 		}
 
-		.wed-comsoon-thumb img:hover {
-			transform: scale(1.07) rotate(-2deg);
-			filter: brightness(1.1) saturate(1.2);
-		}
-
-		/* ===== Event Details Box (Glassmorphism) ===== */
-		.wed-comsoon-eventdetail {
-			padding: 50px;
-			background: rgba(255, 255, 255, 0.7);
-			border-radius: 25px;
-			backdrop-filter: blur(15px);
-			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-			animation: fadeInUp 1s ease-in-out;
-			position: relative;
-			overflow: hidden;
-		}
-
-		/* Glow Border Effect */
-		.wed-comsoon-eventdetail::after {
-			content: "";
-			position: absolute;
-			top: -2px;
-			left: -2px;
-			right: -2px;
-			bottom: -2px;
-			border-radius: 25px;
-			background: linear-gradient(135deg, #e63946, #ff758f, #f9c74f, #90be6d);
-			z-index: -1;
-			opacity: 0.5;
-			background-size: 300% 300%;
-			animation: gradientMove 8s infinite linear;
+		.wed-comsoon-thumb:hover img {
+			transform: scale(1.05);
 		}
 
 		/* Title Styling */
 		.wed-comsoon-eventdetail .title h4 {
-			font-size: 38px;
-			font-weight: 800;
-			text-transform: uppercase;
-			color: #222;
+			font-size: 36px;
+			font-weight: 700;
 			line-height: 1.3;
 			margin-bottom: 20px;
+			color: #333;
 		}
 
 		.wed-comsoon-eventdetail .title span {
-			color: linear-gradient(135deg, #e63946, #ff758f);
-			font-size: 30px;
+			color: #ff4081;
+			font-size: 40px;
 			font-weight: 800;
-			letter-spacing: 2px;
 		}
 
-		/* ===== Counter Styling ===== */
+		/* Countdown Timer */
 		.wed-comsoon-counter {
-			margin: 20px 0;
+			margin: 25px 0;
 			text-align: center;
 		}
 
 		.wed-comsoon-counter span {
-			display: inline-block;
-			background: linear-gradient(135deg, #e63946, #ff758f);
-			color: #fff;
-			font-size: 20px;
-			font-weight: 700;
-			padding: 12px 28px;
-			border-radius: 50px;
-			box-shadow: 0 8px 25px rgba(230, 57, 70, 0.4);
-			margin-bottom: 25px;
-			animation: pulse 2s infinite ease-in-out;
+			display: block;
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 20px;
+			color: #444;
 		}
 
-		ul.countdown {
+		.wed-comsoon-counter ul {
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
+			gap: 18px;
 			padding: 0;
 			list-style: none;
-			gap: 10px;
 		}
 
-		ul.countdown li {
-			flex: 1;
-			background: rgba(255, 255, 255, 0.9);
-			padding: 10px;
-			border-radius: 18px;
-			text-align: center;
-			transition: transform 0.4s ease, background 0.4s ease;
-			box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+		.wed-comsoon-counter ul li {
+			background: #fff;
+			border-radius: 14px;
+			padding: 15px 20px;
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease;
 		}
 
-		ul.countdown li:hover {
+		.wed-comsoon-counter ul li:hover {
 			transform: translateY(-6px);
-			background: linear-gradient(135deg, #ff758f, #e63946);
-			color: #fff;
 		}
 
-		ul.countdown li span {
-			font-size: 38px;
-			font-weight: 800;
+		.wed-comsoon-counter ul li span {
+			font-size: 30px;
+			font-weight: 700;
+			color: #ff4081;
 			display: block;
 		}
 
-		ul.countdown li p {
-			font-size: 15px;
-			margin: 0;
-			opacity: 0.8;
-			font-weight: 600;
+		.wed-comsoon-counter ul li p {
+			font-size: 14px;
+			color: #666;
+			margin: 5px 0 0;
 		}
 
-		/* ===== Text ===== */
+		/* Description */
 		.wed-comsoon-eventdetail p {
-			font-size: 16px;
-			color: #333;
-			line-height: 1.8;
-			margin-bottom: 35px;
+			margin: 20px 0;
+			font-size: 15px;
+			line-height: 1.7;
+			color: #555;
 		}
 
-		/* ===== RSVP Button ===== */
-		.btn1 {
+		/* RSVP Button */
+		.wed-comsoon-eventdetail .btn1 {
 			display: inline-flex;
-
 			align-items: center;
-			gap: 10px;
-			padding: 15px 35px;
-			background: linear-gradient(135deg, #e63946, #ff758f);
+			gap: 8px;
+			padding: 12px 28px;
+			background: #ff4081;
 			color: #fff;
-			font-size: 17px;
-			font-weight: 700;
-			text-transform: uppercase;
-			border-radius: 50px;
+			border-radius: 30px;
+			font-size: 16px;
+			font-weight: 600;
 			text-decoration: none;
-			box-shadow: 0 10px 30px rgba(230, 57, 70, 0.5);
-			transition: all 0.35s ease;
-			position: relative;
-			overflow: hidden;
+			box-shadow: 0 6px 20px rgba(255, 64, 129, 0.4);
+			transition: all 0.3s ease;
 		}
 
-		.btn1::before {
-			content: "";
-			position: absolute;
-			width: 0;
-			height: 100%;
-			left: 0;
-			top: 0;
-			background: rgba(255, 255, 255, 0.3);
-			transition: width 0.35s ease;
-		}
-
-		.btn1:hover::before {
-			width: 100%;
-		}
-
-		.btn1:hover {
+		.wed-comsoon-eventdetail .btn1:hover {
+			background: #e73370;
 			transform: translateY(-4px);
-			box-shadow: 0 14px 40px rgba(230, 57, 70, 0.6);
 		}
 
-		/* ===== Animations ===== */
-		@keyframes slideInLeft {
-			from {
-				transform: translateX(-120px);
-				opacity: 0;
-			}
-
-			to {
-				transform: translateX(0);
-				opacity: 1;
-			}
-		}
-
-		@keyframes slideInRight {
-			from {
-				transform: translateX(120px);
-				opacity: 0;
-			}
-
-			to {
-				transform: translateX(0);
-				opacity: 1;
-			}
-		}
-
-		@keyframes fadeInUp {
-			from {
-				transform: translateY(70px);
-				opacity: 0;
-			}
-
-			to {
-				transform: translateY(0);
-				opacity: 1;
-			}
-		}
-
-		@keyframes gradientMove {
-			0% {
-				background-position: 0% 50%;
-			}
-
-			50% {
-				background-position: 100% 50%;
-			}
-
-			100% {
-				background-position: 0% 50%;
-			}
-		}
-
-		@keyframes pulse {
-
-			0%,
-			100% {
-				transform: scale(1);
-				box-shadow: 0 0 0 rgba(230, 57, 70, 0.4);
-			}
-
-			50% {
-				transform: scale(1.05);
-				box-shadow: 0 0 30px rgba(230, 57, 70, 0.6);
-			}
-		}
-
-		@keyframes float {
-			from {
-				transform: translateY(0);
-			}
-
-			to {
-				transform: translateY(30px);
-			}
-		}
-
-		/* ===== Responsive ===== */
-		@media (max-width: 992px) {
-			.wed-comsoon-eventdetail {
-				margin-top: 40px;
+		/* Responsive */
+		@media (max-width: 991px) {
+			.wed-comsoon {
+				flex-direction: column;
 				text-align: center;
 			}
 
-			ul.countdown {
+			.wed-comsoon-eventdetail {
+				margin-top: 30px;
+			}
+
+			.wed-comsoon-eventdetail .title h4 {
+				font-size: 28px;
+			}
+
+			.wed-comsoon-eventdetail .title span {
+				font-size: 32px;
+			}
+		}
+
+		@media (max-width: 575px) {
+			.wed-comsoon-counter ul {
 				flex-wrap: wrap;
 				gap: 12px;
 			}
 
-			ul.countdown li {
+			.wed-comsoon-counter ul li {
 				flex: 1 1 45%;
-			}
-		}
-
-		@media (max-width: 576px) {
-			.wed-comsoon-eventdetail {
-				padding: 30px;
+				padding: 12px;
 			}
 
-			.wed-comsoon-eventdetail .title h4 {
-				font-size: 26px;
-			}
-
-			ul.countdown li span {
-				font-size: 28px;
+			.wed-comsoon-counter ul li span {
+				font-size: 24px;
 			}
 		}
 
 
-
-
-		/* ===== Wedding Plan Section ===== */
-		section {
-			padding: 100px 0;
-			background: linear-gradient(135deg, #fff5f8, #fefefe);
-			font-family: 'Poppins', sans-serif;
-			position: relative;
-			overflow: hidden;
-		}
-
-		/* Decorative glowing circles in background */
-		section::before,
-		section::after {
-			content: "";
-			position: absolute;
-			width: 300px;
-			height: 300px;
-			border-radius: 50%;
-			background: radial-gradient(circle, rgba(230, 57, 70, 0.25), transparent 70%);
-			animation: float 12s infinite alternate ease-in-out;
-			z-index: 0;
-		}
-
-		section::before {
-			top: -100px;
-			left: -120px;
-		}
-
-		section::after {
-			bottom: -120px;
-			right: -100px;
-			animation-delay: 5s;
-		}
-
+		/* === Wedding Plan Section === */
 		.wed-plan {
-			position: relative;
-			z-index: 2;
-		}
-
-		/* ===== Card Container ===== */
-		.wedplan-post {
-			background: rgba(255, 255, 255, 0.7);
-			border-radius: 25px;
-			overflow: hidden;
-			position: relative;
+			margin: 60px 0;
 			text-align: center;
-			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-			transition: transform 0.6s ease, box-shadow 0.6s ease;
-			backdrop-filter: blur(12px);
-			margin-bottom: 40px;
-			cursor: pointer;
 		}
 
-		/* Glow gradient border */
-		.wedplan-post::after {
-			content: "";
-			position: absolute;
-			top: -2px;
-			left: -2px;
-			right: -2px;
-			bottom: -2px;
-			border-radius: 25px;
-			background: linear-gradient(135deg, #e63946, #ff758f, #f9c74f, #43aa8b);
-			z-index: -1;
-			opacity: 0.6;
-			background-size: 300% 300%;
-			animation: gradientMove 8s infinite linear;
+		.wedplan-post {
+			background: #fff;
+			border-radius: 18px;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			margin-bottom: 30px;
+			transition: all .4s ease;
+			position: relative;
 		}
 
-		/* Hover effect */
 		.wedplan-post:hover {
-			transform: translateY(-15px) scale(1.03);
-			box-shadow: 0 25px 60px rgba(230, 57, 70, 0.3);
+			transform: translateY(-10px) scale(1.03);
+			box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
 		}
 
-		/* Active (center) card emphasis */
-		.wedplan-post.active {
-			transform: scale(1.05);
-			box-shadow: 0 30px 70px rgba(230, 57, 70, 0.35);
+		.wedplan-thumb {
+			width: 100%;
+			height: 260px;
+			overflow: hidden;
+			border-radius: 18px 18px 0 0;
 		}
 
-		/* ===== Card Image ===== */
 		.wedplan-thumb img {
 			width: 100%;
-			height: 300px;
+			height: 100%;
 			object-fit: cover;
-			border-bottom: 5px solid #e63946;
-			transition: filter 0.5s ease;
+			transition: transform .5s ease;
 		}
 
 		.wedplan-post:hover .wedplan-thumb img {
-			filter: brightness(1.1) saturate(1.2);
+			transform: scale(1.08);
 		}
 
-		/* Decorative overlay image */
-		.wedplan-post>img {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			width: 60px;
-			opacity: 0.15;
-			pointer-events: none;
-		}
-
-		/* ===== Card Content ===== */
 		.wedplan-info {
-			padding: 30px 25px;
+			padding: 22px;
 		}
 
 		.wedplan-info i {
-			font-size: 35px;
-			color: #e63946;
-			margin-bottom: 15px;
-			display: inline-block;
-			background: rgba(230, 57, 70, 0.1);
-			padding: 10px;
-			border-radius: 50%;
-			transition: all 0.4s ease;
-		}
-
-		.wedplan-post:hover .wedplan-info i {
-			background: linear-gradient(135deg, #e63946, #ff758f);
-			color: #fff;
-			transform: rotate(15deg) scale(1.1);
-			box-shadow: 0 10px 30px rgba(230, 57, 70, 0.3);
+			font-size: 32px;
+			color: #ff4081;
+			margin-bottom: 14px;
+			display: block;
 		}
 
 		.wedplan-info h2 {
-			font-size: 24px;
+			font-size: 22px;
 			font-weight: 700;
-			margin: 15px 0;
-			color: #222;
+			margin-bottom: 12px;
+			text-transform: capitalize;
+			color: #333;
 		}
 
 		.wedplan-info p {
 			font-size: 15px;
+			line-height: 1.6;
+			margin-bottom: 18px;
 			color: #555;
-			line-height: 1.7;
-			min-height: 120px;
 		}
 
-		/* ===== View Button ===== */
 		.wedplan-info a {
 			display: inline-block;
-			margin-top: 18px;
-			padding: 12px 28px;
-			font-size: 14px;
-			font-weight: 600;
-			text-transform: uppercase;
-			border-radius: 40px;
-			background: linear-gradient(135deg, #e63946, #ff758f);
+			padding: 10px 20px;
+			background: #ff4081;
 			color: #fff;
+			font-size: 14px;
+			border-radius: 25px;
+			transition: background .3s ease;
 			text-decoration: none;
-			box-shadow: 0 8px 25px rgba(230, 57, 70, 0.4);
-			transition: all 0.3s ease;
-			position: relative;
-			overflow: hidden;
-		}
-
-		.wedplan-info a::before {
-			content: "";
-			position: absolute;
-			width: 0;
-			height: 100%;
-			left: 0;
-			top: 0;
-			background: rgba(255, 255, 255, 0.3);
-			transition: width 0.3s ease;
-		}
-
-		.wedplan-info a:hover::before {
-			width: 100%;
 		}
 
 		.wedplan-info a:hover {
-			transform: translateY(-4px);
-			box-shadow: 0 12px 35px rgba(230, 57, 70, 0.5);
+			background: #e73370;
 		}
 
-		/* ===== Animations ===== */
-		@keyframes gradientMove {
-			0% {
-				background-position: 0% 50%;
-			}
-
-			50% {
-				background-position: 100% 50%;
-			}
-
-			100% {
-				background-position: 0% 50%;
-			}
+		/* Active post highlight */
+		.wedplan-post.active {
+			border: 2px solid #ff4081;
+			transform: scale(1.05);
+			box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
 		}
 
-		@keyframes float {
-			from {
-				transform: translateY(0);
-			}
-
-			to {
-				transform: translateY(25px);
-			}
-		}
-
-		/* ===== Responsive ===== */
+		/* Responsive */
 		@media (max-width: 991px) {
-			.wedplan-info p {
-				min-height: auto;
+			.wedplan-thumb {
+				height: 220px;
 			}
 
+			.wedplan-info h2 {
+				font-size: 20px;
+			}
+		}
+
+		@media (max-width: 767px) {
 			.wedplan-post {
-				margin-bottom: 30px;
+				margin-bottom: 25px;
+			}
+
+			.wedplan-thumb {
+				height: 200px;
 			}
 		}
 
@@ -1307,49 +1044,6 @@
 
 
 
-		/* Footer Map Section */
-		.footer-map {
-			position: relative;
-			width: 100%;
-			height: 400px;
-			/* default height for desktops */
-			overflow: hidden;
-			border-radius: 12px;
-			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-		}
-
-		#map-canvas {
-			width: 100%;
-			height: 100%;
-		}
-
-		/* Responsive Adjustments */
-		@media (max-width: 1200px) {
-			.footer-map {
-				height: 350px;
-			}
-		}
-
-		@media (max-width: 992px) {
-			.footer-map {
-				height: 300px;
-			}
-		}
-
-		@media (max-width: 768px) {
-			.footer-map {
-				height: 250px;
-				border-radius: 8px;
-			}
-		}
-
-		@media (max-width: 576px) {
-			.footer-map {
-				height: 200px;
-				border-radius: 6px;
-			}
-		}
-
 
 
 		/* ===== Footer Styling ===== */
@@ -1450,13 +1144,13 @@
 						<li class="menu-item-has-children"><a href="index.html" title="">Home</a>
 
 						</li>
-						<li class="menu-item-has-children"><a href="#" title="">Couple</a>
+						<li class="menu-item-has-children"><a href="about-her.html" title="">Couple</a>
 							<ul>
 								<li><a href="about-her.html" title="">About Her</a></li>
 								<li><a href="about-him.html" title="">About Him</a></li>
 							</ul>
 						</li>
-						<li class="menu-item-has-children"><a href="#" title="">Pages</a>
+						<li class="menu-item-has-children"><a href="blog.html" title="">Pages</a>
 							<ul>
 								<li><a href="blog.html" title="">Blog</a></li>
 								<li><a href="single-blog.html" title="">Single Blog</a></li>
@@ -1464,8 +1158,8 @@
 						</li>
 
 					</ul>
-					<a href="images/new/love4.gif" target="_blank">
-						<img src="images/new/love4.gif" alt="Heart GIF" height="100px" width="100px" />
+					<a href="images/new/love8.gif" target="_blank">
+						<img src="images/new/love8.gif" alt="Heart GIF" height="100px" width="100px" />
 					</a>
 					<ul>
 
@@ -1484,13 +1178,14 @@
 
 				</nav>
 			</div>
-		</header><!-- Header -->
+		</header>
+		<!-- Header -->
 
 		<div class="responsive-header">
 
 			<div class="logo-menu">
-				<div class="logo"> <a href="images/new/love4.gif" target="_blank">
-						<img src="images/new/love4.gif" alt="Heart GIF" height="100px" width="100px" />
+				<div class="logo"> <a href="images/new/love3.gif" target="_blank">
+						<img src="images/new/love3.gif" alt="Heart GIF" height="100px" width="100px" />
 					</a></div>
 				<span class="menu-btn"><i class="fa fa-align-center"></i></span>
 				<div class="responsive-menu">
@@ -1514,21 +1209,22 @@
 								<li><a href="reception-event.html" title="">Reception Event</a></li>
 							</ul>
 						</li>
-
-						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
-						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
-						<li class="menu-item-has-children"><a href="#" title="">Pages</a><i
+						<li class="menu-item-has-children"><a href="blog.html" title="">Pages</a><i
 								class="fa fa-angle-down"></i>
 							<ul>
 								<li><a href="blog.html" title="">Blog</a></li>
 								<li><a href="single-blog.html" title="">Single Blog</a></li>
 							</ul>
 						</li>
+						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
+						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
+
 
 					</ul>
 				</div>
 			</div>
 		</div><!-- Responsive Header -->
+
 
 		<section>
 			<div class="block no-padding">
@@ -1672,67 +1368,115 @@
 			</div>
 		</section>
 
-		<section>
-			<div class="block pattern remove-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="wed-comsoon overlap">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="wed-comsoon-thumb fromleft">
-											<img src="images/new/bb2.jpg" alt="" />
-										</div>
-										<img src="images/new/love7.gif" alt="Loading..." height="300px" width="300px">
 
+		<section class="scroll-sction" id="scroll-gallery-section">
+
+			<div class="block pattern less-spacing">
+				<div class="title style2">
+					<h4>Our <br /> <span> Love </span></h4>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="gallery-sec fromdown style2">
+							<div class="gallery-carousel">
+								<div class="gallery-post">
+									<img src="images/new/aa10.webp" alt="" />
+									<div class="gallery-info">
+										<img src="images/design-white.png" alt="" />
+										<h2>First Meeting </h2>
+										<span>(Love)</span>
 									</div>
-									<div class="col-md-6">
-										<div class="wed-comsoon-eventdetail fromright">
-											<div class="title">
-												<h4>Wedding <span>Comming <br> Soon</span></h4>
-											</div>
-											<div class="wed-comsoon-counter">
-												<span>
-													<img src="images/si.png" alt="" />
-													October,26
-												</span>
-												<ul class="countdown">
-													<li>
-														<span class="days">00</span>
-														<p class="days_ref">Days</p>
-													</li>
-													<li>
-														<span class="hours">00</span>
-														<p class="hours_ref">Hours</p>
-													</li>
-													<li>
-														<span class="minutes">00</span>
-														<p class="minutes_ref">Minutes</p>
-													</li>
-													<li>
-														<span class="seconds">00</span>
-														<p class="seconds_ref">Seconds</p>
-													</li>
-												</ul>
-											</div>
-											<p>But I must explain to you how all this mistaken idea of great denouncing
-												pleasure and praising pain was born and I will give you a complete
-												account of the system, and expound the actual teachings of the great
-												explorer of the truth.</p>
-											<a href="" class="btn1" title=""><i class="fa fa-heart-o"></i>
-												<span>RSVP</span></a>
-										</div>
+								</div>
+								<div class="gallery-post">
+									<img src="images/new/aa11.jpg" alt="" />
+									<div class="gallery-info">
+										<img src="images/design-white.png" alt="" />
+										<h2>Engaged</h2>
+										<span>(cute)</span>
+									</div>
+								</div>
+								<div class="gallery-post">
+									<img src="images/new/aa12.jpg" alt="" />
+									<div class="gallery-info">
+										<img src="images/design-white.png" alt="" />
+										<h2>Romantic</h2>
+										<span>(Free Birds)</span>
+									</div>
+								</div>
+								<div class="gallery-post">
+									<img src="images/new/aa13.jpg" alt="" />
+									<div class="gallery-info">
+										<img src="images/design-white.png" alt="" />
+										<h2>First Kiss</h2>
+										<span>(Forever Love)</span>
+									</div>
+								</div>
+								<div class="gallery-post">
+									<img src="images/new/aa14.jpg" alt="" />
+									<div class="gallery-info">
+										<img src="images/design-white.png" alt="" />
+										<h2>Marrige</h2>
+										<span>(Life Start)</span>
+									</div>
+								</div>
+								<div class="gallery-post">
+									<img src="images/new/aa15.jpg" alt="" />
+									<div class="gallery-info">
+										<img src="images/design-white.png" alt="" />
+										<h2>New Gift</h2>
+										<span>(Life Line )</span>
 									</div>
 								</div>
 							</div>
-						</div>
+						</div><!-- Guest Sec -->
 					</div>
 				</div>
 			</div>
 		</section>
 
 
+		<section class="scroll-sction" id="scroll-story-section">
+			<div class="block pattern remove-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="stories-sec">
+								<div class="stories-post video">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="stories-thumb fromleft lightbox">
+												<img src="images/new/aa5.jpg" alt="" />
+
+											</div>
+											<img src="images/new/love5.gif" alt="Loading..." height="300px"
+												width="300px" style="margin-left: 20px;">
+
+										</div>
+										<div class="col-md-6">
+											<div class="stories-detail fromright">
+												<div class="title">
+													<h4>Our <span>Success <br> Story</span></h4>
+												</div>
+												<h2><a href="#" title="">We start our first</a></h2>
+												<i>10 Aug 2020</i>
+												<p> "Love Story, baby just say yes" from Taylor Swift's "Love Story",
+													and "When you put your arms around me, you let me know there's
+													nothing in this world I can't do" from Keith Urban's "Somebody Like
+													You". </p>
+												<a href="#" title="">View More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- Stories Sec -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section>
+
 			<div class="block pattern remove-gap">
 				<div class="container">
 					<div class="row">
@@ -1794,48 +1538,13 @@
 			</div>
 		</section>
 
-		<section class="scroll-sction" id="scroll-story-section">
-			<div class="block pattern remove-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="stories-sec">
-								<div class="stories-post video">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="stories-thumb fromleft lightbox">
-												<img src="images/new/aa5.jpg" alt="" />
-
-											</div>
-											<img src="images/new/love5.gif" alt="Loading..." height="300px"
-												width="300px" style="margin-left: 20px;">
-
-										</div>
-										<div class="col-md-6">
-											<div class="stories-detail fromright">
-												<div class="title">
-													<h4>Our <span>Success <br> Story</span></h4>
-												</div>
-												<h2><a href="#" title="">We start our first</a></h2>
-												<i>10 Aug 2020</i>
-												<p> "Love Story, baby just say yes" from Taylor Swift's "Love Story",
-													and "When you put your arms around me, you let me know there's
-													nothing in this world I can't do" from Keith Urban's "Somebody Like
-													You". </p>
-												<a href="#" title="">View More</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div><!-- Stories Sec -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<section>
+			<div class="title style2">
+				<h4>Our <br /> <span> Service </span></h4>
+			</div>
 			<div class="block pattern tbb">
+
 				<div class="row">
 					<div class="col-md-12">
 						<div class="wethinkabout-sec">
@@ -2044,88 +1753,88 @@
 			</div>
 		</section>
 
-		<section class="scroll-sction" id="scroll-gallery-section">
-			<div class="block pattern less-spacing">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="gallery-sec fromdown style2">
-							<div class="gallery-carousel">
-								<div class="gallery-post">
-									<img src="images/new/aa10.webp" alt="" />
-									<div class="gallery-info">
-										<img src="images/design-white.png" alt="" />
-										<h2>First Meeting </h2>
-										<span>(Love)</span>
+		<section>
+			<div class="block pattern remove-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="wed-comsoon overlap">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="wed-comsoon-thumb fromleft">
+											<img src="images/new/bb2.jpg" alt="" />
+										</div>
+										<img src="images/new/love7.gif" alt="Loading..." height="300px" width="300px">
+
 									</div>
-								</div>
-								<div class="gallery-post">
-									<img src="images/new/aa11.jpg" alt="" />
-									<div class="gallery-info">
-										<img src="images/design-white.png" alt="" />
-										<h2>Engaged</h2>
-										<span>(cute)</span>
-									</div>
-								</div>
-								<div class="gallery-post">
-									<img src="images/new/aa12.jpg" alt="" />
-									<div class="gallery-info">
-										<img src="images/design-white.png" alt="" />
-										<h2>Romantic</h2>
-										<span>(Free Birds)</span>
-									</div>
-								</div>
-								<div class="gallery-post">
-									<img src="images/new/aa13.jpg" alt="" />
-									<div class="gallery-info">
-										<img src="images/design-white.png" alt="" />
-										<h2>First Kiss</h2>
-										<span>(Forever Love)</span>
-									</div>
-								</div>
-								<div class="gallery-post">
-									<img src="images/new/aa14.jpg" alt="" />
-									<div class="gallery-info">
-										<img src="images/design-white.png" alt="" />
-										<h2>Marrige</h2>
-										<span>(Life Start)</span>
-									</div>
-								</div>
-								<div class="gallery-post">
-									<img src="images/new/aa15.jpg" alt="" />
-									<div class="gallery-info">
-										<img src="images/design-white.png" alt="" />
-										<h2>New Gift</h2>
-										<span>(Life Line )</span>
+									<div class="col-md-6">
+										<div class="wed-comsoon-eventdetail fromright">
+											<div class="title">
+												<h4>Wedding <span>Comming <br> Soon</span></h4>
+											</div>
+											<div class="wed-comsoon-counter">
+												<span>
+													<img src="images/si.png" alt="" />
+													October,26
+												</span>
+												<ul class="countdown">
+													<li>
+														<span class="days">00</span>
+														<p class="days_ref">Days</p>
+													</li>
+													<li>
+														<span class="hours">00</span>
+														<p class="hours_ref">Hours</p>
+													</li>
+													<li>
+														<span class="minutes">00</span>
+														<p class="minutes_ref">Minutes</p>
+													</li>
+													<li>
+														<span class="seconds">00</span>
+														<p class="seconds_ref">Seconds</p>
+													</li>
+												</ul>
+											</div>
+											<p>But I must explain to you how all this mistaken idea of great denouncing
+												pleasure and praising pain was born and I will give you a complete
+												account of the system, and expound the actual teachings of the great
+												explorer of the truth.</p>
+											<a href="" class="btn1" title=""><i class="fa fa-heart-o"></i>
+												<span>RSVP</span></a>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div><!-- Guest Sec -->
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
+
 		<section class="scroll-sction" id="scroll-rsvp-section">
-			<div class="block pattern remove-bottom">
+			<div class="block pattern no-padding">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="attending-sec overlape style2">
+							<div class="attending-sec">
+								<img class="contact-mockup fromleft" src="images/" alt="" />
 								<div class="attending">
 									<div class="row">
 										<div class="col-md-6">
 											<div class="attending-div fromleft">
 												<div class="title">
-													<h4>For <span>More <br /> Contact Us</span></h4>
+													<h4>Are <span>You <br /> Attending?</span></h4>
 												</div>
-												<img src="images/design.png" alt="" />
 												<p>But I must explain to you how all this mistaken idea of denouncing
-													pleasure and praising pain was born.</p>
+													pleasure and praising pain was born and I will give you a complete
+													account.</p>
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="contect-form fromright">
-												<img src="images/contact-img2.png" alt="" />
+												<img src="images/contact-img.png" alt="" />
 												<div id="message"></div>
 												<form>
 													<div class="row">
@@ -2169,17 +1878,6 @@
 			</div>
 		</section>
 
-		<section>
-			<div class="block no-padding">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="footer-map fromdown">
-							<div id="map-canvas"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<footer>
 			<div class="block pattern remove-bottom">
