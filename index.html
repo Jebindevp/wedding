@@ -34,6 +34,10 @@
 	<link rel="stylesheet" type="text/css" href="css/revolution/navigation.css" />
 	<link rel="stylesheet" type="text/css" href="css/revolution/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
 
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
 	<style>
 		/* Reset and Base */
 		* {
@@ -184,54 +188,1249 @@
 		}
 
 
-		.page-load {
+
+
+
+		/* ===== Wedding Coming Soon Section ===== */
+		section {
+			padding: 100px 0;
+			background: linear-gradient(135deg, #fff5f7, #fefefe);
+			position: relative;
+			overflow: hidden;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		/* Decorative Glow Circles */
+		section::before,
+		section::after {
+			content: "";
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			background: radial-gradient(circle, rgba(230, 57, 70, 0.3), transparent 70%);
+			animation: float 10s infinite alternate ease-in-out;
+			z-index: 0;
+		}
+
+		section::before {
+			top: -80px;
+			left: -100px;
+		}
+
+		section::after {
+			bottom: -80px;
+			right: -100px;
+			animation-delay: 5s;
+		}
+
+		.block.pattern {
+			position: relative;
+			z-index: 1;
+		}
+
+		/* ===== Image Styling ===== */
+		.wed-comsoon-thumb img {
+			width: 100%;
+			border-radius: 25px;
+			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+			transition: transform 0.6s ease, filter 0.6s ease;
+		}
+
+		.wed-comsoon-thumb img:hover {
+			transform: scale(1.07) rotate(-2deg);
+			filter: brightness(1.1) saturate(1.2);
+		}
+
+		/* ===== Event Details Box (Glassmorphism) ===== */
+		.wed-comsoon-eventdetail {
+			padding: 50px;
+			background: rgba(255, 255, 255, 0.7);
+			border-radius: 25px;
+			backdrop-filter: blur(15px);
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+			animation: fadeInUp 1s ease-in-out;
+			position: relative;
+			overflow: hidden;
+		}
+
+		/* Glow Border Effect */
+		.wed-comsoon-eventdetail::after {
+			content: "";
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			right: -2px;
+			bottom: -2px;
+			border-radius: 25px;
+			background: linear-gradient(135deg, #e63946, #ff758f, #f9c74f, #90be6d);
+			z-index: -1;
+			opacity: 0.5;
+			background-size: 300% 300%;
+			animation: gradientMove 8s infinite linear;
+		}
+
+		/* Title Styling */
+		.wed-comsoon-eventdetail .title h4 {
+			font-size: 38px;
+			font-weight: 800;
+			text-transform: uppercase;
+			color: #222;
+			line-height: 1.3;
+			margin-bottom: 20px;
+		}
+
+		.wed-comsoon-eventdetail .title span {
+			color: linear-gradient(135deg, #e63946, #ff758f);
+			font-size: 30px;
+			font-weight: 800;
+			letter-spacing: 2px;
+		}
+
+		/* ===== Counter Styling ===== */
+		.wed-comsoon-counter {
+			margin: 20px 0;
+			text-align: center;
+		}
+
+		.wed-comsoon-counter span {
+			display: inline-block;
+			background: linear-gradient(135deg, #e63946, #ff758f);
+			color: #fff;
+			font-size: 20px;
+			font-weight: 700;
+			padding: 12px 28px;
+			border-radius: 50px;
+			box-shadow: 0 8px 25px rgba(230, 57, 70, 0.4);
+			margin-bottom: 25px;
+			animation: pulse 2s infinite ease-in-out;
+		}
+
+		ul.countdown {
+			display: flex;
+			justify-content: space-between;
+			padding: 0;
+			list-style: none;
+			gap: 10px;
+		}
+
+		ul.countdown li {
+			flex: 1;
+			background: rgba(255, 255, 255, 0.9);
+			padding: 10px;
+			border-radius: 18px;
+			text-align: center;
+			transition: transform 0.4s ease, background 0.4s ease;
+			box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+		}
+
+		ul.countdown li:hover {
+			transform: translateY(-6px);
+			background: linear-gradient(135deg, #ff758f, #e63946);
+			color: #fff;
+		}
+
+		ul.countdown li span {
+			font-size: 38px;
+			font-weight: 800;
+			display: block;
+		}
+
+		ul.countdown li p {
+			font-size: 15px;
+			margin: 0;
+			opacity: 0.8;
+			font-weight: 600;
+		}
+
+		/* ===== Text ===== */
+		.wed-comsoon-eventdetail p {
+			font-size: 16px;
+			color: #333;
+			line-height: 1.8;
+			margin-bottom: 35px;
+		}
+
+		/* ===== RSVP Button ===== */
+		.btn1 {
+			display: inline-flex;
+
+			align-items: center;
+			gap: 10px;
+			padding: 15px 35px;
+			background: linear-gradient(135deg, #e63946, #ff758f);
+			color: #fff;
+			font-size: 17px;
+			font-weight: 700;
+			text-transform: uppercase;
+			border-radius: 50px;
+			text-decoration: none;
+			box-shadow: 0 10px 30px rgba(230, 57, 70, 0.5);
+			transition: all 0.35s ease;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.btn1::before {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background: rgba(255, 255, 255, 0.3);
+			transition: width 0.35s ease;
+		}
+
+		.btn1:hover::before {
+			width: 100%;
+		}
+
+		.btn1:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 14px 40px rgba(230, 57, 70, 0.6);
+		}
+
+		/* ===== Animations ===== */
+		@keyframes slideInLeft {
+			from {
+				transform: translateX(-120px);
+				opacity: 0;
+			}
+
+			to {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+
+		@keyframes slideInRight {
+			from {
+				transform: translateX(120px);
+				opacity: 0;
+			}
+
+			to {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+
+		@keyframes fadeInUp {
+			from {
+				transform: translateY(70px);
+				opacity: 0;
+			}
+
+			to {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+
+		@keyframes gradientMove {
+			0% {
+				background-position: 0% 50%;
+			}
+
+			50% {
+				background-position: 100% 50%;
+			}
+
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+
+		@keyframes pulse {
+
+			0%,
+			100% {
+				transform: scale(1);
+				box-shadow: 0 0 0 rgba(230, 57, 70, 0.4);
+			}
+
+			50% {
+				transform: scale(1.05);
+				box-shadow: 0 0 30px rgba(230, 57, 70, 0.6);
+			}
+		}
+
+		@keyframes float {
+			from {
+				transform: translateY(0);
+			}
+
+			to {
+				transform: translateY(30px);
+			}
+		}
+
+		/* ===== Responsive ===== */
+		@media (max-width: 992px) {
+			.wed-comsoon-eventdetail {
+				margin-top: 40px;
+				text-align: center;
+			}
+
+			ul.countdown {
+				flex-wrap: wrap;
+				gap: 12px;
+			}
+
+			ul.countdown li {
+				flex: 1 1 45%;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.wed-comsoon-eventdetail {
+				padding: 30px;
+			}
+
+			.wed-comsoon-eventdetail .title h4 {
+				font-size: 26px;
+			}
+
+			ul.countdown li span {
+				font-size: 28px;
+			}
+		}
+
+
+
+
+		/* ===== Wedding Plan Section ===== */
+		section {
+			padding: 100px 0;
+			background: linear-gradient(135deg, #fff5f8, #fefefe);
+			font-family: 'Poppins', sans-serif;
+			position: relative;
+			overflow: hidden;
+		}
+
+		/* Decorative glowing circles in background */
+		section::before,
+		section::after {
+			content: "";
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			background: radial-gradient(circle, rgba(230, 57, 70, 0.25), transparent 70%);
+			animation: float 12s infinite alternate ease-in-out;
+			z-index: 0;
+		}
+
+		section::before {
+			top: -100px;
+			left: -120px;
+		}
+
+		section::after {
+			bottom: -120px;
+			right: -100px;
+			animation-delay: 5s;
+		}
+
+		.wed-plan {
+			position: relative;
+			z-index: 2;
+		}
+
+		/* ===== Card Container ===== */
+		.wedplan-post {
+			background: rgba(255, 255, 255, 0.7);
+			border-radius: 25px;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+			transition: transform 0.6s ease, box-shadow 0.6s ease;
+			backdrop-filter: blur(12px);
+			margin-bottom: 40px;
+			cursor: pointer;
+		}
+
+		/* Glow gradient border */
+		.wedplan-post::after {
+			content: "";
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			right: -2px;
+			bottom: -2px;
+			border-radius: 25px;
+			background: linear-gradient(135deg, #e63946, #ff758f, #f9c74f, #43aa8b);
+			z-index: -1;
+			opacity: 0.6;
+			background-size: 300% 300%;
+			animation: gradientMove 8s infinite linear;
+		}
+
+		/* Hover effect */
+		.wedplan-post:hover {
+			transform: translateY(-15px) scale(1.03);
+			box-shadow: 0 25px 60px rgba(230, 57, 70, 0.3);
+		}
+
+		/* Active (center) card emphasis */
+		.wedplan-post.active {
+			transform: scale(1.05);
+			box-shadow: 0 30px 70px rgba(230, 57, 70, 0.35);
+		}
+
+		/* ===== Card Image ===== */
+		.wedplan-thumb img {
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+			border-bottom: 5px solid #e63946;
+			transition: filter 0.5s ease;
+		}
+
+		.wedplan-post:hover .wedplan-thumb img {
+			filter: brightness(1.1) saturate(1.2);
+		}
+
+		/* Decorative overlay image */
+		.wedplan-post>img {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 60px;
+			opacity: 0.15;
+			pointer-events: none;
+		}
+
+		/* ===== Card Content ===== */
+		.wedplan-info {
+			padding: 30px 25px;
+		}
+
+		.wedplan-info i {
+			font-size: 35px;
+			color: #e63946;
+			margin-bottom: 15px;
+			display: inline-block;
+			background: rgba(230, 57, 70, 0.1);
+			padding: 10px;
+			border-radius: 50%;
+			transition: all 0.4s ease;
+		}
+
+		.wedplan-post:hover .wedplan-info i {
+			background: linear-gradient(135deg, #e63946, #ff758f);
+			color: #fff;
+			transform: rotate(15deg) scale(1.1);
+			box-shadow: 0 10px 30px rgba(230, 57, 70, 0.3);
+		}
+
+		.wedplan-info h2 {
+			font-size: 24px;
+			font-weight: 700;
+			margin: 15px 0;
+			color: #222;
+		}
+
+		.wedplan-info p {
+			font-size: 15px;
+			color: #555;
+			line-height: 1.7;
+			min-height: 120px;
+		}
+
+		/* ===== View Button ===== */
+		.wedplan-info a {
+			display: inline-block;
+			margin-top: 18px;
+			padding: 12px 28px;
+			font-size: 14px;
+			font-weight: 600;
+			text-transform: uppercase;
+			border-radius: 40px;
+			background: linear-gradient(135deg, #e63946, #ff758f);
+			color: #fff;
+			text-decoration: none;
+			box-shadow: 0 8px 25px rgba(230, 57, 70, 0.4);
+			transition: all 0.3s ease;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.wedplan-info a::before {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background: rgba(255, 255, 255, 0.3);
+			transition: width 0.3s ease;
+		}
+
+		.wedplan-info a:hover::before {
+			width: 100%;
+		}
+
+		.wedplan-info a:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 12px 35px rgba(230, 57, 70, 0.5);
+		}
+
+		/* ===== Animations ===== */
+		@keyframes gradientMove {
+			0% {
+				background-position: 0% 50%;
+			}
+
+			50% {
+				background-position: 100% 50%;
+			}
+
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+
+		@keyframes float {
+			from {
+				transform: translateY(0);
+			}
+
+			to {
+				transform: translateY(25px);
+			}
+		}
+
+		/* ===== Responsive ===== */
+		@media (max-width: 991px) {
+			.wedplan-info p {
+				min-height: auto;
+			}
+
+			.wedplan-post {
+				margin-bottom: 30px;
+			}
+		}
+
+
+
+
+		/* ===== Success Story Section ===== */
+		.scroll-sction {
+			padding: 100px 0;
+			background: linear-gradient(135deg, #e63946, #ff758f);
+			font-family: 'Poppins', sans-serif;
+			position: relative;
+			overflow: hidden;
+		}
+
+		/* Decorative glow circles */
+		.scroll-sction::before,
+		.scroll-sction::after {
+			content: "";
+			position: absolute;
+			width: 350px;
+			height: 350px;
+			border-radius: 50%;
+			background: radial-gradient(circle, rgba(230, 57, 70, 0.2), transparent 70%);
+			animation: float 12s infinite alternate ease-in-out;
+			z-index: 0;
+		}
+
+		.scroll-sction::before {
+			top: -120px;
+			left: -150px;
+		}
+
+		.scroll-sction::after {
+			bottom: -120px;
+			right: -150px;
+			animation-delay: 5s;
+		}
+
+		.stories-sec {
+			position: relative;
+			z-index: 2;
+		}
+
+		/* ===== Story Post Container ===== */
+		.stories-post {
+			display: flex;
+			align-items: center;
+			border-radius: 25px;
+			background: rgba(255, 255, 255, 0.8);
+			backdrop-filter: blur(12px);
+			overflow: hidden;
+			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+			transition: transform 0.6s ease, box-shadow 0.6s ease;
+		}
+
+		.stories-post:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 30px 70px rgba(230, 57, 70, 0.25);
+		}
+
+		/* ===== Story Image ===== */
+		.stories-thumb {
+			position: relative;
+			overflow: hidden;
+			border-radius: 20px;
+		}
+
+		.stories-thumb img {
+			width: 100%;
+			border-radius: 20px;
+			transition: transform 0.8s ease, filter 0.5s ease;
+		}
+
+		.stories-post:hover .stories-thumb img {
+			transform: scale(1.08);
+			filter: brightness(1.05) saturate(1.2);
+		}
+
+		/* ===== Story Detail ===== */
+		.stories-detail {
+			padding: 40px;
+			animation: fadeInUp 1s ease-in-out;
+		}
+
+		.stories-detail .title h4 {
+			font-size: 32px;
+			font-weight: 800;
+			color: #222;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+		}
+
+		.stories-detail .title span {
+			color: #e63946;
+			font-size: 36px;
+			font-weight: 900;
+			letter-spacing: 1px;
+		}
+
+		.stories-detail h2 {
+			font-size: 26px;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+
+		.stories-detail h2 a {
+			color: #e63946;
+			text-decoration: none;
+			transition: color 0.3s ease;
+		}
+
+		.stories-detail h2 a:hover {
+			color: #ff758f;
+		}
+
+		.stories-detail i {
+			display: block;
+			font-size: 14px;
+			color: #888;
+			margin-bottom: 20px;
+		}
+
+		.stories-detail p {
+			font-size: 15px;
+			color: #444;
+			line-height: 1.8;
+			margin-bottom: 30px;
+		}
+
+		/* ===== View More Button ===== */
+		.stories-detail a {
+			display: inline-block;
+			padding: 12px 28px;
+			font-size: 15px;
+			font-weight: 600;
+			text-transform: uppercase;
+			border-radius: 40px;
+			background: linear-gradient(135deg, #e63946, #ff758f);
+			color: #fff;
+			text-decoration: none;
+			box-shadow: 0 10px 30px rgba(230, 57, 70, 0.4);
+			transition: all 0.3s ease;
+			position: relative;
+			overflow: hidden;
+			margin-left: 50px;
+		}
+
+		.stories-detail a::before {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background: rgba(255, 255, 255, 0.3);
+			transition: width 0.3s ease;
+		}
+
+		.stories-detail a:hover::before {
+			width: 100%;
+		}
+
+		.stories-detail a:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 14px 40px rgba(230, 57, 70, 0.6);
+		}
+
+		/* ===== Animations ===== */
+		@keyframes fadeInUp {
+			from {
+				transform: translateY(60px);
+				opacity: 0;
+			}
+
+			to {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+
+		@keyframes float {
+			from {
+				transform: translateY(0);
+			}
+
+			to {
+				transform: translateY(25px);
+			}
+		}
+
+		/* ===== Responsive ===== */
+		@media (max-width: 991px) {
+			.stories-post {
+				flex-direction: column;
+			}
+
+			.stories-detail {
+				padding: 30px;
+				text-align: center;
+			}
+
+			.stories-detail h2 {
+				font-size: 22px;
+			}
+		}
+
+
+
+
+		/* ===== We Think About Section ===== */
+		.wethinkabout-sec {
+			padding: 80px 0;
+			background: linear-gradient(135deg, #e63946, #ff758f);
+			font-family: 'Poppins', sans-serif;
+			position: relative;
+			overflow: hidden;
+		}
+
+		/* Left side image & quote */
+		.thinkabout-thumb {
+			position: relative;
+			border-radius: 25px;
+			overflow: hidden;
+			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+		}
+
+		.thinkabout-thumb img {
+			width: 100%;
+			border-radius: 25px;
+			transition: transform 1s ease;
+		}
+
+		.thinkabout-thumb:hover img {
+			transform: scale(1.08);
+		}
+
+		.thinkabout-thumb .title2 {
+			position: absolute;
+			bottom: 30px;
+			left: 20px;
+			right: 20px;
+			background: rgba(230, 57, 70, 0.8);
+			padding: 20px;
+			border-radius: 15px;
+			color: #fff;
+			font-style: italic;
+			font-size: 16px;
+			line-height: 1.6;
+			backdrop-filter: blur(6px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+		}
+
+		.thinkabout-thumb .title2 span {
+			display: block;
+			margin-top: 8px;
+			font-weight: 700;
+			font-size: 18px;
+		}
+
+		/* Right side services section */
+		.services {
+			position: relative;
+			margin-left: 10px;
+		}
+
+		.services img {
+			width: 100%;
+			border-radius: 20px;
+			margin-bottom: 30px;
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+		}
+
+		/* Services list grid */
+		.services-list {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+		}
+
+		.service-item {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+
+		/* Individual service box */
+		.service-box {
+			background: #fff;
+			border-radius: 20px;
+			padding: 25px 15px;
+			text-align: center;
+			transition: all 0.4s ease;
+			position: relative;
+			box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+		}
+
+		.service-box i img {
+			width: 50px;
+			height: 50px;
+			margin-bottom: 15px;
+			transition: transform 0.5s ease;
+		}
+
+		.service-box h2 {
+			font-size: 18px;
+			font-weight: 700;
+			margin: 0;
+		}
+
+		.service-box h2 span {
+			display: block;
+			font-size: 14px;
+			color: #e63946;
+			font-weight: 600;
+			margin-bottom: 5px;
+		}
+
+		.service-box a {
+			color: #222;
+			text-decoration: none;
+			transition: color 0.3s ease;
+		}
+
+		.service-box:hover {
+			transform: translateY(-12px) scale(1.05);
+			box-shadow: 0 18px 40px rgba(230, 57, 70, 0.2);
+			background: linear-gradient(135deg, #fff, #fff0f2);
+		}
+
+		.service-box:hover i img {
+			transform: rotate(12deg) scale(1.2);
+		}
+
+		.service-box:hover a {
+			color: #e63946;
+		}
+
+		/* Floating background shapes */
+		.wethinkabout-sec::before,
+		.wethinkabout-sec::after {
+			content: "";
+			position: absolute;
+			border-radius: 50%;
+			background: radial-gradient(circle, rgba(230, 57, 70, 0.1), transparent 70%);
+			animation: float 10s infinite alternate;
+			z-index: 0;
+		}
+
+		.wethinkabout-sec::before {
+			top: -100px;
+			left: -120px;
+			width: 320px;
+			height: 320px;
+		}
+
+		.wethinkabout-sec::after {
+			bottom: -120px;
+			right: -150px;
+			width: 400px;
+			height: 400px;
+			animation-delay: 4s;
+		}
+
+		/* Float animation */
+		@keyframes float {
+			from {
+				transform: translateY(0);
+			}
+
+			to {
+				transform: translateY(25px);
+			}
+		}
+
+		/* Responsive */
+		@media (max-width: 991px) {
+
+			.thinkabout-thumb,
+			.services {
+				margin: 0 0 30px 0;
+			}
+
+			.services-list {
+				gap: 20px;
+			}
+
+			.service-item {
+				flex-direction: column;
+				gap: 15px;
+			}
+		}
+
+		.flip-card {
+			background: transparent;
+			width: 450px;
+			height: 400px;
+			perspective: 1000px;
+
+			/* gives 3D depth */
+		}
+
+		.flip-card-inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			transition: transform 0.8s ease-in-out;
+			transform-style: preserve-3d;
+		}
+
+		.flip-card:hover .flip-card-inner {
+			transform: rotateY(180deg);
+		}
+
+		/* Front side */
+		.flip-card-front,
+		.flip-card-back {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-webkit-backface-visibility: hidden;
+			/* Safari */
+			backface-visibility: hidden;
+			border-radius: 15px;
+			overflow: hidden;
+			box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+		}
+
+		/* Front */
+		.flip-card-front img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		/* Back */
+		.flip-card-back {
+			background: linear-gradient(135deg, #e63946, #ff758f);
+			color: white;
+			transform: rotateY(180deg);
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 100vh;
-			background: #e4c9c9;
+			padding: 10px;
+			margin-right: 50px;
 		}
 
-		.pageloader {
+		.flip-card-back h4 {
+			font-size: 15px;
+			line-height: 1.5;
+		}
+
+		.flip-card-back span {
+			display: block;
+			margin-top: 8px;
+			font-weight: 600;
+			font-style: italic;
+		}
+
+
+
+
+		.pricing-table {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+
+		.pricing {
+			background: #fff;
+			border-radius: 20px;
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+			padding: 25px;
 			text-align: center;
-			margin-top: 300px;
+			transition: transform 0.4s ease, box-shadow 0.4s ease;
+			position: relative;
+			overflow: hidden;
+			flex: 1 1 calc(33.333% - 40px);
+			/* 3 cards per row */
+			max-width: 350px;
 		}
 
-		.loader-img {
-			width: 500px;
-			height: auto;
-			display: block;
-			margin: 0 auto;
+		.pricing:hover {
+			transform: translateY(-15px) scale(1.05);
+			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 		}
 
-		.shadow {
-			display: block;
-			width: 100px;
-			height: 20px;
-			background: rgba(215, 205, 205, 0.3);
-			margin: 10px auto 0;
-			border-radius: 50%;
-			filter: blur(8px);
+		.pricing.active {
+			border: 3px solid #ff4081;
+			transform: scale(1.07);
 		}
 
-		/* ✅ Media Queries for responsiveness */
-		@media (max-width: 768px) {
-			.loader-img {
-				width: 150px;
+		.pricing img {
+			max-width: 100%;
+			border-radius: 15px;
+			margin: 15px 0;
+		}
+
+		.pricing h2 {
+			font-size: 1.6rem;
+			margin: 15px 0;
+			color: #333;
+			font-weight: 700;
+		}
+
+		.pricing ul {
+			list-style: none;
+			padding: 0;
+			margin: 15px 0;
+		}
+
+		.pricing ul li {
+			font-size: 0.95rem;
+			color: #666;
+			margin-bottom: 8px;
+			line-height: 1.4em;
+		}
+
+		.pricing-btn a {
+			display: inline-block;
+			padding: 10px 20px;
+			border-radius: 30px;
+			background: linear-gradient(135deg, #ff4081, #ff7043);
+			color: #fff;
+			text-decoration: none;
+			font-weight: 600;
+			transition: background 0.3s ease;
+		}
+
+		.pricing-btn a:hover {
+			background: linear-gradient(135deg, #f7f5f5, #14090d);
+		}
+
+		/* floating icon style */
+		.pricing i.fa {
+			font-size: 28px;
+			color: #17030a;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			opacity: 0.7;
+		}
+
+		/* ================== RESPONSIVE ================== */
+		@media screen and (max-width: 992px) {
+			.pricing {
+				flex: 1 1 calc(50% - 30px);
+				/* 2 cards per row */
+				max-width: 100%;
 			}
 
-			.shadow {
-				width: 80px;
+			.pricing h2 {
+				font-size: 1.4rem;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			.pricing {
+				flex: 1 1 100%;
+				/* 1 card per row */
+				max-width: 100%;
+			}
+
+			.pricing h2 {
+				font-size: 1.3rem;
+			}
+
+			.pricing ul li {
+				font-size: 0.9rem;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.pricing {
+				padding: 20px 15px;
+				border-radius: 15px;
+			}
+
+			.pricing h2 {
+				font-size: 1.1rem;
+			}
+
+			.pricing-btn a {
+				padding: 8px 16px;
+				font-size: 14px;
+			}
+
+			.pricing i.fa {
+				font-size: 22px;
+			}
+		}
+
+
+
+		/* Footer Map Section */
+		.footer-map {
+			position: relative;
+			width: 100%;
+			height: 400px;
+			/* default height for desktops */
+			overflow: hidden;
+			border-radius: 12px;
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+		}
+
+		#map-canvas {
+			width: 100%;
+			height: 100%;
+		}
+
+		/* Responsive Adjustments */
+		@media (max-width: 1200px) {
+			.footer-map {
+				height: 350px;
+			}
+		}
+
+		@media (max-width: 992px) {
+			.footer-map {
+				height: 300px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.footer-map {
+				height: 250px;
+				border-radius: 8px;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.footer-map {
+				height: 200px;
+				border-radius: 6px;
+			}
+		}
+
+
+
+		/* ===== Footer Styling ===== */
+		footer {
+			padding: 40px 0;
+			position: relative;
+			text-align: center;
+			font-family: "Poppins", sans-serif;
+		}
+
+		/* Container */
+		footer .container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
+
+		/* Footer Links */
+		footer .bottom-links ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			gap: 30px;
+			flex-wrap: wrap;
+		}
+
+		footer .bottom-links ul li {
+			display: inline-block;
+		}
+
+		footer .bottom-links ul li a {
+			text-decoration: none;
+			color: #090101;
+			font-size: 16px;
+			font-weight: 500;
+			transition: color 0.3s, border-bottom 0.3s;
+			padding: 5px 10px;
+		}
+
+		footer .bottom-links ul li a:hover {
+			color: #f93509;
+			border-bottom: 2px solid #0f0d03;
+		}
+
+		/* Footer Logo (if enabled) */
+		footer .logo img {
+			max-width: 120px;
+			height: auto;
+			margin: 10px auto;
+			display: block;
+		}
+
+		/* Responsive */
+		@media (max-width: 768px) {
+			footer {
+				padding: 30px 15px;
+			}
+
+			footer .bottom-links ul {
+				flex-direction: column;
+				gap: 15px;
+			}
+
+			footer .bottom-links ul li a {
+				font-size: 18px;
 			}
 		}
 
 		@media (max-width: 480px) {
-			.loader-img {
-				width: 100px;
+			footer {
+				padding: 20px 10px;
 			}
 
-			.shadow {
-				width: 60px;
+			footer .bottom-links ul {
+				gap: 10px;
+			}
+
+			footer .bottom-links ul li a {
+				font-size: 16px;
 			}
 		}
 	</style>
@@ -240,12 +1439,6 @@
 </head>
 
 <body>
-	<div class="page-load">
-		<div class="pageloader">
-			<img src="images/new/heart1.gif" alt="Loading..." height="100px" width="200px">
-			<span class="shadow"></span>
-		</div>
-	</div>
 
 	<div class="theme-layout">
 
@@ -271,8 +1464,8 @@
 						</li>
 
 					</ul>
-					<a href="images/new/heart.gif" target="_blank">
-						<img src="images/new/heart.gif" alt="Heart GIF" height="100px" width="100px" />
+					<a href="images/new/love4.gif" target="_blank">
+						<img src="images/new/love4.gif" alt="Heart GIF" height="100px" width="100px" />
 					</a>
 					<ul>
 
@@ -296,8 +1489,8 @@
 		<div class="responsive-header">
 
 			<div class="logo-menu">
-				<div class="logo"> <a href="images/new/heart.gif" target="_blank">
-						<img src="images/new/heart.gif" alt="Heart GIF" height="100px" width="100px" />
+				<div class="logo"> <a href="images/new/love4.gif" target="_blank">
+						<img src="images/new/love4.gif" alt="Heart GIF" height="100px" width="100px" />
 					</a></div>
 				<span class="menu-btn"><i class="fa fa-align-center"></i></span>
 				<div class="responsive-menu">
@@ -363,7 +1556,8 @@
 											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
 											data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1000"
 											data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-											data-elementdelay="0.05" style="font-size:36px;letter-spacing:0.2px;">
+											data-elementdelay="0.05"
+											style="font-size:36px;letter-spacing:0.2px;color:white;">
 											Welcome To Our,
 										</div>
 
@@ -376,7 +1570,7 @@
 											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
 											data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-start="1200"
 											data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-											data-elementdelay="0.05" style="font-size:197px">Wedding
+											data-elementdelay="0.05" style="font-size:197px;color:white;">Wedding
 										</div>
 
 										<!-- LAYER NR. 3 -->
@@ -388,12 +1582,13 @@
 											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
 											data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-start="1400"
 											data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-											data-elementdelay="0.05" style="font-size:197px;padding-left:20px">Planner!
+											data-elementdelay="0.05"
+											style="font-size:197px;padding-left:20px;color:white;">Design
 										</div>
 
 
 										<!-- LAYER NR. 4 -->
-										<div class="tp-caption tp-resizeme" id="slide1-layer4" data-x="center"
+										<!-- <div class="tp-caption tp-resizeme" id="slide1-layer4" data-x="center"
 											data-hoffset="60" data-y="bottom" data-voffset="100"
 											data-width="['auto','auto','auto','auto']"
 											data-height="['auto','auto','auto','auto']" data-transform_idle="o:1;"
@@ -402,7 +1597,7 @@
 											data-start="3400" data-splitin="none" data-splitout="none"
 											data-responsive_offset="on" data-elementdelay="0.7"><img
 												src="images/new/aa1.png" alt="" style="height:900px;" />
-										</div>
+										</div> -->
 									</li>
 
 									<li data-index="rs-2" data-transition="papercut" data-slotamount="7"
@@ -424,7 +1619,8 @@
 											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
 											data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1000"
 											data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-											data-elementdelay="0.05" style="font-size:36px;letter-spacing:0.2px;">
+											data-elementdelay="0.05"
+											style="font-size:36px;letter-spacing:0.2px;color:white;">
 											Welcome To Our,
 										</div>
 
@@ -437,7 +1633,7 @@
 											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
 											data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-start="1200"
 											data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-											data-elementdelay="0.05" style="font-size:197px">Wedding
+											data-elementdelay="0.05" style="font-size:197px;color:white;">Wedding
 										</div>
 
 										<!-- LAYER NR. 3 -->
@@ -449,12 +1645,13 @@
 											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
 											data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-start="1400"
 											data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-											data-elementdelay="0.05" style="font-size:197px;padding-left:20px">Planner!
+											data-elementdelay="0.05"
+											style="font-size:197px;padding-left:20px;color:white;">Events
 										</div>
 
 
 										<!-- LAYER NR. 4 -->
-										<div class="tp-caption tp-resizeme" id="slide2-layer4" data-x="center"
+										<!-- <div class="tp-caption tp-resizeme" id="slide2-layer4" data-x="center"
 											data-hoffset="60" data-y="bottom" data-voffset="100"
 											data-width="['auto','auto','auto','auto']"
 											data-height="['auto','auto','auto','auto']" data-transform_idle="o:1;"
@@ -463,7 +1660,7 @@
 											data-start="3400" data-splitin="none" data-splitout="none"
 											data-responsive_offset="on" data-elementdelay="0.7"><img
 												src="images/new/aa1.png" alt="" style="height:900px;" />
-										</div>
+										</div> -->
 									</li>
 
 
@@ -486,6 +1683,8 @@
 										<div class="wed-comsoon-thumb fromleft">
 											<img src="images/new/bb2.jpg" alt="" />
 										</div>
+										<img src="images/new/love7.gif" alt="Loading..." height="300px" width="300px">
+
 									</div>
 									<div class="col-md-6">
 										<div class="wed-comsoon-eventdetail fromright">
@@ -549,8 +1748,9 @@
 											<div class="wedplan-info">
 												<i class="fa fa-user"></i>
 												<h2>Love & True</h2>
-												<p>"Some day, when I'm awfully low, when the world is cold, I will feel a glow just thinking of you and the way you look tonight."</p>
-												<a href="#" title="">View</a>
+												<p>"Some day, when I'm awfully low, when the world is cold, I will feel
+													a glow just thinking of you and the way you look tonight."</p>
+
 											</div>
 										</div>
 									</div>
@@ -563,8 +1763,10 @@
 											<div class="wedplan-info">
 												<i class="fa fa-heart-o"></i>
 												<h2>Wedding Planning</h2>
-												<p>"Man, oh, man, you're my best friend. I scream it to the nothingness. There ain't nothing that I need. Home, let me come home, home is wherever I'm with you."</p>
-												<a href="#" title="">View</a>
+												<p>"Man, oh, man, you're my best friend. I scream it to the nothingness.
+													There ain't nothing that I need. Home, let me come home, home is
+													wherever I'm with you."</p>
+
 											</div>
 										</div>
 									</div>
@@ -577,8 +1779,10 @@
 											<div class="wedplan-info">
 												<i class="fa fa-heart"></i>
 												<h2>Honymoon Planning</h2>
-												<p>"And I'd give up forever to touch you, 'cause I know that you feel me somehow. You're the closest to heaven that I'll ever be and I don't wanna go home right now."</p>
-												<a href="#" title="">View</a>
+												<p>"And I'd give up forever to touch you, 'cause I know that you feel me
+													somehow. You're the closest to heaven that I'll ever be and I don't
+													wanna go home right now."</p>
+
 											</div>
 										</div>
 									</div>
@@ -603,6 +1807,9 @@
 												<img src="images/new/aa5.jpg" alt="" />
 
 											</div>
+											<img src="images/new/love5.gif" alt="Loading..." height="300px"
+												width="300px" style="margin-left: 20px;">
+
 										</div>
 										<div class="col-md-6">
 											<div class="stories-detail fromright">
@@ -611,7 +1818,10 @@
 												</div>
 												<h2><a href="#" title="">We start our first</a></h2>
 												<i>10 Aug 2020</i>
-												<p> "Love Story, baby just say yes" from Taylor Swift's "Love Story", and "When you put your arms around me, you let me know there's nothing in this world I can't do" from Keith Urban's "Somebody Like You". </p>
+												<p> "Love Story, baby just say yes" from Taylor Swift's "Love Story",
+													and "When you put your arms around me, you let me know there's
+													nothing in this world I can't do" from Keith Urban's "Somebody Like
+													You". </p>
 												<a href="#" title="">View More</a>
 											</div>
 										</div>
@@ -631,12 +1841,27 @@
 						<div class="wethinkabout-sec">
 							<div class="row">
 								<div class="col-md-6">
-									<div class="thinkabout-thumb fromleft">
-										<img src="images/new/aa45.jpg" alt="" />
-										<div class="title2">
-											<h4>"When you put your arms around me,<span>you let me know there's nothing in this world I can't do."</span></h4>
+									<div class="flip-card">
+										<div class="flip-card-inner">
+											<!-- Front Side -->
+											<div class="flip-card-front">
+												<img src="images/new/aa45.jpg" alt="Love Quote" />
+											</div>
+
+											<!-- Back Side -->
+											<div class="flip-card-back">
+												<div class="title2">
+													<h4>
+														"When you put your <br> arms around me,
+														<span>you let me know there's <br> nothing in this <br> world I
+															can't
+															do."</span>
+													</h4>
+												</div>
+											</div>
 										</div>
 									</div>
+
 								</div>
 								<div class="col-md-6">
 									<div class="services fromright">
@@ -761,14 +1986,17 @@
 									<div class="col-md-4">
 										<div class="pricing fromleft">
 											<span class="top-img"><img src="images/design-blue.png" alt="" /></span>
-											<span><i>Satrt from,</i> ₹ 10,000 <br><i>wedding stage decoration </i></span>
+											<span><i>Satrt from,</i> ₹ 10,000 <br><i>wedding stage decoration
+												</i></span>
 											<span><img src="images/new/aa7.jpg" alt="" /></span>
 											<i class="fa fa-heart"></i>
 											<h2><strong>stage decoration</strong></h2>
 											<ul>
 												<li>We are obsessed with this earthy stage.</li>
-												<li>This floral dome stage is just so fresh and unique with its green grass, and pops of white, pink and purple flowers!</li>
-												<li>This grand all-white stage with cascading white flowers and a pretty aisle is sure to impress you!</li>
+												<li>This floral dome stage is just so fresh and unique with its green
+													grass, and pops of white, pink and purple flowers!</li>
+												<li>This grand all-white stage with cascading white flowers and a pretty
+													aisle is sure to impress you!</li>
 											</ul>
 											<span class="pricing-btn"><a href="#" title="">View</a></span>
 										</div>
@@ -776,7 +2004,7 @@
 									<div class="col-md-4">
 										<div class="pricing active fromdown">
 											<span class="top-img"><img src="images/design-blue.png" alt="" /></span>
-											<span><i>Satrt from,</i>₹ 8000  <br><i>wedding  Dinner Table </i></span>
+											<span><i>Satrt from,</i>₹ 8000 <br><i>wedding Dinner Table </i></span>
 											<span><img src="images/new/aa8.jpg" alt="" /></span>
 
 											<i class="fa fa-spoon"></i>
@@ -784,7 +2012,8 @@
 											<ul>
 												<li> It looks heavenly.</li>
 												<li>This reception dinner table looks so lively and romantic.</li>
-												<li>It takes care of even the smallest of everyone's needs, like a box of mouth fresheners post-dinner.</li>
+												<li>It takes care of even the smallest of everyone's needs, like a box
+													of mouth fresheners post-dinner.</li>
 											</ul>
 											<span class="pricing-btn"><a href="#" title="">View</a></span>
 										</div>
@@ -792,14 +2021,17 @@
 									<div class="col-md-4">
 										<div class="pricing fromright">
 											<span class="top-img"><img src="images/design-blue.png" alt="" /></span>
-											<span><i>Satrt from,</i> ₹25,000  <br><i>wedding photographer </i></span>
+											<span><i>Satrt from,</i> ₹25,000 <br><i>wedding photographer </i></span>
 											<span><img src="images/new/aa9.jpg" alt="" /></span>
 											<i class="fa fa-diamond"></i>
 											<h2><strong>Full Wedding</strong></h2>
 											<ul>
-												<li>There are a couple of ways you can have your wedding stationery and wedding invitations photographed</li>
-												<li>I’ll also find ways to capture the rings in other settings like this</li>
-												<li>This gives me enough time to spend time with people and get a good feel for the day.</li>
+												<li>There are a couple of ways you can have your wedding stationery and
+													wedding invitations photographed</li>
+												<li>I’ll also find ways to capture the rings in other settings like this
+												</li>
+												<li>This gives me enough time to spend time with people and get a good
+													feel for the day.</li>
 											</ul>
 											<span class="pricing-btn"><a href="#" title="">View</a></span>
 										</div>
@@ -956,10 +2188,9 @@
 						<div class="col-md-12">
 							<div class="bottom-links overlape2 fromdown" style="height: 100px;">
 
-								<div class="logo"><a href="images/new/heart.gif" target="_blank">
-										<img src="images/new/heart.gif" alt="Heart GIF" height="150px" width="150px" />
-									</a></div>
 								<ul>
+									<img src="images/new/love6.gif" alt="Heart GIF" height="100px" width="100px" />
+
 									<li><a href="index.html" title="">Home</a></li>
 									<li><a href="about-her.html" title="">Couple</a></li>
 									<li><a href="wedding-event.html" title="">Event</a></li>

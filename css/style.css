@@ -93,7 +93,7 @@ section {
 .gray2 {background-color: #f9f9f9;}
 .block.ext-toppadd {padding-top: 327px;}
 .block.ext-bottompadd {padding-bottom: 317px;}
-.block.pattern {background: url(../images/bg-pattern.jpg);}
+.block.pattern {background:whitesmoke;}    
 .tbb,
 .block.tbb {
     border-top: 1px solid #dcd9d9;
