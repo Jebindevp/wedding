@@ -27,7 +27,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 8. Gallery Category Filter
   initGalleryFilters();
+
+  // 9. Styling Studio Tabs (Makeup, Hair, Dress Fitting)
+  initStylingTabs();
 });
+
+/* -------------------------------------------------------------
+ * Styling Studio Tabs Switcher
+ * ------------------------------------------------------------- */
+function initStylingTabs() {
+  const tabBtns = document.querySelectorAll('.styling-tab-btn');
+  const tabPanes = document.querySelectorAll('.styling-tab-pane');
+
+  if (!tabBtns.length || !tabPanes.length) return;
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+
+      tabBtns.forEach(b => b.classList.remove('active'));
+      tabPanes.forEach(p => p.classList.remove('active'));
+
+      btn.classList.add('active');
+      const activePane = document.getElementById(targetId);
+      if (activePane) {
+        activePane.classList.add('active');
+      }
+    });
+  });
+}
 
 /* -------------------------------------------------------------
  * 1. Mobile Drawer
@@ -182,7 +210,7 @@ function initBudgetCalculator() {
 }
 
 /* -------------------------------------------------------------
- * 5. Wedding Countdown Timer
+ * 5. Wedding Countdown Timer (1500 Days Reverse Countdown)
  * ------------------------------------------------------------- */
 function initCountdownTimer() {
   const daysEl = document.getElementById('cd-days');
@@ -192,8 +220,18 @@ function initCountdownTimer() {
 
   if (!daysEl || !hoursEl || !minsEl || !secsEl) return;
 
-  // Set target date 45 days into future
-  const targetDate = new Date(Date.now() + 45 * 24 * 60 * 60 * 1000).getTime();
+  const TOTAL_DAYS = 1500;
+  const STORAGE_KEY = 'wedding_countdown_target_1500';
+  let savedTarget = localStorage.getItem(STORAGE_KEY);
+  let targetDate;
+
+  // Initialize or retrieve persistent 1500 days target
+  if (!savedTarget || isNaN(Number(savedTarget)) || Number(savedTarget) <= Date.now()) {
+    targetDate = Date.now() + TOTAL_DAYS * 24 * 60 * 60 * 1000;
+    localStorage.setItem(STORAGE_KEY, String(targetDate));
+  } else {
+    targetDate = Number(savedTarget);
+  }
 
   function update() {
     const now = Date.now();
@@ -212,7 +250,7 @@ function initCountdownTimer() {
     const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     const s = Math.floor((diff % (1000 * 60)) / 1000);
 
-    daysEl.textContent = String(d).padStart(2, '0');
+    daysEl.textContent = String(d);
     hoursEl.textContent = String(h).padStart(2, '0');
     minsEl.textContent = String(m).padStart(2, '0');
     secsEl.textContent = String(s).padStart(2, '0');

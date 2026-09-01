@@ -191,20 +191,22 @@ button, input, select, textarea {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
+  flex-wrap: nowrap;
 }
 
 .nav-link {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: #334155;
   position: relative;
-  padding: 8px 12px;
+  padding: 6px 9px;
   border-radius: var(--radius-full);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -1838,8 +1840,8 @@ textarea.luxury-input {
   }
 }
 
-/* Tablets Portrait (max-width: 768px) */
-@media screen and (max-width: 768px) {
+/* Medium Screens & Tablets (max-width: 1200px) */
+@media screen and (max-width: 1200px) {
   .nav-menu, .header-actions .btn-luxury {
     display: none;
   }
@@ -1849,8 +1851,12 @@ textarea.luxury-input {
   }
 
   .navbar-wrapper {
-    height: 70px;
+    height: 72px;
   }
+}
+
+/* Tablets Portrait (max-width: 768px) */
+@media screen and (max-width: 768px) {
 
   .hero-luxury-sec {
     padding-top: 105px;
@@ -2089,5 +2095,421 @@ textarea.luxury-input {
 
   .photo-grid-masonry {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   RELIGIOUS WEDDING TYPES & SACRED CEREMONIES
+   ========================================================================== */
+.religious-weddings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 30px;
+}
+
+.religious-wedding-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+}
+
+.religious-wedding-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-gold);
+}
+
+.religious-thumb-wrap {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.religious-thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.religious-wedding-card:hover .religious-thumb-wrap img {
+  transform: scale(1.06);
+}
+
+.religious-faith-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: rgba(89, 13, 34, 0.9);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(223, 167, 87, 0.4);
+}
+
+.religious-body {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.religious-title {
+  font-family: var(--font-heading);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--deep-burgundy);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.religious-desc {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.ritual-highlights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.ritual-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.ritual-item i {
+  color: var(--primary-gold-dark);
+  margin-top: 4px;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.religious-footer {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px dashed var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ==========================================================================
+   7-DAY INDIAN WEDDING TIMELINE
+   ========================================================================== */
+.timeline-7days-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.timeline-day-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.timeline-day-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-gold);
+}
+
+.timeline-img-wrap {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.timeline-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.timeline-day-card:hover .timeline-img-wrap img {
+  transform: scale(1.08);
+}
+
+.timeline-day-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: linear-gradient(135deg, var(--deep-burgundy), var(--accent-rose));
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.timeline-event-name {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--deep-burgundy);
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+
+.timeline-lead-desc {
+  font-size: 14px;
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.timeline-points-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.timeline-point {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.timeline-point i {
+  color: var(--primary-gold-dark);
+  font-size: 13px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.timeline-card-tag {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-gold-dark);
+  background: rgba(223, 167, 87, 0.12);
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+}
+
+/* ==========================================================================
+   STYLING STUDIO: MAKEUP MODELS, HAIR STYLES & DRESS FITTING
+   ========================================================================== */
+.styling-tabs-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.styling-tab-btn {
+  padding: 12px 26px;
+  border-radius: var(--radius-full);
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  color: var(--text-dark);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
+}
+
+.styling-tab-btn:hover {
+  border-color: var(--primary-gold);
+  color: var(--deep-burgundy);
+  transform: translateY(-2px);
+}
+
+.styling-tab-btn.active {
+  background: linear-gradient(135deg, var(--deep-burgundy), var(--accent-rose));
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 6px 18px rgba(89, 13, 34, 0.28);
+}
+
+.styling-tab-pane {
+  display: none;
+  animation: fadeInPane 0.4s ease forwards;
+}
+
+.styling-tab-pane.active {
+  display: block;
+}
+
+@keyframes fadeInPane {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.styling-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.styling-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+}
+
+.styling-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-gold);
+}
+
+.styling-card-thumb {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.styling-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.styling-card:hover .styling-card-thumb img {
+  transform: scale(1.08);
+}
+
+.styling-category-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(15, 23, 42, 0.85);
+  color: var(--primary-gold-light);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(223, 167, 87, 0.3);
+}
+
+.styling-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.styling-card-body h4 {
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--deep-burgundy);
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+
+.styling-card-body p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.styling-features-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.styling-chip {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(223, 167, 87, 0.12);
+  color: var(--deep-burgundy);
+  border: 1px solid rgba(223, 167, 87, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Responsive adjustments for new sections */
+@media screen and (max-width: 992px) {
+  .religious-weddings-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-7days-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .styling-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .styling-tabs-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .styling-tab-btn {
+    width: 100%;
+    justify-content: center;
   }
 }
