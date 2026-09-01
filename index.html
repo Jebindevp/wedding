@@ -1,1999 +1,1418 @@
 <!DOCTYPE html>
-
-<!-- Mirrored from html.themexriver.com/forever-love/demos/forever-love/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jul 2025 14:34:06 GMT -->
-
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>❤️ Wedding ❤️</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-
-	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /><!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" /><!-- Font Awesome -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" /><!-- Style -->
-	<link rel="stylesheet" type="text/css" href="css/responsive.css" /><!-- Responsive -->
-
-	<!-- Color Scheme -->
-	<link rel="stylesheet" type="text/css" href="css/colors/color.css" title="color" /><!-- Color -->
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/color2.css" title="color2" /> <!-- Color2 -->
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/color3.css" title="color3" /> <!-- Color3 -->
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/color4.css" title="color4" /> <!-- Color4 -->
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/color5.css" title="color5" /> <!-- Color5 -->
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/color6.css" title="color6" /> <!-- Color6 -->
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/color7.css" title="color7" /> <!-- Color7 -->
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/color8.css" title="color8" /> <!-- Color8 -->
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/color9.css" title="color9" /> <!-- Color9 -->
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/color10.css" title="color10" /> <!-- Color10 -->
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/color11.css" title="color11" /> <!-- Color11 -->
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/color12.css" title="color12" /> <!-- Color12 -->
-
-	<!-- REVOLUTION STYLE SHEETS -->
-	<link rel="stylesheet" type="text/css" href="css/revolution/settings.css" />
-	<link rel="stylesheet" type="text/css" href="css/revolution/navigation.css" />
-	<link rel="stylesheet" type="text/css" href="css/revolution/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
-
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-	<style>
-		/* Reset and Base */
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		body {
-			font-family: 'Poppins', sans-serif;
-			background-color: #f7f9fb;
-			color: #100d0d;
-		}
-
-		/* Responsive Header Container */
-		.responsive-header {
-			background-color: #f6eeee;
-			border-bottom: 1px solid #eee;
-			position: relative;
-			z-index: 1000;
-			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-			padding: 10px 20px;
-		}
-
-		/* Logo + Menu container */
-		.logo-menu {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-		}
-
-		/* Logo */
-		.logo img {
-			max-height: 50px;
-			transition: transform 0.3s ease;
-		}
-
-		.logo img:hover {
-			transform: scale(1.05);
-		}
-
-		/* Menu Button */
-		.menu-btn {
-			font-size: 24px;
-			color: #f3ebeb;
-			cursor: pointer;
-			display: none;
-		}
-
-		.menu-btn i {
-			transition: color 0.3s ease;
-		}
-
-		.menu-btn:hover i {
-			color: #007bff;
-		}
-
-		/* Responsive Menu Container */
-		.responsive-menu {
-			position: absolute;
-			top: 100%;
-			left: 0;
-			width: 100%;
-			background: #fff;
-			display: none;
-			flex-direction: column;
-			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-			animation: slideDown 0.3s ease-in-out;
-		}
-
-		@keyframes slideDown {
-			from {
-				opacity: 0;
-				transform: translateY(-20px);
-			}
-
-			to {
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-
-		.responsive-menu ul {
-			list-style: none;
-			padding: 20px;
-		}
-
-		.responsive-menu ul li {
-			margin-bottom: 10px;
-			position: relative;
-		}
-
-		.responsive-menu ul li a {
-			text-decoration: none;
-			color: #de0909;
-			font-weight: 500;
-			display: inline-block;
-			padding: 8px 10px;
-			transition: all 0.3s ease;
-		}
-
-		.responsive-menu ul li a:hover {
-			color: #18f40c;
-		}
-
-		/* Submenu */
-		.menu-item-has-children>i {
-			margin-left: 10px;
-			cursor: pointer;
-		}
-
-		.menu-item-has-children ul {
-			display: none;
-			margin-top: 10px;
-			padding-left: 15px;
-		}
-
-		.menu-item-has-children:hover>ul {
-			display: block;
-		}
-
-		/* Close Button */
-		.close-btn {
-			text-align: right;
-			padding: 10px 20px;
-			font-size: 22px;
-			cursor: pointer;
-			color: #333;
-		}
-
-		.close-btn:hover {
-			color: #ff3e3e;
-		}
-
-		/* Responsive Behavior */
-		@media (max-width: 768px) {
-			.menu-btn {
-				display: block;
-			}
-
-			.responsive-menu {
-				display: flex;
-			}
-
-			.logo-menu {
-				flex-direction: row;
-			}
-		}
-
-
-
-		/* === Wedding Coming Soon Section === */
-		.wed-comsoon {
-			margin: 80px 0;
-			display: flex;
-			align-items: center;
-		}
-
-		.wed-comsoon-thumb {
-			position: relative;
-			border-radius: 18px;
-			overflow: hidden;
-			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-		}
-
-		.wed-comsoon-thumb img {
-			width: 100%;
-			height: auto;
-			border-radius: 18px;
-			object-fit: cover;
-			transition: transform 0.6s ease;
-		}
-
-		.wed-comsoon-thumb:hover img {
-			transform: scale(1.05);
-		}
-
-		/* Title Styling */
-		.wed-comsoon-eventdetail .title h4 {
-			font-size: 36px;
-			font-weight: 700;
-			line-height: 1.3;
-			margin-bottom: 20px;
-			color: #333;
-		}
-
-		.wed-comsoon-eventdetail .title span {
-			color: #ff4081;
-			font-size: 40px;
-			font-weight: 800;
-		}
-
-		/* Countdown Timer */
-		.wed-comsoon-counter {
-			margin: 25px 0;
-			text-align: center;
-		}
-
-		.wed-comsoon-counter span {
-			display: block;
-			font-size: 18px;
-			font-weight: 600;
-			margin-bottom: 20px;
-			color: #444;
-		}
-
-		.wed-comsoon-counter ul {
-			display: flex;
-			justify-content: center;
-			gap: 18px;
-			padding: 0;
-			list-style: none;
-		}
-
-		.wed-comsoon-counter ul li {
-			background: #fff;
-			border-radius: 14px;
-			padding: 15px 20px;
-			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-			transition: transform 0.3s ease;
-		}
-
-		.wed-comsoon-counter ul li:hover {
-			transform: translateY(-6px);
-		}
-
-		.wed-comsoon-counter ul li span {
-			font-size: 30px;
-			font-weight: 700;
-			color: #ff4081;
-			display: block;
-		}
-
-		.wed-comsoon-counter ul li p {
-			font-size: 14px;
-			color: #666;
-			margin: 5px 0 0;
-		}
-
-		/* Description */
-		.wed-comsoon-eventdetail p {
-			margin: 20px 0;
-			font-size: 15px;
-			line-height: 1.7;
-			color: #555;
-		}
-
-		/* RSVP Button */
-		.wed-comsoon-eventdetail .btn1 {
-			display: inline-flex;
-			align-items: center;
-			gap: 8px;
-			padding: 12px 28px;
-			background: #ff4081;
-			color: #fff;
-			border-radius: 30px;
-			font-size: 16px;
-			font-weight: 600;
-			text-decoration: none;
-			box-shadow: 0 6px 20px rgba(255, 64, 129, 0.4);
-			transition: all 0.3s ease;
-		}
-
-		.wed-comsoon-eventdetail .btn1:hover {
-			background: #e73370;
-			transform: translateY(-4px);
-		}
-
-		/* Responsive */
-		@media (max-width: 991px) {
-			.wed-comsoon {
-				flex-direction: column;
-				text-align: center;
-			}
-
-			.wed-comsoon-eventdetail {
-				margin-top: 30px;
-			}
-
-			.wed-comsoon-eventdetail .title h4 {
-				font-size: 28px;
-			}
-
-			.wed-comsoon-eventdetail .title span {
-				font-size: 32px;
-			}
-		}
-
-		@media (max-width: 575px) {
-			.wed-comsoon-counter ul {
-				flex-wrap: wrap;
-				gap: 12px;
-			}
-
-			.wed-comsoon-counter ul li {
-				flex: 1 1 45%;
-				padding: 12px;
-			}
-
-			.wed-comsoon-counter ul li span {
-				font-size: 24px;
-			}
-		}
-
-
-		/* === Wedding Plan Section === */
-		.wed-plan {
-			margin: 60px 0;
-			text-align: center;
-		}
-
-		.wedplan-post {
-			background: #fff;
-			border-radius: 18px;
-			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-			overflow: hidden;
-			margin-bottom: 30px;
-			transition: all .4s ease;
-			position: relative;
-		}
-
-		.wedplan-post:hover {
-			transform: translateY(-10px) scale(1.03);
-			box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
-		}
-
-		.wedplan-thumb {
-			width: 100%;
-			height: 260px;
-			overflow: hidden;
-			border-radius: 18px 18px 0 0;
-		}
-
-		.wedplan-thumb img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			transition: transform .5s ease;
-		}
-
-		.wedplan-post:hover .wedplan-thumb img {
-			transform: scale(1.08);
-		}
-
-		.wedplan-info {
-			padding: 22px;
-		}
-
-		.wedplan-info i {
-			font-size: 32px;
-			color: #ff4081;
-			margin-bottom: 14px;
-			display: block;
-		}
-
-		.wedplan-info h2 {
-			font-size: 22px;
-			font-weight: 700;
-			margin-bottom: 12px;
-			text-transform: capitalize;
-			color: #333;
-		}
-
-		.wedplan-info p {
-			font-size: 15px;
-			line-height: 1.6;
-			margin-bottom: 18px;
-			color: #555;
-		}
-
-		.wedplan-info a {
-			display: inline-block;
-			padding: 10px 20px;
-			background: #ff4081;
-			color: #fff;
-			font-size: 14px;
-			border-radius: 25px;
-			transition: background .3s ease;
-			text-decoration: none;
-		}
-
-		.wedplan-info a:hover {
-			background: #e73370;
-		}
-
-		/* Active post highlight */
-		.wedplan-post.active {
-			border: 2px solid #ff4081;
-			transform: scale(1.05);
-			box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
-		}
-
-		/* Responsive */
-		@media (max-width: 991px) {
-			.wedplan-thumb {
-				height: 220px;
-			}
-
-			.wedplan-info h2 {
-				font-size: 20px;
-			}
-		}
-
-		@media (max-width: 767px) {
-			.wedplan-post {
-				margin-bottom: 25px;
-			}
-
-			.wedplan-thumb {
-				height: 200px;
-			}
-		}
-
-
-
-
-		/* ===== Success Story Section ===== */
-		.scroll-sction {
-			padding: 100px 0;
-			background: linear-gradient(135deg, #e63946, #ff758f);
-			font-family: 'Poppins', sans-serif;
-			position: relative;
-			overflow: hidden;
-		}
-
-		/* Decorative glow circles */
-		.scroll-sction::before,
-		.scroll-sction::after {
-			content: "";
-			position: absolute;
-			width: 350px;
-			height: 350px;
-			border-radius: 50%;
-			background: radial-gradient(circle, rgba(230, 57, 70, 0.2), transparent 70%);
-			animation: float 12s infinite alternate ease-in-out;
-			z-index: 0;
-		}
-
-		.scroll-sction::before {
-			top: -120px;
-			left: -150px;
-		}
-
-		.scroll-sction::after {
-			bottom: -120px;
-			right: -150px;
-			animation-delay: 5s;
-		}
-
-		.stories-sec {
-			position: relative;
-			z-index: 2;
-		}
-
-		/* ===== Story Post Container ===== */
-		.stories-post {
-			display: flex;
-			align-items: center;
-			border-radius: 25px;
-			background: rgba(255, 255, 255, 0.8);
-			backdrop-filter: blur(12px);
-			overflow: hidden;
-			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-			transition: transform 0.6s ease, box-shadow 0.6s ease;
-		}
-
-		.stories-post:hover {
-			transform: translateY(-10px);
-			box-shadow: 0 30px 70px rgba(230, 57, 70, 0.25);
-		}
-
-		/* ===== Story Image ===== */
-		.stories-thumb {
-			position: relative;
-			overflow: hidden;
-			border-radius: 20px;
-		}
-
-		.stories-thumb img {
-			width: 100%;
-			border-radius: 20px;
-			transition: transform 0.8s ease, filter 0.5s ease;
-		}
-
-		.stories-post:hover .stories-thumb img {
-			transform: scale(1.08);
-			filter: brightness(1.05) saturate(1.2);
-		}
-
-		/* ===== Story Detail ===== */
-		.stories-detail {
-			padding: 40px;
-			animation: fadeInUp 1s ease-in-out;
-		}
-
-		.stories-detail .title h4 {
-			font-size: 32px;
-			font-weight: 800;
-			color: #222;
-			margin-bottom: 15px;
-			text-transform: uppercase;
-		}
-
-		.stories-detail .title span {
-			color: #e63946;
-			font-size: 36px;
-			font-weight: 900;
-			letter-spacing: 1px;
-		}
-
-		.stories-detail h2 {
-			font-size: 26px;
-			font-weight: 700;
-			margin-bottom: 10px;
-		}
-
-		.stories-detail h2 a {
-			color: #e63946;
-			text-decoration: none;
-			transition: color 0.3s ease;
-		}
-
-		.stories-detail h2 a:hover {
-			color: #ff758f;
-		}
-
-		.stories-detail i {
-			display: block;
-			font-size: 14px;
-			color: #888;
-			margin-bottom: 20px;
-		}
-
-		.stories-detail p {
-			font-size: 15px;
-			color: #444;
-			line-height: 1.8;
-			margin-bottom: 30px;
-		}
-
-		/* ===== View More Button ===== */
-		.stories-detail a {
-			display: inline-block;
-			padding: 12px 28px;
-			font-size: 15px;
-			font-weight: 600;
-			text-transform: uppercase;
-			border-radius: 40px;
-			background: linear-gradient(135deg, #e63946, #ff758f);
-			color: #fff;
-			text-decoration: none;
-			box-shadow: 0 10px 30px rgba(230, 57, 70, 0.4);
-			transition: all 0.3s ease;
-			position: relative;
-			overflow: hidden;
-			margin-left: 50px;
-		}
-
-		.stories-detail a::before {
-			content: "";
-			position: absolute;
-			width: 0;
-			height: 100%;
-			left: 0;
-			top: 0;
-			background: rgba(255, 255, 255, 0.3);
-			transition: width 0.3s ease;
-		}
-
-		.stories-detail a:hover::before {
-			width: 100%;
-		}
-
-		.stories-detail a:hover {
-			transform: translateY(-3px);
-			box-shadow: 0 14px 40px rgba(230, 57, 70, 0.6);
-		}
-
-		/* ===== Animations ===== */
-		@keyframes fadeInUp {
-			from {
-				transform: translateY(60px);
-				opacity: 0;
-			}
-
-			to {
-				transform: translateY(0);
-				opacity: 1;
-			}
-		}
-
-		@keyframes float {
-			from {
-				transform: translateY(0);
-			}
-
-			to {
-				transform: translateY(25px);
-			}
-		}
-
-		/* ===== Responsive ===== */
-		@media (max-width: 991px) {
-			.stories-post {
-				flex-direction: column;
-			}
-
-			.stories-detail {
-				padding: 30px;
-				text-align: center;
-			}
-
-			.stories-detail h2 {
-				font-size: 22px;
-			}
-		}
-
-
-
-
-		/* ===== We Think About Section ===== */
-		.wethinkabout-sec {
-			padding: 80px 0;
-			background: linear-gradient(135deg, #e63946, #ff758f);
-			font-family: 'Poppins', sans-serif;
-			position: relative;
-			overflow: hidden;
-		}
-
-		/* Left side image & quote */
-		.thinkabout-thumb {
-			position: relative;
-			border-radius: 25px;
-			overflow: hidden;
-			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-		}
-
-		.thinkabout-thumb img {
-			width: 100%;
-			border-radius: 25px;
-			transition: transform 1s ease;
-		}
-
-		.thinkabout-thumb:hover img {
-			transform: scale(1.08);
-		}
-
-		.thinkabout-thumb .title2 {
-			position: absolute;
-			bottom: 30px;
-			left: 20px;
-			right: 20px;
-			background: rgba(230, 57, 70, 0.8);
-			padding: 20px;
-			border-radius: 15px;
-			color: #fff;
-			font-style: italic;
-			font-size: 16px;
-			line-height: 1.6;
-			backdrop-filter: blur(6px);
-			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-		}
-
-		.thinkabout-thumb .title2 span {
-			display: block;
-			margin-top: 8px;
-			font-weight: 700;
-			font-size: 18px;
-		}
-
-		/* Right side services section */
-		.services {
-			position: relative;
-			margin-left: 10px;
-		}
-
-		.services img {
-			width: 100%;
-			border-radius: 20px;
-			margin-bottom: 30px;
-			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-		}
-
-		/* Services list grid */
-		.services-list {
-			display: flex;
-			flex-direction: column;
-			gap: 30px;
-		}
-
-		.service-item {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 20px;
-		}
-
-		/* Individual service box */
-		.service-box {
-			background: #fff;
-			border-radius: 20px;
-			padding: 25px 15px;
-			text-align: center;
-			transition: all 0.4s ease;
-			position: relative;
-			box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
-		}
-
-		.service-box i img {
-			width: 50px;
-			height: 50px;
-			margin-bottom: 15px;
-			transition: transform 0.5s ease;
-		}
-
-		.service-box h2 {
-			font-size: 18px;
-			font-weight: 700;
-			margin: 0;
-		}
-
-		.service-box h2 span {
-			display: block;
-			font-size: 14px;
-			color: #e63946;
-			font-weight: 600;
-			margin-bottom: 5px;
-		}
-
-		.service-box a {
-			color: #222;
-			text-decoration: none;
-			transition: color 0.3s ease;
-		}
-
-		.service-box:hover {
-			transform: translateY(-12px) scale(1.05);
-			box-shadow: 0 18px 40px rgba(230, 57, 70, 0.2);
-			background: linear-gradient(135deg, #fff, #fff0f2);
-		}
-
-		.service-box:hover i img {
-			transform: rotate(12deg) scale(1.2);
-		}
-
-		.service-box:hover a {
-			color: #e63946;
-		}
-
-		/* Floating background shapes */
-		.wethinkabout-sec::before,
-		.wethinkabout-sec::after {
-			content: "";
-			position: absolute;
-			border-radius: 50%;
-			background: radial-gradient(circle, rgba(230, 57, 70, 0.1), transparent 70%);
-			animation: float 10s infinite alternate;
-			z-index: 0;
-		}
-
-		.wethinkabout-sec::before {
-			top: -100px;
-			left: -120px;
-			width: 320px;
-			height: 320px;
-		}
-
-		.wethinkabout-sec::after {
-			bottom: -120px;
-			right: -150px;
-			width: 400px;
-			height: 400px;
-			animation-delay: 4s;
-		}
-
-		/* Float animation */
-		@keyframes float {
-			from {
-				transform: translateY(0);
-			}
-
-			to {
-				transform: translateY(25px);
-			}
-		}
-
-		/* Responsive */
-		@media (max-width: 991px) {
-
-			.thinkabout-thumb,
-			.services {
-				margin: 0 0 30px 0;
-			}
-
-			.services-list {
-				gap: 20px;
-			}
-
-			.service-item {
-				flex-direction: column;
-				gap: 15px;
-			}
-		}
-
-		.flip-card {
-			background: transparent;
-			width: 450px;
-			height: 400px;
-			perspective: 1000px;
-
-			/* gives 3D depth */
-		}
-
-		.flip-card-inner {
-			position: relative;
-			width: 100%;
-			height: 100%;
-			text-align: center;
-			transition: transform 0.8s ease-in-out;
-			transform-style: preserve-3d;
-		}
-
-		.flip-card:hover .flip-card-inner {
-			transform: rotateY(180deg);
-		}
-
-		/* Front side */
-		.flip-card-front,
-		.flip-card-back {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			-webkit-backface-visibility: hidden;
-			/* Safari */
-			backface-visibility: hidden;
-			border-radius: 15px;
-			overflow: hidden;
-			box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-		}
-
-		/* Front */
-		.flip-card-front img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-
-		/* Back */
-		.flip-card-back {
-			background: linear-gradient(135deg, #e63946, #ff758f);
-			color: white;
-			transform: rotateY(180deg);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			padding: 10px;
-			margin-right: 50px;
-		}
-
-		.flip-card-back h4 {
-			font-size: 15px;
-			line-height: 1.5;
-		}
-
-		.flip-card-back span {
-			display: block;
-			margin-top: 8px;
-			font-weight: 600;
-			font-style: italic;
-		}
-
-
-
-
-		.pricing-table {
-			display: flex;
-			justify-content: center;
-			gap: 20px;
-			flex-wrap: wrap;
-		}
-
-		.pricing {
-			background: #fff;
-			border-radius: 20px;
-			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-			padding: 25px;
-			text-align: center;
-			transition: transform 0.4s ease, box-shadow 0.4s ease;
-			position: relative;
-			overflow: hidden;
-			flex: 1 1 calc(33.333% - 40px);
-			/* 3 cards per row */
-			max-width: 350px;
-		}
-
-		.pricing:hover {
-			transform: translateY(-15px) scale(1.05);
-			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-		}
-
-		.pricing.active {
-			border: 3px solid #ff4081;
-			transform: scale(1.07);
-		}
-
-		.pricing img {
-			max-width: 100%;
-			border-radius: 15px;
-			margin: 15px 0;
-		}
-
-		.pricing h2 {
-			font-size: 1.6rem;
-			margin: 15px 0;
-			color: #333;
-			font-weight: 700;
-		}
-
-		.pricing ul {
-			list-style: none;
-			padding: 0;
-			margin: 15px 0;
-		}
-
-		.pricing ul li {
-			font-size: 0.95rem;
-			color: #666;
-			margin-bottom: 8px;
-			line-height: 1.4em;
-		}
-
-		.pricing-btn a {
-			display: inline-block;
-			padding: 10px 20px;
-			border-radius: 30px;
-			background: linear-gradient(135deg, #ff4081, #ff7043);
-			color: #fff;
-			text-decoration: none;
-			font-weight: 600;
-			transition: background 0.3s ease;
-		}
-
-		.pricing-btn a:hover {
-			background: linear-gradient(135deg, #f7f5f5, #14090d);
-		}
-
-		/* floating icon style */
-		.pricing i.fa {
-			font-size: 28px;
-			color: #17030a;
-			position: absolute;
-			top: 20px;
-			right: 20px;
-			opacity: 0.7;
-		}
-
-		/* ================== RESPONSIVE ================== */
-		@media screen and (max-width: 992px) {
-			.pricing {
-				flex: 1 1 calc(50% - 30px);
-				/* 2 cards per row */
-				max-width: 100%;
-			}
-
-			.pricing h2 {
-				font-size: 1.4rem;
-			}
-		}
-
-		@media screen and (max-width: 768px) {
-			.pricing {
-				flex: 1 1 100%;
-				/* 1 card per row */
-				max-width: 100%;
-			}
-
-			.pricing h2 {
-				font-size: 1.3rem;
-			}
-
-			.pricing ul li {
-				font-size: 0.9rem;
-			}
-		}
-
-		@media screen and (max-width: 480px) {
-			.pricing {
-				padding: 20px 15px;
-				border-radius: 15px;
-			}
-
-			.pricing h2 {
-				font-size: 1.1rem;
-			}
-
-			.pricing-btn a {
-				padding: 8px 16px;
-				font-size: 14px;
-			}
-
-			.pricing i.fa {
-				font-size: 22px;
-			}
-		}
-
-
-
-
-
-		/* ===== Footer Styling ===== */
-		footer {
-			padding: 40px 0;
-			position: relative;
-			text-align: center;
-			font-family: "Poppins", sans-serif;
-		}
-
-		/* Container */
-		footer .container {
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 0 15px;
-		}
-
-		/* Footer Links */
-		footer .bottom-links ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			justify-content: center;
-			gap: 30px;
-			flex-wrap: wrap;
-		}
-
-		footer .bottom-links ul li {
-			display: inline-block;
-		}
-
-		footer .bottom-links ul li a {
-			text-decoration: none;
-			color: #090101;
-			font-size: 16px;
-			font-weight: 500;
-			transition: color 0.3s, border-bottom 0.3s;
-			padding: 5px 10px;
-		}
-
-		footer .bottom-links ul li a:hover {
-			color: #f93509;
-			border-bottom: 2px solid #0f0d03;
-		}
-
-		/* Footer Logo (if enabled) */
-		footer .logo img {
-			max-width: 120px;
-			height: auto;
-			margin: 10px auto;
-			display: block;
-		}
-
-		/* Responsive */
-		@media (max-width: 768px) {
-			footer {
-				padding: 30px 15px;
-			}
-
-			footer .bottom-links ul {
-				flex-direction: column;
-				gap: 15px;
-			}
-
-			footer .bottom-links ul li a {
-				font-size: 18px;
-			}
-		}
-
-		@media (max-width: 480px) {
-			footer {
-				padding: 20px 10px;
-			}
-
-			footer .bottom-links ul {
-				gap: 10px;
-			}
-
-			footer .bottom-links ul li a {
-				font-size: 16px;
-			}
-		}
-	</style>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forever Love | Luxury Wedding & Grand Marriage Event Planners</title>
+  <meta name="description" content="Premier luxury wedding & marriage event planners. Gourmet multi-country catering, live Dhol & soundbars, electrifying DJ nightclub parties, royal decor, and cinematic 4K photography.">
+  <meta name="keywords" content="wedding planner, luxury weddings, marriage events, multi-cuisine catering, dhol squad, DJ afterparty, wedding decor, cinematic wedding photography">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/gif" href="images/new/love3.gif">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Core Luxury Stylesheet -->
+  <link rel="stylesheet" href="css/modern-wedding.css">
 </head>
-
 <body>
 
-	<div class="theme-layout">
-
-		<header class="stick">
-
-			<div class="container">
-				<nav class="logomenu-sec">
-					<ul>
-						<li class="menu-item-has-children"><a href="index.html" title="">Home</a>
-
-						</li>
-						<li class="menu-item-has-children"><a href="about-her.html" title="">Couple</a>
-							<ul>
-								<li><a href="about-her.html" title="">About Her</a></li>
-								<li><a href="about-him.html" title="">About Him</a></li>
-							</ul>
-						</li>
-						<li class="menu-item-has-children"><a href="blog.html" title="">Pages</a>
-							<ul>
-								<li><a href="blog.html" title="">Blog</a></li>
-								<li><a href="single-blog.html" title="">Single Blog</a></li>
-							</ul>
-						</li>
-
-					</ul>
-					<a href="images/new/love8.gif" target="_blank">
-						<img src="images/new/love8.gif" alt="Heart GIF" height="100px" width="100px" />
-					</a>
-					<ul>
-
-						<li class="menu-item-has-children"><a class="custom-scroll" href="#scroll-blog-section"
-								title="">Event</a>
-							<ul>
-								<li><a href="wedding-event.html" title="">Wedding Event</a></li>
-								<li><a href="reception-event.html" title="">Reception Event</a></li>
-							</ul>
-						</li>
-
-						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
-						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
-
-					</ul>
-
-				</nav>
-			</div>
-		</header>
-		<!-- Header -->
-
-		<div class="responsive-header">
-
-			<div class="logo-menu">
-				<div class="logo"> <a href="images/new/love3.gif" target="_blank">
-						<img src="images/new/love3.gif" alt="Heart GIF" height="100px" width="100px" />
-					</a></div>
-				<span class="menu-btn"><i class="fa fa-align-center"></i></span>
-				<div class="responsive-menu">
-					<span class="close-btn"><i class="fa fa-times"></i></span>
-					<ul>
-						<li><a href="index.html" title="">Home</a></li>
-
-
-						</li>
-						<li class="menu-item-has-children"><a href="#" title="">Couple</a><i
-								class="fa fa-angle-down"></i>
-							<ul>
-								<li><a href="about-her.html" title="">About Her</a></li>
-								<li><a href="about-him.html" title="">About Him</a></li>
-							</ul>
-						</li>
-						<li class="menu-item-has-children"><a class="custom-scroll" href="#scroll-blog-section"
-								title="">Event</a><i class="fa fa-angle-down"></i>
-							<ul>
-								<li><a href="wedding-event.html" title="">Wedding Event</a></li>
-								<li><a href="reception-event.html" title="">Reception Event</a></li>
-							</ul>
-						</li>
-						<li class="menu-item-has-children"><a href="blog.html" title="">Pages</a><i
-								class="fa fa-angle-down"></i>
-							<ul>
-								<li><a href="blog.html" title="">Blog</a></li>
-								<li><a href="single-blog.html" title="">Single Blog</a></li>
-							</ul>
-						</li>
-						<li><a class="custom-scroll" href="gallery.html" title="">Gallery</a></li>
-						<li><a class="custom-scroll" href="contact.html" title="">RSVP</a></li>
-
-
-					</ul>
-				</div>
-			</div>
-		</div><!-- Responsive Header -->
-
-
-		<section>
-			<div class="block no-padding">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="creative-slider">
-							<div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;">
-								<ul>
-									<li data-index="rs-1" data-transition="papercut" data-slotamount="7"
-										data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
-										data-masterspeed="2000" data-title="Slide 2">
-										<!-- MAIN IMAGE -->
-										<img src="images/new/ai1.png" alt="" data-bgposition="center center"
-											data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10"
-											data-kenburns="on" data-duration="10000" data-ease="Linear.explainpaseNone"
-											data-scalestart="120" data-scaleend="100" class="rev-slidebg"
-											data-no-retina>
-
-										<!-- LAYER NR. 1 -->
-										<div class="tp-caption layer4 tp-resizeme rs-parallaxlevel-3"
-											id="slide1-layer-1" data-x="center" data-hoffset="-250" data-y="center"
-											data-voffset="-250" data-width="['auto','auto','auto','auto']"
-											data-height="['auto','auto','auto','auto']" data-transform_idle="o:1;"
-											data-transform_in="x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
-											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-											data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1000"
-											data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-											data-elementdelay="0.05"
-											style="font-size:36px;letter-spacing:0.2px;color:white;">
-											Welcome To Our,
-										</div>
-
-										<!-- LAYER NR. 2 -->
-										<div class="tp-caption layer5 tp-resizeme rs-parallaxlevel-3"
-											id="slide1-layer-2" data-x="center" data-hoffset="" data-y="center"
-											data-voffset="-100" data-width="['auto','auto','auto','auto']"
-											data-height="['auto','auto','auto','auto']" data-transform_idle="o:1;"
-											data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power3.easeInOut;"
-											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-											data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-start="1200"
-											data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-											data-elementdelay="0.05" style="font-size:197px;color:white;">Wedding
-										</div>
-
-										<!-- LAYER NR. 3 -->
-										<div class="tp-caption layer5 tp-resizeme rs-parallaxlevel-3"
-											id="slide1-layer-3" data-x="center" data-hoffset="" data-y="center"
-											data-voffset="100" data-width="['auto','auto','auto','auto']"
-											data-height="['auto','auto','auto','auto']" data-transform_idle="o:1;"
-											data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power3.easeInOut;"
-											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-											data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-start="1400"
-											data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-											data-elementdelay="0.05"
-											style="font-size:197px;padding-left:20px;color:white;">Design
-										</div>
-
-
-										<!-- LAYER NR. 4 -->
-										<!-- <div class="tp-caption tp-resizeme" id="slide1-layer4" data-x="center"
-											data-hoffset="60" data-y="bottom" data-voffset="100"
-											data-width="['auto','auto','auto','auto']"
-											data-height="['auto','auto','auto','auto']" data-transform_idle="o:1;"
-											data-transform_in="x:50px;opacity:0;s:1000;e:Power3.easeOut;"
-											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-											data-start="3400" data-splitin="none" data-splitout="none"
-											data-responsive_offset="on" data-elementdelay="0.7"><img
-												src="images/new/aa1.png" alt="" style="height:900px;" />
-										</div> -->
-									</li>
-
-									<li data-index="rs-2" data-transition="papercut" data-slotamount="7"
-										data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
-										data-masterspeed="2000" data-title="Slide 2">
-										<!-- MAIN IMAGE -->
-										<img src="images/new/ai1.png" alt="" data-bgposition="center center"
-											data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10"
-											data-kenburns="on" data-duration="10000" data-ease="Linear.explainpaseNone"
-											data-scalestart="120" data-scaleend="100" class="rev-slidebg"
-											data-no-retina>
-
-										<!-- LAYER NR. 1 -->
-										<div class="tp-caption layer4 tp-resizeme rs-parallaxlevel-3"
-											id="slide2-layer-1" data-x="center" data-hoffset="-250" data-y="center"
-											data-voffset="-250" data-width="['auto','auto','auto','auto']"
-											data-height="['auto','auto','auto','auto']" data-transform_idle="o:1;"
-											data-transform_in="x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
-											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-											data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1000"
-											data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-											data-elementdelay="0.05"
-											style="font-size:36px;letter-spacing:0.2px;color:white;">
-											Welcome To Our,
-										</div>
-
-										<!-- LAYER NR. 2 -->
-										<div class="tp-caption layer5 tp-resizeme rs-parallaxlevel-3"
-											id="slide2-layer-2" data-x="center" data-hoffset="" data-y="center"
-											data-voffset="-100" data-width="['auto','auto','auto','auto']"
-											data-height="['auto','auto','auto','auto']" data-transform_idle="o:1;"
-											data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power3.easeInOut;"
-											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-											data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-start="1200"
-											data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-											data-elementdelay="0.05" style="font-size:197px;color:white;">Wedding
-										</div>
-
-										<!-- LAYER NR. 3 -->
-										<div class="tp-caption layer5 tp-resizeme rs-parallaxlevel-3"
-											id="slide2-layer-3" data-x="center" data-hoffset="" data-y="center"
-											data-voffset="100" data-width="['auto','auto','auto','auto']"
-											data-height="['auto','auto','auto','auto']" data-transform_idle="o:1;"
-											data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power3.easeInOut;"
-											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-											data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-start="1400"
-											data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-											data-elementdelay="0.05"
-											style="font-size:197px;padding-left:20px;color:white;">Events
-										</div>
-
-
-										<!-- LAYER NR. 4 -->
-										<!-- <div class="tp-caption tp-resizeme" id="slide2-layer4" data-x="center"
-											data-hoffset="60" data-y="bottom" data-voffset="100"
-											data-width="['auto','auto','auto','auto']"
-											data-height="['auto','auto','auto','auto']" data-transform_idle="o:1;"
-											data-transform_in="x:50px;opacity:0;s:1000;e:Power3.easeOut;"
-											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-											data-start="3400" data-splitin="none" data-splitout="none"
-											data-responsive_offset="on" data-elementdelay="0.7"><img
-												src="images/new/aa1.png" alt="" style="height:900px;" />
-										</div> -->
-									</li>
-
-
-								</ul>
-							</div>
-						</div>
-					</div><!-- Creative Slider  -->
-				</div>
-			</div>
-		</section>
-
-
-		<section class="scroll-sction" id="scroll-gallery-section">
-
-			<div class="block pattern less-spacing">
-				<div class="title style2">
-					<h4>Our <br /> <span> Love </span></h4>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="gallery-sec fromdown style2">
-							<div class="gallery-carousel">
-								<div class="gallery-post">
-									<img src="images/new/aa10.webp" alt="" />
-									<div class="gallery-info">
-										<img src="images/design-white.png" alt="" />
-										<h2>First Meeting </h2>
-										<span>(Love)</span>
-									</div>
-								</div>
-								<div class="gallery-post">
-									<img src="images/new/aa11.jpg" alt="" />
-									<div class="gallery-info">
-										<img src="images/design-white.png" alt="" />
-										<h2>Engaged</h2>
-										<span>(cute)</span>
-									</div>
-								</div>
-								<div class="gallery-post">
-									<img src="images/new/aa12.jpg" alt="" />
-									<div class="gallery-info">
-										<img src="images/design-white.png" alt="" />
-										<h2>Romantic</h2>
-										<span>(Free Birds)</span>
-									</div>
-								</div>
-								<div class="gallery-post">
-									<img src="images/new/aa13.jpg" alt="" />
-									<div class="gallery-info">
-										<img src="images/design-white.png" alt="" />
-										<h2>First Kiss</h2>
-										<span>(Forever Love)</span>
-									</div>
-								</div>
-								<div class="gallery-post">
-									<img src="images/new/aa14.jpg" alt="" />
-									<div class="gallery-info">
-										<img src="images/design-white.png" alt="" />
-										<h2>Marrige</h2>
-										<span>(Life Start)</span>
-									</div>
-								</div>
-								<div class="gallery-post">
-									<img src="images/new/aa15.jpg" alt="" />
-									<div class="gallery-info">
-										<img src="images/design-white.png" alt="" />
-										<h2>New Gift</h2>
-										<span>(Life Line )</span>
-									</div>
-								</div>
-							</div>
-						</div><!-- Guest Sec -->
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<section class="scroll-sction" id="scroll-story-section">
-			<div class="block pattern remove-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="stories-sec">
-								<div class="stories-post video">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="stories-thumb fromleft lightbox">
-												<img src="images/new/aa5.jpg" alt="" />
-
-											</div>
-											<img src="images/new/love5.gif" alt="Loading..." height="300px"
-												width="300px" style="margin-left: 20px;">
-
-										</div>
-										<div class="col-md-6">
-											<div class="stories-detail fromright">
-												<div class="title">
-													<h4>Our <span>Success <br> Story</span></h4>
-												</div>
-												<h2><a href="#" title="">We start our first</a></h2>
-												<i>10 Aug 2020</i>
-												<p> "Love Story, baby just say yes" from Taylor Swift's "Love Story",
-													and "When you put your arms around me, you let me know there's
-													nothing in this world I can't do" from Keith Urban's "Somebody Like
-													You". </p>
-												<a href="#" title="">View More</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div><!-- Stories Sec -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section>
-
-			<div class="block pattern remove-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="wed-plan overlap">
-								<div class="row">
-									<div class="col-md-4">
-										<div class="wedplan-post fromleft">
-											<div class="wedplan-thumb">
-												<img src="images/new/aa2.jpg" alt="" height="300px" />
-											</div>
-											<img src="images/design-blue.png" alt="" />
-											<div class="wedplan-info">
-												<i class="fa fa-user"></i>
-												<h2>Love & True</h2>
-												<p>"Some day, when I'm awfully low, when the world is cold, I will feel
-													a glow just thinking of you and the way you look tonight."</p>
-
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="wedplan-post active fromdown">
-											<div class="wedplan-thumb">
-												<img src="images/new/aa3.jpeg" alt="" height="300px" />
-											</div>
-											<img src="images/design-blue.png" alt="" />
-											<div class="wedplan-info">
-												<i class="fa fa-heart-o"></i>
-												<h2>Wedding Planning</h2>
-												<p>"Man, oh, man, you're my best friend. I scream it to the nothingness.
-													There ain't nothing that I need. Home, let me come home, home is
-													wherever I'm with you."</p>
-
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="wedplan-post fromright">
-											<div class="wedplan-thumb">
-												<img src="images/new/aa4.jpeg" alt="" height="300px" />
-											</div>
-											<img src="images/design-blue.png" alt="" />
-											<div class="wedplan-info">
-												<i class="fa fa-heart"></i>
-												<h2>Honymoon Planning</h2>
-												<p>"And I'd give up forever to touch you, 'cause I know that you feel me
-													somehow. You're the closest to heaven that I'll ever be and I don't
-													wanna go home right now."</p>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<section>
-			<div class="title style2">
-				<h4>Our <br /> <span> Service </span></h4>
-			</div>
-			<div class="block pattern tbb">
-
-				<div class="row">
-					<div class="col-md-12">
-						<div class="wethinkabout-sec">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="flip-card">
-										<div class="flip-card-inner">
-											<!-- Front Side -->
-											<div class="flip-card-front">
-												<img src="images/new/aa45.jpg" alt="Love Quote" />
-											</div>
-
-											<!-- Back Side -->
-											<div class="flip-card-back">
-												<div class="title2">
-													<h4>
-														"When you put your <br> arms around me,
-														<span>you let me know there's <br> nothing in this <br> world I
-															can't
-															do."</span>
-													</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-								<div class="col-md-6">
-									<div class="services fromright">
-										<img src="images/new/aa43.jpg" alt="" height="400px" />
-										<div class="services-list">
-											<div class="service-item">
-												<div class="row">
-													<div class="col-md-4">
-														<div class="service-box">
-															<i><img src="images/resource/service-icon1.png"
-																	alt="" /></i>
-															<h2><a href="#" title=""><span>Flower</span> Design</a></h2>
-														</div>
-													</div>
-													<div class="col-md-4">
-														<div class="service-box">
-															<i><img src="images/resource/service-icon2.png"
-																	alt="" /></i>
-															<h2><a href="#" title=""><span>Bhoto</span> Boot</a></h2>
-														</div>
-													</div>
-													<div class="col-md-4">
-														<div class="service-box">
-															<i><img src="images/resource/service-icon3.png"
-																	alt="" /></i>
-															<h2><a href="#" title=""><span>Best</span> Restaurant</a>
-															</h2>
-														</div>
-													</div>
-													<div class="col-md-4">
-														<div class="service-box">
-															<i><img src="images/resource/service-icon4.png"
-																	alt="" /></i>
-															<h2><a href="#" title=""><span>Wedding</span> Cake</a></h2>
-														</div>
-													</div>
-													<div class="col-md-4">
-														<div class="service-box">
-															<i><img src="images/resource/service-icon5.png"
-																	alt="" /></i>
-															<h2><a href="#" title=""><span>Invitation</span> Card</a>
-															</h2>
-														</div>
-													</div>
-													<div class="col-md-4">
-														<div class="service-box">
-															<i><img src="images/resource/service-icon6.png"
-																	alt="" /></i>
-															<h2><a href="#" title=""><span>Honey</span>moon</a></h2>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="service-item">
-												<div class="row">
-													<div class="col-md-4">
-														<div class="service-box">
-															<i><img src="images/resource/service-icon1.png"
-																	alt="" /></i>
-															<h2><a href="#" title=""><span>Flower</span> Design</a></h2>
-														</div>
-													</div>
-													<div class="col-md-4">
-														<div class="service-box">
-															<i><img src="images/resource/service-icon2.png"
-																	alt="" /></i>
-															<h2><a href="#" title=""><span>Bhoto</span> Boot</a></h2>
-														</div>
-													</div>
-													<div class="col-md-4">
-														<div class="service-box">
-															<i><img src="images/resource/service-icon3.png"
-																	alt="" /></i>
-															<h2><a href="#" title=""><span>Best</span> Restaurant</a>
-															</h2>
-														</div>
-													</div>
-													<div class="col-md-4">
-														<div class="service-box">
-															<i><img src="images/resource/service-icon4.png"
-																	alt="" /></i>
-															<h2><a href="#" title=""><span>Wedding</span> Cake</a></h2>
-														</div>
-													</div>
-													<div class="col-md-4">
-														<div class="service-box">
-															<i><img src="images/resource/service-icon5.png"
-																	alt="" /></i>
-															<h2><a href="#" title=""><span>Invitation</span> Card</a>
-															</h2>
-														</div>
-													</div>
-													<div class="col-md-4">
-														<div class="service-box">
-															<i><img src="images/resource/service-icon6.png"
-																	alt="" /></i>
-															<h2><a href="#" title=""><span>Honey</span>moon</a></h2>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div class="block pattern">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="title style2">
-								<h4>Our <br /> <span>Other Service </span></h4>
-							</div>
-							<div class="pricing-table">
-								<div class="row">
-									<div class="col-md-4">
-										<div class="pricing fromleft">
-											<span class="top-img"><img src="images/design-blue.png" alt="" /></span>
-											<span><i>Satrt from,</i> ₹ 10,000 <br><i>wedding stage decoration
-												</i></span>
-											<span><img src="images/new/aa7.jpg" alt="" /></span>
-											<i class="fa fa-heart"></i>
-											<h2><strong>stage decoration</strong></h2>
-											<ul>
-												<li>We are obsessed with this earthy stage.</li>
-												<li>This floral dome stage is just so fresh and unique with its green
-													grass, and pops of white, pink and purple flowers!</li>
-												<li>This grand all-white stage with cascading white flowers and a pretty
-													aisle is sure to impress you!</li>
-											</ul>
-											<span class="pricing-btn"><a href="#" title="">View</a></span>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="pricing active fromdown">
-											<span class="top-img"><img src="images/design-blue.png" alt="" /></span>
-											<span><i>Satrt from,</i>₹ 8000 <br><i>wedding Dinner Table </i></span>
-											<span><img src="images/new/aa8.jpg" alt="" /></span>
-
-											<i class="fa fa-spoon"></i>
-											<h2><strong> Dinner Table</strong></h2>
-											<ul>
-												<li> It looks heavenly.</li>
-												<li>This reception dinner table looks so lively and romantic.</li>
-												<li>It takes care of even the smallest of everyone's needs, like a box
-													of mouth fresheners post-dinner.</li>
-											</ul>
-											<span class="pricing-btn"><a href="#" title="">View</a></span>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="pricing fromright">
-											<span class="top-img"><img src="images/design-blue.png" alt="" /></span>
-											<span><i>Satrt from,</i> ₹25,000 <br><i>wedding photographer </i></span>
-											<span><img src="images/new/aa9.jpg" alt="" /></span>
-											<i class="fa fa-diamond"></i>
-											<h2><strong>Full Wedding</strong></h2>
-											<ul>
-												<li>There are a couple of ways you can have your wedding stationery and
-													wedding invitations photographed</li>
-												<li>I’ll also find ways to capture the rings in other settings like this
-												</li>
-												<li>This gives me enough time to spend time with people and get a good
-													feel for the day.</li>
-											</ul>
-											<span class="pricing-btn"><a href="#" title="">View</a></span>
-										</div>
-									</div>
-								</div>
-							</div><!-- Pricing Table -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div class="block pattern remove-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="wed-comsoon overlap">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="wed-comsoon-thumb fromleft">
-											<img src="images/new/bb2.jpg" alt="" />
-										</div>
-										<img src="images/new/love7.gif" alt="Loading..." height="300px" width="300px">
-
-									</div>
-									<div class="col-md-6">
-										<div class="wed-comsoon-eventdetail fromright">
-											<div class="title">
-												<h4>Wedding <span>Comming <br> Soon</span></h4>
-											</div>
-											<div class="wed-comsoon-counter">
-												<span>
-													<img src="images/si.png" alt="" />
-													October,26
-												</span>
-												<ul class="countdown">
-													<li>
-														<span class="days">00</span>
-														<p class="days_ref">Days</p>
-													</li>
-													<li>
-														<span class="hours">00</span>
-														<p class="hours_ref">Hours</p>
-													</li>
-													<li>
-														<span class="minutes">00</span>
-														<p class="minutes_ref">Minutes</p>
-													</li>
-													<li>
-														<span class="seconds">00</span>
-														<p class="seconds_ref">Seconds</p>
-													</li>
-												</ul>
-											</div>
-											<p>But I must explain to you how all this mistaken idea of great denouncing
-												pleasure and praising pain was born and I will give you a complete
-												account of the system, and expound the actual teachings of the great
-												explorer of the truth.</p>
-											<a href="" class="btn1" title=""><i class="fa fa-heart-o"></i>
-												<span>RSVP</span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<section class="scroll-sction" id="scroll-rsvp-section">
-			<div class="block pattern no-padding">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="attending-sec">
-								<img class="contact-mockup fromleft" src="images/" alt="" />
-								<div class="attending">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="attending-div fromleft">
-												<div class="title">
-													<h4>Are <span>You <br /> Attending?</span></h4>
-												</div>
-												<p>But I must explain to you how all this mistaken idea of denouncing
-													pleasure and praising pain was born and I will give you a complete
-													account.</p>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="contect-form fromright">
-												<img src="images/contact-img.png" alt="" />
-												<div id="message"></div>
-												<form>
-													<div class="row">
-														<div class="col-md-6">
-															<input type="text" placeholder="name..." />
-														</div>
-														<div class="col-md-6">
-															<input type="email" placeholder="mail..." />
-														</div>
-														<div class="col-md-6">
-															<input type="text" placeholder="phone..." />
-														</div>
-														<div class="col-md-6">
-															<input type="text" placeholder="booking..." />
-														</div>
-														<div class="col-md-12">
-															<input type="text" placeholder="text..." />
-														</div>
-														<div class="col-md-12">
-															<input type="text" />
-														</div>
-														<div class="col-md-12">
-															<input type="text" />
-														</div>
-														<div class="col-md-12">
-															<button type="submit">Send</button>
-														</div>
-													</div>
-												</form>
-												<span class="envelop-btn">
-													<i class="fa fa-envelope-o"></i>
-												</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div><!-- Attending Sec -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<footer>
-			<div class="block pattern remove-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="bottom-links overlape2 fromdown" style="height: 100px;">
-
-								<ul>
-									<img src="images/new/love6.gif" alt="Heart GIF" height="100px" width="100px" />
-
-									<li><a href="index.html" title="">Home</a></li>
-									<li><a href="about-her.html" title="">Couple</a></li>
-									<li><a href="wedding-event.html" title="">Event</a></li>
-									<li><a href="gallery.html" title="">Gallery</a></li>
-									<li><a href="#scroll-rsvp-section" title="">RSVP</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-
-		<div class="bottom-line">
-			<p> 2025. <span>Create in Marrige couples</span> </p>
-			<p>Made with <i class="fa fa-heart"></i> by <a href="#" title="">Jebin</a></p>
-		</div>
-
-	</div><!-- Theme Layout -->
-
-	<script>
-		// Set the date we're counting down to
-		const targetDate = new Date("October 26, 2025 00:00:00").getTime();
-
-		// Update the countdown every second
-		const countdownFunction = setInterval(function () {
-			const now = new Date().getTime();
-			const distance = targetDate - now;
-
-			if (distance < 0) {
-				clearInterval(countdownFunction);
-				document.querySelector(".countdown").innerHTML = "<li><span>00</span><p>Event Ended</p></li>";
-				return;
-			}
-
-			// Time calculations
-			const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-			// Update DOM
-			document.querySelector(".days").textContent = String(days).padStart(2, "0");
-			document.querySelector(".hours").textContent = String(hours).padStart(2, "0");
-			document.querySelector(".minutes").textContent = String(minutes).padStart(2, "0");
-			document.querySelector(".seconds").textContent = String(seconds).padStart(2, "0");
-		}, 1000);
-	</script>
-
-
-
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			const menuBtn = document.querySelector('.menu-btn');
-			const closeBtn = document.querySelector('.close-btn');
-			const responsiveMenu = document.querySelector('.responsive-menu');
-
-			menuBtn.addEventListener('click', () => {
-				responsiveMenu.style.display = 'flex';
-			});
-
-			closeBtn.addEventListener('click', () => {
-				responsiveMenu.style.display = 'none';
-			});
-		});
-	</script>
-
-
-	<!-- Scripts -->
-	<script src="js/jquery.min.js" type="text/javascript"></script><!-- jQuery -->
-	<script src="js/bootstrap.min.js" type="text/javascript"></script><!-- Bootstrap -->
-	<script src="js/owl.carousel.min.js" type="text/javascript"></script><!-- Owl Carousel -->
-	<script src="js/jquery.downCount.js" type="text/javascript"></script><!-- Down Count -->
-	<script src="js/jquery.poptrox.min.js" type="text/javascript"></script><!-- LightBox -->
-	<script src="js/smoothscroll.js" type="text/javascript"></script><!-- Scroll Count -->
-
-	<!-- REVOLUTION JS FILES -->
-	<script type="text/javascript" src="js/revolution/jquery.themepunch.tools.min.js"></script>
-	<script type="text/javascript" src="js/revolution/jquery.themepunch.revolution.min.js"></script>
-
-	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
-	<script type="text/javascript" src="js/revolution/revolution.extension.actions.min.js"></script>
-	<script type="text/javascript" src="js/revolution/revolution.extension.carousel.min.js"></script>
-	<script type="text/javascript" src="js/revolution/revolution.extension.kenburn.min.js"></script>
-	<script type="text/javascript" src="js/revolution/revolution.extension.layeranimation.min.js"></script>
-	<script type="text/javascript" src="js/revolution/revolution.extension.migration.min.js"></script>
-	<script type="text/javascript" src="js/revolution/revolution.extension.navigation.min.js"></script>
-	<script type="text/javascript" src="js/revolution/revolution.extension.parallax.min.js"></script>
-	<script type="text/javascript" src="js/revolution/revolution.extension.slideanims.min.js"></script>
-	<script type="text/javascript" src="js/revolution/revolution.extension.video.min.js"></script>
-	<script type="text/javascript" src="js/revolution/revolution.initialize.js"></script>
-
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script><!-- Google Map -->
-	<script src="js/skrollr.min.js" type="text/javascript"></script><!-- Skrollr -->
-	<script src="js/styleswitcher.js" type="text/javascript"></script><!-- Style Switcher -->
-	<script src="js/onscreen.js" type="text/javascript"></script><!-- OnScreen -->
-	<script src="../../../../w.soundcloud.com/player/api.js" type="text/javascript"></script>
-
-	<!-- <script type="text/javascript" src="js/perfect-scrollbar.js"></script> --> <!-- Scroll Bar -->
-	<!-- <script type="text/javascript" src="js/perfect-scrollbar.jquery.js"></script> --> <!-- Scroll Bar -->
-	<script src="js/map-int1.js" type="text/javascript"></script><!-- Map Int -->
-	<script src="js/script.js" type="text/javascript"></script><!-- Custom -->
+  <!-- =========================================================================
+       NAVIGATION & HEADER
+       ========================================================================= -->
+  <header class="luxury-header">
+    <div class="luxury-container">
+      <div class="navbar-wrapper">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" title="Forever Love">
+          <div class="logo-icon">
+            <img src="images/new/love3.gif" alt="Forever Love Logo">
+          </div>
+          <span class="logo-title">Forever<span>Love</span></span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="nav-menu">
+          <a href="#hero-sec" class="nav-link active">Home</a>
+          <a href="wedding-event.html" class="nav-link">Ceremonies</a>
+          <a href="reception-event.html" class="nav-link">Reception</a>
+          <a href="#decor-showcase-sec" class="nav-link">Decor</a>
+          <a href="#catering-sec" class="nav-link">Catering</a>
+          <a href="#nightclub-sec" class="nav-link">DJ & Beats</a>
+          <a href="#couple-suite-sec" class="nav-link">Couples</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="#calculator-sec" class="nav-link">Calculator</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Actions -->
+        <div class="header-actions">
+          <a href="#rsvp-sec" class="btn-luxury btn-rose">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Plan Event</span>
+          </a>
+          <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="logo-icon" style="width: 38px; height: 38px;">
+          <img src="images/new/love3.gif" alt="Forever Love">
+        </div>
+        <div class="logo-text">
+          <span class="logo-title" style="font-size: 20px;">Forever <span>Love</span></span>
+        </div>
+      </div>
+      <button class="drawer-close-btn" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="drawer-links">
+      <a href="#hero-sec"><i class="fa-solid fa-house" style="margin-right: 8px; color: var(--primary-gold);"></i> Home</a>
+      <a href="wedding-event.html"><i class="fa-solid fa-crown" style="margin-right: 8px; color: var(--primary-gold);"></i> Wedding Ceremonies</a>
+      <a href="reception-event.html"><i class="fa-solid fa-champagne-glasses" style="margin-right: 8px; color: var(--primary-gold);"></i> Reception Gala</a>
+      <a href="#decor-showcase-sec"><i class="fa-solid fa-wand-magic-sparkles" style="margin-right: 8px; color: var(--primary-gold);"></i> Stage & Decor Showcase</a>
+      <a href="#catering-sec"><i class="fa-solid fa-utensils" style="margin-right: 8px; color: var(--primary-gold);"></i> Multi-Country Catering</a>
+      <a href="#entertainment-sec"><i class="fa-solid fa-drum" style="margin-right: 8px; color: var(--primary-gold);"></i> Live Dhol & Soundbar</a>
+      <a href="#nightclub-sec"><i class="fa-solid fa-compact-disc" style="margin-right: 8px; color: var(--primary-gold);"></i> DJ & Nightclub Party</a>
+      <a href="about-her.html"><i class="fa-solid fa-heart" style="margin-right: 8px; color: var(--primary-gold);"></i> The Bride Suite</a>
+      <a href="about-him.html"><i class="fa-solid fa-user-tie" style="margin-right: 8px; color: var(--primary-gold);"></i> The Groom & Baraat</a>
+      <a href="gallery.html"><i class="fa-solid fa-images" style="margin-right: 8px; color: var(--primary-gold);"></i> Luxury Visual Gallery</a>
+      <a href="#calculator-sec"><i class="fa-solid fa-calculator" style="margin-right: 8px; color: var(--primary-gold);"></i> Budget Estimator</a>
+      <a href="blog.html"><i class="fa-solid fa-newspaper" style="margin-right: 8px; color: var(--primary-gold);"></i> Wedding Blog</a>
+      <a href="contact.html"><i class="fa-solid fa-envelope-open-text" style="margin-right: 8px; color: var(--primary-gold);"></i> VIP RSVP / Booking</a>
+    </div>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <a href="#rsvp-sec" class="btn-luxury btn-rose" style="width: 100%;">
+        <i class="fa-solid fa-phone"></i> Free VIP Consultation
+      </a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       HERO SECTION
+       ========================================================================= -->
+  <section class="hero-luxury-sec" id="hero-sec">
+    <div class="hero-glow-blob-1"></div>
+    <div class="hero-glow-blob-2"></div>
+
+    <div class="luxury-container">
+      <div class="hero-grid">
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-gem"></i> Bespoke Wedding & Event Management
+          </div>
+          <h1 class="hero-title">
+            Crafting Royal & Modern <br>
+            <span class="highlight-text">Dream Wedding Events</span>
+          </h1>
+          <p class="hero-subtitle">
+            From lavish multi-country gourmet live counters & thunderous Punjabi Dhol Baraats to electrifying DJ nightclub afterparties and cinematic 4K drone films — we make your once-in-a-lifetime marriage magical.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#wedding-types-sec" class="btn-luxury">
+              <i class="fa-solid fa-sparkles"></i> Explore Wedding Types
+            </a>
+            <a href="#catering-sec" class="btn-luxury btn-outline-gold">
+              <i class="fa-solid fa-utensils"></i> Global Cuisines
+            </a>
+            <a href="#calculator-sec" class="btn-luxury btn-rose">
+              <i class="fa-solid fa-calculator"></i> Cost Calculator
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">500+</span>
+              <span class="hero-stat-label">Royal Weddings Done</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">15+</span>
+              <span class="hero-stat-label">Global Cuisines Live</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">100%</span>
+              <span class="hero-stat-label">Sound & DJ Mastery</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">4.9 ★</span>
+              <span class="hero-stat-label">Client Love Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual-wrap">
+          <div class="hero-main-card">
+            <img src="images/new/ai1.png" alt="Grand Luxury Wedding Event">
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-glass-card pos-top-left">
+            <div class="floating-icon">
+              <i class="fa-solid fa-champagne-glasses"></i>
+            </div>
+            <div class="floating-text">
+              <h4>Multi-Country Cuisine</h4>
+              <p>Indian, Italian, Asian, BBQ & More</p>
+            </div>
+          </div>
+
+          <div class="floating-glass-card pos-bottom-right">
+            <div class="floating-icon">
+              <i class="fa-solid fa-music"></i>
+            </div>
+            <div class="floating-text">
+              <h4>Live Dhol & Nightclub DJ</h4>
+              <p>Concert Sound, Pyros & LED Floor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       COUNTDOWN & QUICK STATS BANNER
+       ========================================================================= -->
+  <div class="luxury-container">
+    <div class="countdown-banner-sec">
+      <div class="countdown-grid">
+        <div class="countdown-intro">
+          <h3>Grand Royal Wedding Showcase</h3>
+          <p>Book your upcoming wedding season dates early to reserve our elite decor, gourmet catering team, and celebrity DJ soundbar setups.</p>
+        </div>
+        <div class="countdown-timer-boxes">
+          <div class="time-box">
+            <span class="num" id="cd-days">45</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="time-box">
+            <span class="num" id="cd-hours">18</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="time-box">
+            <span class="num" id="cd-mins">34</span>
+            <span class="label">Mins</span>
+          </div>
+          <div class="time-box">
+            <span class="num" id="cd-secs">12</span>
+            <span class="label">Secs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       WEDDING TYPES & THEMES SECTION
+       ========================================================================= -->
+  <section class="section-padding" id="wedding-types-sec">
+    <div class="luxury-container">
+      <div class="section-header">
+        <span class="section-badge">Tailored Celebrations</span>
+        <h2 class="section-title">Magnificent <span>Wedding Styles</span> We Craft</h2>
+        <div class="section-divider-ornament">
+          <span></span>
+          <i class="fa-solid fa-heart"></i>
+          <span></span>
+        </div>
+        <p class="section-desc">
+          Whether you dream of a royal palace mandap, a sun-kissed beach getaway, or a high-octane modern ballroom celebration, our master planners curate every detail to perfection.
+        </p>
+      </div>
+
+      <div class="wedding-types-grid">
+        <!-- Card 1: Royal Palace Mandap -->
+        <div class="wedding-type-card">
+          <div class="wedding-card-thumb">
+            <img src="images/new/aa7.jpg" alt="Royal Palace Wedding">
+            <span class="wedding-type-tag">Royal Heritage</span>
+          </div>
+          <div class="wedding-card-body">
+            <h3>Royal Mandap & Heritage Wedding</h3>
+            <p>Magnificent carved floral mandaps, grand royal Baraat with elephant/vintage car entry, Vedic rituals, royal Shehnai symphony, and traditional welcome showers.</p>
+            <div class="wedding-card-features">
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Carved Mandap</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Grand Baraat</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Royal Shehnai</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> 1000+ Guests</span>
+            </div>
+            <div class="wedding-card-footer">
+              <span class="price-hint">Starting from <strong>₹ 2,50,000</strong></span>
+              <a href="#rsvp-sec" class="btn-luxury" style="padding: 8px 18px; font-size: 13px;">Book This</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Destination Beach Wedding -->
+        <div class="wedding-type-card">
+          <div class="wedding-card-thumb">
+            <img src="images/new/aa10.webp" alt="Destination Beach Wedding">
+            <span class="wedding-type-tag">Destination & Coastal</span>
+          </div>
+          <div class="wedding-card-body">
+            <h3>Destination & Beachside Vows</h3>
+            <p>Breathtaking seaside gazebos, sunset cocktail vows, floral beach pathways, luxury resort guest management, coastal breeze acoustics, and tiki torch afterparties.</p>
+            <div class="wedding-card-features">
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Oceanfront Gazebo</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Resort Hospitality</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Sunset Cocktails</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Beach Bonfire</span>
+            </div>
+            <div class="wedding-card-footer">
+              <span class="price-hint">Starting from <strong>₹ 4,00,000</strong></span>
+              <a href="#rsvp-sec" class="btn-luxury" style="padding: 8px 18px; font-size: 13px;">Book This</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Classic White Church Wedding -->
+        <div class="wedding-type-card">
+          <div class="wedding-card-thumb">
+            <img src="images/new/aa14.jpg" alt="Christian White Wedding">
+            <span class="wedding-type-tag">Timeless Romance</span>
+          </div>
+          <div class="wedding-card-body">
+            <h3>Christian & Classic White Wedding</h3>
+            <p>Cathedral flower arches, cascading white rose aisles, live violin & organ hymns, bridesmaid coordination, multi-tier fondant cake, and fairy-tale banquet reception.</p>
+            <div class="wedding-card-features">
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Floral Aisle</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Live Strings</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> 5-Tier Cake</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Grand Banquet</span>
+            </div>
+            <div class="wedding-card-footer">
+              <span class="price-hint">Starting from <strong>₹ 1,80,000</strong></span>
+              <a href="#rsvp-sec" class="btn-luxury" style="padding: 8px 18px; font-size: 13px;">Book This</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Modern Luxury Ballroom -->
+        <div class="wedding-type-card">
+          <div class="wedding-card-thumb">
+            <img src="images/new/aa8.jpg" alt="Ballroom Reception">
+            <span class="wedding-type-tag">Contemporary Grandeur</span>
+          </div>
+          <div class="wedding-card-body">
+            <h3>Modern Luxury Ballroom Reception</h3>
+            <p>Gleaming crystal chandeliers, personalized 3D stage backdrops, moving-head lighting, silver-service dining, champagne towers, and high-tech digital media walls.</p>
+            <div class="wedding-card-features">
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Crystal Chandeliers</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> 3D Stage</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Champagne Tower</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Silver Service</span>
+            </div>
+            <div class="wedding-card-footer">
+              <span class="price-hint">Starting from <strong>₹ 3,20,000</strong></span>
+              <a href="#rsvp-sec" class="btn-luxury" style="padding: 8px 18px; font-size: 13px;">Book This</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Boho Lawn & Garden Wedding -->
+        <div class="wedding-type-card">
+          <div class="wedding-card-thumb">
+            <img src="images/new/aa2.jpg" alt="Garden Wedding">
+            <span class="wedding-type-tag">Boho & Nature</span>
+          </div>
+          <div class="wedding-card-body">
+            <h3>Intimate Boho Garden & Lawn Gala</h3>
+            <p>Lush greenery, fairy-lit tree canopies, wooden teepees, rustic flower decor, live acoustic guitarists, artisan grazing stations, and cozy bohemian lounge seating.</p>
+            <div class="wedding-card-features">
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Fairy Light Canopy</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Rustic Decor</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Acoustic Music</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Artisan Grazing</span>
+            </div>
+            <div class="wedding-card-footer">
+              <span class="price-hint">Starting from <strong>₹ 1,50,000</strong></span>
+              <a href="#rsvp-sec" class="btn-luxury" style="padding: 8px 18px; font-size: 13px;">Book This</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: High-Voltage Sangeet & Cocktail -->
+        <div class="wedding-type-card">
+          <div class="wedding-card-thumb">
+            <img src="images/new/aa19.jpg" alt="Sangeet and Cocktail Night">
+            <span class="wedding-type-tag">Glamour & Beats</span>
+          </div>
+          <div class="wedding-card-body">
+            <h3>Glitzy Sangeet & Cocktail Night</h3>
+            <p>Concert-grade LED infinity dance floors, celebrity anchors, family choreography coordination, cold sparklers, smoke machines, and a premium cocktail lounge.</p>
+            <div class="wedding-card-features">
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> LED Dance Floor</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Choreography</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Cold Pyros</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Cocktail Bar</span>
+            </div>
+            <div class="wedding-card-footer">
+              <span class="price-hint">Starting from <strong>₹ 2,00,000</strong></span>
+              <a href="#rsvp-sec" class="btn-luxury" style="padding: 8px 18px; font-size: 13px;">Book This</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       LUXURY DECOR & THEMATIC STAGING (Catering Counters, Stages & Church Decor)
+       ========================================================================= -->
+  <section class="section-padding" id="decor-showcase-sec" style="background: var(--bg-warm-light);">
+    <div class="luxury-container">
+      <div class="section-header">
+        <span class="section-badge">Bespoke Scenography & Styling</span>
+        <h2 class="section-title">Grand <span>Stage, Catering Counter</span> & Church Decorations</h2>
+        <div class="section-divider-ornament">
+          <span></span>
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span></span>
+        </div>
+        <p class="section-desc">
+          Transforming venues into breathtaking royal dreamscapes. We curate opulent wedding stages, artistic live culinary counters, and ethereal church floral aisles tailored to your love story.
+        </p>
+      </div>
+
+      <div class="wedding-types-grid">
+        <!-- Decor Card 1: Catering Counter Decoration -->
+        <div class="wedding-type-card">
+          <div class="wedding-card-thumb">
+            <img src="images/new/aa8.jpg" alt="Luxury Catering Counter Decoration">
+            <span class="wedding-type-tag">Culinary Styling</span>
+          </div>
+          <div class="wedding-card-body">
+            <h3>Thematic Catering Counter Decoration</h3>
+            <p>Carved wooden & marble buffet counters, illuminated neon signage, royal brass & copper chafing dishes, cascading fresh floral runners, dry-ice mocktail displays, and artisan fruit carving towers.</p>
+            <div class="wedding-card-features">
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Marble & Wood Counters</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Royal Brass Chafing Dishes</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Floral Table Runners</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Neon Food Signage</span>
+            </div>
+            <div class="wedding-card-footer">
+              <span class="price-hint">Includes: <strong>Full Thematic Layout</strong></span>
+              <a href="#rsvp-sec" class="btn-luxury" style="padding: 8px 18px; font-size: 13px;">Book Decor</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decor Card 2: Royal Stage Decoration -->
+        <div class="wedding-type-card">
+          <div class="wedding-card-thumb">
+            <img src="images/new/aa7.jpg" alt="Royal Wedding Stage Decoration">
+            <span class="wedding-type-tag">Grand Stagecraft</span>
+          </div>
+          <div class="wedding-card-body">
+            <h3>Royal Floral & 3D Stage Decoration</h3>
+            <p>Architectural 3D backdrops with cascading roses and orchids, imported crystal chandeliers, royal Maharaja thrones, automated moving-head spotlights, cold pyros, and low-fog cloud effects.</p>
+            <div class="wedding-card-features">
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> 3D Floral Backdrops</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Crystal Chandeliers</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Royal Velvet Couches</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Low-Fog Stage FX</span>
+            </div>
+            <div class="wedding-card-footer">
+              <span class="price-hint">Includes: <strong>Lighting, Stage & Fog</strong></span>
+              <a href="#rsvp-sec" class="btn-luxury" style="padding: 8px 18px; font-size: 13px;">Book Decor</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decor Card 3: Church Marriage Decoration -->
+        <div class="wedding-type-card">
+          <div class="wedding-card-thumb">
+            <img src="images/new/aa14.jpg" alt="Church Marriage Decoration">
+            <span class="wedding-type-tag">Cathedral Romance</span>
+          </div>
+          <div class="wedding-card-body">
+            <h3>Cathedral & Church Marriage Decoration</h3>
+            <p>White rose and baby's breath entrance arches, satin-draped church pews, candlelit glass lanterns lining the aisle, delicate fairy-lit altar canopies, and fragrant floral petal carpets.</p>
+            <div class="wedding-card-features">
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> White Rose Archway</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Candlelit Pew Lanterns</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Satin Pew Bows</span>
+              <span class="feature-chip"><i class="fa-solid fa-check"></i> Altar Floral Canopy</span>
+            </div>
+            <div class="wedding-card-footer">
+              <span class="price-hint">Includes: <strong>Aisle, Pew & Altar Decor</strong></span>
+              <a href="#rsvp-sec" class="btn-luxury" style="padding: 8px 18px; font-size: 13px;">Book Decor</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MULTI-COUNTRY GOURMET CATERING & LIVE COOKING SECTION
+       ========================================================================= -->
+  <section class="section-padding catering-section" id="catering-sec">
+    <div class="luxury-container">
+      <div class="section-header">
+        <span class="section-badge">Gastronomic Excellence</span>
+        <h2 class="section-title">Multi-Country <span>Gourmet Catering</span> & Live Cooking</h2>
+        <div class="section-divider-ornament">
+          <span></span>
+          <i class="fa-solid fa-utensils"></i>
+          <span></span>
+        </div>
+        <p class="section-desc">
+          Treat your wedding guests to an unforgettable global culinary journey. Our certified master chefs cook fresh, authentic cuisines from around the world at interactive live counters.
+        </p>
+      </div>
+
+      <!-- Cuisine Filter Tabs -->
+      <div class="cuisine-tabs-nav">
+        <button class="cuisine-tab-btn active" data-target="pane-indian">
+          <i class="fa-solid fa-bowl-rice"></i> Royal Indian & Chaat
+        </button>
+        <button class="cuisine-tab-btn" data-target="pane-italian">
+          <i class="fa-solid fa-pizza-slice"></i> Italian & Live Pasta
+        </button>
+        <button class="cuisine-tab-btn" data-target="pane-asian">
+          <i class="fa-solid fa-bowl-food"></i> Pan-Asian & Dim Sum
+        </button>
+        <button class="cuisine-tab-btn" data-target="pane-mexican">
+          <i class="fa-solid fa-pepper-hot"></i> Mexican & Latin Fiesta
+        </button>
+        <button class="cuisine-tab-btn" data-target="pane-bbq">
+          <i class="fa-solid fa-fire"></i> Mediterranean & Live BBQ
+        </button>
+        <button class="cuisine-tab-btn" data-target="pane-dessert">
+          <i class="fa-solid fa-cake-candles"></i> Bakery, Cakes & Drinks
+        </button>
+      </div>
+
+      <!-- Tab Content 1: Indian -->
+      <div class="cuisine-content-pane active" id="pane-indian">
+        <div class="cuisine-highlight-grid">
+          <div class="cuisine-visual">
+            <img src="images/new/aa28.jpg" alt="Royal Indian Wedding Feast">
+          </div>
+          <div class="cuisine-details">
+            <h3>Royal Indian Feasts & Live Street Chaat</h3>
+            <p class="cuisine-lead">
+              Centuries-old royal recipes prepared with pure desi ghee and aromatic saffron, accompanied by vibrant live Old Delhi chaat streets and traditional tandoori ovens.
+            </p>
+            <div class="cuisine-menu-items">
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Awadhi & Hyderabadi Dum Biryani</h5>
+                  <p>Slow-cooked in clay handis with fragrant basmati & secret royal spices.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Live Banarasi Chaat Counter</h5>
+                  <p>Crisp pani puris, dahi bhalla, raj kachori & aloo tikki made fresh to order.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Mughlai & Punjabi Curries</h5>
+                  <p>Dal Makhani, Paneer Lababdar, Butter Chicken & Tandoori Kulchas.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Royal South Indian Sadhya</h5>
+                  <p>Authentic Kerala & Chettinad feast served on fresh banana leaves.</p>
+                </div>
+              </div>
+            </div>
+            <a href="#rsvp-sec" class="btn-luxury">Customize Indian Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 2: Italian -->
+      <div class="cuisine-content-pane" id="pane-italian">
+        <div class="cuisine-highlight-grid">
+          <div class="cuisine-visual">
+            <img src="images/new/aa22.jpg" alt="Italian Gourmet Cooking">
+          </div>
+          <div class="cuisine-details">
+            <h3>Italian Trattoria & Live Pasta Wheel</h3>
+            <p class="cuisine-lead">
+              Hand-tossed artisan Neapolitan pizzas fired in mobile stone ovens and fresh fettuccine tossed directly inside an authentic giant Parmesan cheese wheel.
+            </p>
+            <div class="cuisine-menu-items">
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Parmesan Wheel Pasta Bar</h5>
+                  <p>Fettuccine & Penne in Truffle Alfredo or San Marzano Arrabbiata.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Wood-Fired Neapolitan Pizza</h5>
+                  <p>Burrata Margherita, Quattro Formaggi & Pesto Sundried Tomato.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Wild Mushroom Risotto</h5>
+                  <p>Creamy Arborio rice with porcini mushrooms and aged Pecorino.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Antipasti & Bruschetta Bar</h5>
+                  <p>Artisan focaccia, stuffed olives, mozzarella di bufala & dips.</p>
+                </div>
+              </div>
+            </div>
+            <a href="#rsvp-sec" class="btn-luxury">Customize Italian Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 3: Asian -->
+      <div class="cuisine-content-pane" id="pane-asian">
+        <div class="cuisine-highlight-grid">
+          <div class="cuisine-visual">
+            <img src="images/new/aa25.jpg" alt="Pan-Asian Live Cooking">
+          </div>
+          <div class="cuisine-details">
+            <h3>Pan-Asian & Dim Sum Live Station</h3>
+            <p class="cuisine-lead">
+              High-flame live Asian woks with sizzling Hakka noodles, delicate bamboo-steamed dim sums, Japanese sushi rolls, and fragrant Thai curries.
+            </p>
+            <div class="cuisine-menu-items">
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Live Bamboo Dim Sum Trolley</h5>
+                  <p>Crystal vegetable dumplings, chicken sui mai & spicy edamame.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Sizzling Teppanyaki & Wok Station</h5>
+                  <p>Custom stir-fry noodles, fried rice, and crispy chilli garlic lotus stem.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Japanese Sushi & Maki Bar</h5>
+                  <p>Avocado maki, California rolls, Tempura rolls with wasabi & pickled ginger.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Authentic Thai Curries</h5>
+                  <p>Green & Red Thai curries infused with lemongrass, galangal & jasmine rice.</p>
+                </div>
+              </div>
+            </div>
+            <a href="#rsvp-sec" class="btn-luxury">Customize Asian Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 4: Mexican -->
+      <div class="cuisine-content-pane" id="pane-mexican">
+        <div class="cuisine-highlight-grid">
+          <div class="cuisine-visual">
+            <img src="images/new/aa32.jpg" alt="Mexican Fiesta Catering">
+          </div>
+          <div class="cuisine-details">
+            <h3>Mexican & Latin Gourmet Fiesta</h3>
+            <p class="cuisine-lead">
+              Vibrant street-style live taco trucks, sizzling fajita hotplates, loaded cheesy nachos, and fresh guacamole mashed tableside for your guests.
+            </p>
+            <div class="cuisine-menu-items">
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Live Sizzling Taco Station</h5>
+                  <p>Soft corn & hard shell tacos with salsa verde, chipotle crema & queso.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Tableside Guacamole Bar</h5>
+                  <p>Fresh Hass avocados mashed with cilantro, lime, jalapenos & sea salt.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Stuffed Quesadillas & Burritos</h5>
+                  <p>Melted Jack cheese, black beans, fajita peppers & seasoned fillings.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Hot Churros & Mexican Chocolate</h5>
+                  <p>Cinnamon-dusted crispy churros served with warm Mexican spiced chocolate.</p>
+                </div>
+              </div>
+            </div>
+            <a href="#rsvp-sec" class="btn-luxury">Customize Mexican Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 5: BBQ & Mediterranean -->
+      <div class="cuisine-content-pane" id="pane-bbq">
+        <div class="cuisine-highlight-grid">
+          <div class="cuisine-visual">
+            <img src="images/new/aa33.jpg" alt="Live BBQ and Mediterranean">
+          </div>
+          <div class="cuisine-details">
+            <h3>Mediterranean & Live Smokehouse BBQ</h3>
+            <p class="cuisine-lead">
+              Smoky charcoal skewers, rotisserie shawarmas, Turkish Adana kebabs, rich hummus platters, and grilled vegetables seasoned with zesty za'atar and sumac.
+            </p>
+            <div class="cuisine-menu-items">
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Live Charcoal Skewer Grill</h5>
+                  <p>Paneer Tikka, Shish Tawook, Galouti Kebabs & Halloumi skewers.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Rotisserie Shawarma Station</h5>
+                  <p>Slow-roasted chicken & falafel wrapped in warm pita with garlic toum.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Grand Mezze Grazing Table</h5>
+                  <p>Smoky Baba Ghanoush, creamy Hummus, Tabbouleh, and fresh lavash.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Greek Souvlaki & Tzatziki</h5>
+                  <p>Herb-marinated grilled skewers with cucumber dill yogurt sauce.</p>
+                </div>
+              </div>
+            </div>
+            <a href="#rsvp-sec" class="btn-luxury">Customize BBQ Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 6: Desserts & Drinks -->
+      <div class="cuisine-content-pane" id="pane-dessert">
+        <div class="cuisine-highlight-grid">
+          <div class="cuisine-visual">
+            <img src="images/new/aa24.webp" alt="Wedding Cakes and Desserts">
+          </div>
+          <div class="cuisine-details">
+            <h3>Luxury Wedding Cakes, Patisserie & Mixology</h3>
+            <p class="cuisine-lead">
+              Custom architectural multi-tier wedding cakes, cascading Belgian chocolate fountains, hot live jalebis with rabdi, and exotic smoking dry-ice mocktails.
+            </p>
+            <div class="cuisine-menu-items">
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Multi-Tier Designer Wedding Cakes</h5>
+                  <p>Hand-sculpted sugar flowers, Belgian chocolate ganache, Red Velvet & Gold leaf.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Live Rabdi Jalebi & Kulfi Bar</h5>
+                  <p>Saffron jalebi fried live, served with thickened rabdi & stuffed matka kulfis.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>French Macaron & Pastry Tower</h5>
+                  <p>Pistachio, Raspberry, and Salted Caramel macarons with Belgian chocolate truffles.</p>
+                </div>
+              </div>
+              <div class="menu-item-box">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h5>Molecular Mocktails & Cocktails</h5>
+                  <p>Dry-ice smoke drinks, passionfruit mojitos, edible flower cocktails & craft coffee.</p>
+                </div>
+              </div>
+            </div>
+            <a href="#rsvp-sec" class="btn-luxury">Customize Dessert & Drinks</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       DHOL, DOLL SOUNDBAR & LIVE MUSIC ENSEMBLE
+       ========================================================================= -->
+  <section class="section-padding entertainment-music-sec" id="entertainment-sec">
+    <div class="luxury-container">
+      <div class="section-header">
+        <span class="section-badge">Live Beats & Melody</span>
+        <h2 class="section-title">High-Energy <span>Dhol Squad</span> & Doll Soundbar Symphony</h2>
+        <div class="section-divider-ornament">
+          <span></span>
+          <i class="fa-solid fa-drum"></i>
+          <span></span>
+        </div>
+        <p class="section-desc">
+          Set the perfect celebratory tone with our champion Dhol teams for thrilling Baraat entries, followed by crystal-clear acoustic soundbar amplification and live classical instruments.
+        </p>
+      </div>
+
+      <div class="entertainment-grid">
+        <!-- Item 1: Punjabi & Nasik Dhol -->
+        <div class="entertainment-card">
+          <div class="ent-icon-badge">
+            <i class="fa-solid fa-drum"></i>
+          </div>
+          <h3>Royal Punjabi & Nasik Dhol Squad</h3>
+          <p>Electrifying beats for the Groom’s Baraat and Bride’s grand entry. Our master percussionists create an unstoppable wave of celebration that gets every guest dancing.</p>
+          <ul class="ent-inclusions">
+            <li><i class="fa-solid fa-check"></i> 8-16 Master Dhol Players</li>
+            <li><i class="fa-solid fa-check"></i> Traditional Tasha & Nagada Accents</li>
+            <li><i class="fa-solid fa-check"></i> LED-Illuminated Dhol Drums for night Baraat</li>
+            <li><i class="fa-solid fa-check"></i> Energetic Bhangra Dancers Troupe</li>
+          </ul>
+        </div>
+
+        <!-- Item 2: Doll Soundbar & Line Array Audio -->
+        <div class="entertainment-card">
+          <div class="ent-icon-badge">
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
+          <h3>Doll Soundbar & Acoustic Engineering</h3>
+          <p>Concert-grade soundbars and distributed line-array sound engineering that delivers warm, pristine, distortion-free audio across the entire venue for vows, speeches, and background melodies.</p>
+          <ul class="ent-inclusions">
+            <li><i class="fa-solid fa-check"></i> High-Fidelity Doll Soundbar arrays</li>
+            <li><i class="fa-solid fa-check"></i> Wireless Sennheiser Lapel & Handheld Mics</li>
+            <li><i class="fa-solid fa-check"></i> Zero Feedback & Acoustic Echo Elimination</li>
+            <li><i class="fa-solid fa-check"></i> Multi-Zone Volume Control for Dining & Mandap</li>
+          </ul>
+        </div>
+
+        <!-- Item 3: Live Strings & Royal Shehnai -->
+        <div class="entertainment-card">
+          <div class="ent-icon-badge">
+            <i class="fa-solid fa-guitar"></i>
+          </div>
+          <h3>Live Symphony Strings & Shehnai</h3>
+          <p>Soulful live violinists, grand piano, flute soloists, and classical Shehnai/Nadaswaram maestros to create an atmosphere of divine elegance during sacred rituals and dinners.</p>
+          <ul class="ent-inclusions">
+            <li><i class="fa-solid fa-check"></i> Live String Quartet (Violin, Cello, Viola)</li>
+            <li><i class="fa-solid fa-check"></i> Traditional Shehnai & Nadaswaram for rituals</li>
+            <li><i class="fa-solid fa-check"></i> Romantic Saxophone for cocktail hour</li>
+            <li><i class="fa-solid fa-check"></i> Custom aisle entry songs arranged live</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       DJ, BGM PARTY & NIGHT CLUB EXPERIENCE (Dark Mode Glow Aesthetic)
+       ========================================================================= -->
+  <section class="nightclub-sec" id="nightclub-sec">
+    <div class="luxury-container">
+      <div class="section-header">
+        <span class="section-badge" style="background: rgba(247, 37, 133, 0.2); color: var(--night-club-pink);">Electric Afterparty</span>
+        <h2 class="section-title">High-Voltage <span>DJ, BGM Party</span> & VIP Nightclub Lounge</h2>
+        <div class="section-divider-ornament">
+          <span style="background: var(--night-club-neon);"></span>
+          <i class="fa-solid fa-compact-disc" style="color: var(--night-club-pink);"></i>
+          <span style="background: var(--night-club-neon);"></span>
+        </div>
+        <p class="section-desc">
+          When the formal rituals end, turn your wedding into an elite nightclub festival with concert-grade sound, hypnotic lasers, cold pyro sparklers, and world-class celebrity DJs.
+        </p>
+      </div>
+
+      <div class="nightclub-grid">
+        <!-- Feature List -->
+        <div class="nightclub-feature-list">
+          <div class="nightclub-feature-item">
+            <div class="nc-icon">
+              <i class="fa-solid fa-cubes"></i>
+            </div>
+            <div class="nc-text">
+              <h4>3D Infinity LED Dance Floor</h4>
+              <p>Illuminated glass mirror LED dance floors that create mind-bending bottomless optical illusions reacting dynamically to the music beats.</p>
+            </div>
+          </div>
+
+          <div class="nightclub-feature-item">
+            <div class="nc-icon">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div class="nc-text">
+              <h4>Intelligent Moving-Head Lasers & Lighting</h4>
+              <p>Concert-grade multi-beam RGB lasers, sharp beam fixtures, wash lights, and computerized DMX lighting lightshows synced to EDM and Bollywood bangers.</p>
+            </div>
+          </div>
+
+          <div class="nightclub-feature-item">
+            <div class="nc-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <div class="nc-text">
+              <h4>Cold Pyro Sparklers & CO2 Cryo Jets</h4>
+              <p>Safe indoor cold-flame sparklers shooting 15ft fireworks and high-pressure CO2 cryo fog blasts on music beat drops with confetti cannons.</p>
+            </div>
+          </div>
+
+          <div class="nightclub-feature-item">
+            <div class="nc-icon">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+            <div class="nc-text">
+              <h4>"Walking on Clouds" Low-Fog Entry</h4>
+              <p>Dry-ice dense white floor fog for romantic first dances and grand entries, creating an ethereal cloud carpet without smoke alarm triggers.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Showcase -->
+        <div class="nightclub-visual-wrapper">
+          <img src="images/new/aa18.jpg" alt="Nightclub DJ and Party Vibes">
+          <div class="nightclub-overlay-badge">
+            <div>
+              <h5>VIP Sangeet & Afterparty Setup</h5>
+              <p>Celebrity DJs • Cold Pyro • Custom Neon Monograms</p>
+            </div>
+            <a href="#rsvp-sec" class="btn-luxury" style="padding: 8px 18px; font-size: 13px;">Book DJ Setup</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CINEMATIC PHOTOGRAPHY & 4K DRONE SECTION
+       ========================================================================= -->
+  <section class="section-padding photo-gallery-sec" id="photo-sec">
+    <div class="luxury-container">
+      <div class="section-header">
+        <span class="section-badge">Eternal Memories</span>
+        <h2 class="section-title">Cinematic <span>4K Photography</span> & Drone Videography</h2>
+        <div class="section-divider-ornament">
+          <span></span>
+          <i class="fa-solid fa-camera"></i>
+          <span></span>
+        </div>
+        <p class="section-desc">
+          Capture every tear of joy, passionate glance, and high-energy dance with our world-renowned visual artists using Hollywood-grade cinema cameras and 4K aerial drones.
+        </p>
+      </div>
+
+      <div class="photo-grid-masonry">
+        <div class="photo-card-item">
+          <img src="images/new/aa1.png" alt="Couple Romantic Portrait">
+          <div class="photo-overlay">
+            <h4>Romantic Pre-Wedding Shoot</h4>
+            <p>Editorial Destination Portraits</p>
+          </div>
+        </div>
+
+        <div class="photo-card-item">
+          <img src="images/new/aa5.jpg" alt="Candid Wedding Moments">
+          <div class="photo-overlay">
+            <h4>Candid Emotional Moments</h4>
+            <p>Heartfelt smiles & sacred rituals</p>
+          </div>
+        </div>
+
+        <div class="photo-card-item">
+          <img src="images/new/aa11.jpg" alt="Ring Ceremony and Engagement">
+          <div class="photo-overlay">
+            <h4>The Royal Engagement</h4>
+            <p>Ring exchange & family joy</p>
+          </div>
+        </div>
+
+        <div class="photo-card-item">
+          <img src="images/new/aa12.jpg" alt="Bride and Groom Chemistry">
+          <div class="photo-overlay">
+            <h4>Bride & Groom Chemistry</h4>
+            <p>Cinematic slow-motion storytelling</p>
+          </div>
+        </div>
+
+        <div class="photo-card-item">
+          <img src="images/new/aa15.jpg" alt="Grand Stage and Mandap">
+          <div class="photo-overlay">
+            <h4>Grand Floral Mandap Aerials</h4>
+            <p>4K Ultra HD Drone Perspectives</p>
+          </div>
+        </div>
+
+        <div class="photo-card-item">
+          <img src="images/new/aa16.jpg" alt="Celebration and Cheers">
+          <div class="photo-overlay">
+            <h4>360° Slow-Motion Video Booth</h4>
+            <p>Instant social media video sharing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       THE BRIDE & THE GROOM STYLING SUITES
+       ========================================================================= -->
+  <section class="section-padding" id="couple-suite-sec" style="background: linear-gradient(180deg, #ffffff 0%, var(--bg-warm-light) 100%);">
+    <div class="luxury-container">
+      <div class="section-header">
+        <span class="section-badge">Royal Couple Suites</span>
+        <h2 class="section-title">The Bride & Groom <span>Bespoke Styling</span> Concierge</h2>
+        <div class="section-divider-ornament">
+          <span></span>
+          <i class="fa-solid fa-heart" style="color: var(--accent-rose);"></i>
+          <span></span>
+        </div>
+        <p class="section-desc">
+          Tailored luxury for the stars of the celebration. From celebrity bridal makeup and floral entries to bespoke groom sherwanis, safa draping, and thunderous Baraats.
+        </p>
+      </div>
+
+      <div class="wedding-types-grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));">
+        <!-- Bride Card -->
+        <div class="wedding-type-card">
+          <div class="wedding-card-thumb" style="height: 280px;">
+            <img src="images/resource/bride.jpg" alt="The Radiant Bride Suite">
+            <span class="wedding-type-tag" style="background: rgba(89, 13, 34, 0.85); color: var(--primary-gold-light);"><i class="fa-solid fa-crown"></i> The Queen's Suite</span>
+          </div>
+          <div class="wedding-card-body">
+            <h3>The Radiant Bride & Styling Suite</h3>
+            <p>End-to-end luxury bridal services: Celebrity HD airbrush makeup, couture lehenga draping, Polki & Kundan jewelry consultation, customized organic henna, and "Walking on Clouds" dry-ice floral entries.</p>
+            <div class="wedding-card-features">
+              <span class="feature-chip"><i class="fa-solid fa-wand-magic-sparkles"></i> HD Airbrush Makeup</span>
+              <span class="feature-chip"><i class="fa-solid fa-gem"></i> Royal Jewelry Draping</span>
+              <span class="feature-chip"><i class="fa-solid fa-cloud"></i> Walking on Clouds Entry</span>
+              <span class="feature-chip"><i class="fa-solid fa-fan"></i> Organic Henna Art</span>
+            </div>
+            <div class="wedding-card-footer">
+              <span class="price-hint">Dedicated: <strong>Bridal Concierge</strong></span>
+              <a href="about-her.html" class="btn-luxury btn-rose" style="padding: 10px 22px; font-size: 13px;">View Bride Suite</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Groom Card -->
+        <div class="wedding-type-card">
+          <div class="wedding-card-thumb" style="height: 280px;">
+            <img src="images/resource/groom.jpg" alt="The Royal Groom & Baraat Suite">
+            <span class="wedding-type-tag" style="background: rgba(15, 23, 42, 0.85); color: var(--primary-gold-light);"><i class="fa-solid fa-user-tie"></i> The King's Suite</span>
+          </div>
+          <div class="wedding-card-body">
+            <h3>The Royal Groom & Baraat Entourage</h3>
+            <p>Commanding royalty at every step: Bespoke handcrafted zardozi sherwanis, authentic Rajasthani safa tying with heritage kalgi, vintage Rolls Royce fleet arrival, and a 16-piece Punjabi Dhol squad.</p>
+            <div class="wedding-card-features">
+              <span class="feature-chip"><i class="fa-solid fa-vest-patches"></i> Couture Sherwani</span>
+              <span class="feature-chip"><i class="fa-solid fa-crown"></i> Master Safa Tying</span>
+              <span class="feature-chip"><i class="fa-solid fa-car"></i> Vintage Car Fleet</span>
+              <span class="feature-chip"><i class="fa-solid fa-drum"></i> 16 Dhol Players</span>
+            </div>
+            <div class="wedding-card-footer">
+              <span class="price-hint">Dedicated: <strong>Baraat Concierge</strong></span>
+              <a href="about-him.html" class="btn-luxury btn-outline-gold" style="padding: 10px 22px; font-size: 13px;">View Groom Suite</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       INTERACTIVE WEDDING BUDGET & COST ESTIMATOR CALCULATOR
+       ========================================================================= -->
+  <section class="section-padding calculator-sec" id="calculator-sec">
+    <div class="luxury-container">
+      <div class="section-header">
+        <span class="section-badge">Transparency & Planning</span>
+        <h2 class="section-title">Interactive <span>Wedding Budget</span> Estimator</h2>
+        <div class="section-divider-ornament">
+          <span></span>
+          <i class="fa-solid fa-calculator"></i>
+          <span></span>
+        </div>
+        <p class="section-desc">
+          Customize your wedding parameters below to get an instant real-time estimated budget for your dream celebration.
+        </p>
+      </div>
+
+      <div class="calculator-box">
+        <div class="calc-grid">
+          <!-- Controls -->
+          <div class="calc-controls">
+            <div class="calc-control-group">
+              <label for="calc-wedding-type"><i class="fa-solid fa-crown" style="color: var(--primary-gold); margin-right: 6px;"></i> Select Wedding Style</label>
+              <select id="calc-wedding-type" class="calc-select">
+                <option value="royal" selected>Royal Heritage Palace Mandap (₹ 1,50,000 base)</option>
+                <option value="destination">Exotic Destination & Beach Wedding (₹ 3,50,000 base)</option>
+                <option value="ballroom">Modern Luxury Ballroom Gala (₹ 2,50,000 base)</option>
+                <option value="intimate">Intimate Boho Lawn & Garden (₹ 80,000 base)</option>
+                <option value="cocktail">Glitzy Sangeet & Cocktail Night (₹ 1,20,000 base)</option>
+              </select>
+            </div>
+
+            <div class="calc-control-group">
+              <label for="calc-guests"><i class="fa-solid fa-users" style="color: var(--primary-gold); margin-right: 6px;"></i> Number of Guests</label>
+              <input type="range" id="calc-guests" class="calc-range" min="50" max="1500" step="25" value="250">
+              <div class="guest-count-display">
+                <span>Minimum: 50</span>
+                <span>Selected Guests: <span class="val" id="calc-guests-val">250</span></span>
+                <span>Maximum: 1500+</span>
+              </div>
+            </div>
+
+            <div class="calc-control-group">
+              <label for="calc-catering"><i class="fa-solid fa-utensils" style="color: var(--primary-gold); margin-right: 6px;"></i> Catering & Cuisine Plan</label>
+              <select id="calc-catering" class="calc-select">
+                <option value="standard">Standard Deluxe (Indian Feast + Live Chaat) - ₹ 850 / Plate</option>
+                <option value="multi" selected>Royal Multi-Country (Indian, Italian, Asian, BBQ) - ₹ 1,400 / Plate</option>
+                <option value="platinum">Platinum Grand (7 Global Cuisines, Live Wagyu/Seafood/Truffle) - ₹ 2,200 / Plate</option>
+              </select>
+            </div>
+
+            <div class="calc-control-group">
+              <label><i class="fa-solid fa-plus-circle" style="color: var(--primary-gold); margin-right: 6px;"></i> Premium Entertainment & Media Add-ons</label>
+              <div class="calc-checkbox-grid">
+                <label class="calc-checkbox-label">
+                  <input type="checkbox" id="calc-add-dj" checked>
+                  <span>VIP DJ, LED Floor & Lasers (+₹ 65,000)</span>
+                </label>
+                <label class="calc-checkbox-label">
+                  <input type="checkbox" id="calc-add-dhol" checked>
+                  <span>Punjabi Dhol Squad & Tasha (+₹ 35,000)</span>
+                </label>
+                <label class="calc-checkbox-label">
+                  <input type="checkbox" id="calc-add-photo" checked>
+                  <span>4K Drone & 360 Video Booth (+₹ 95,000)</span>
+                </label>
+                <label class="calc-checkbox-label">
+                  <input type="checkbox" id="calc-add-decor" checked>
+                  <span>Grand Royal Floral Stage Decor (+₹ 1,20,000)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Summary Box -->
+          <div class="calc-summary-card">
+            <div class="calc-summary-header">
+              <h4>Estimated Package Total</h4>
+              <p>Inclusive of all taxes, event staffing, setup and executive supervision.</p>
+            </div>
+
+            <div class="cost-display-wrap">
+              <span class="est-tag">Total Estimated Investment</span>
+              <div class="price-amount" id="calc-total-cost">₹ 7,15,000</div>
+            </div>
+
+            <ul class="cost-breakdown-list">
+              <li><span>Catering & Food:</span> <strong id="bd-catering">₹ 3,50,000</strong></li>
+              <li><span>Venue & Stage Decor:</span> <strong id="bd-venue">₹ 2,70,000</strong></li>
+              <li><span>Music, DJ & Dhol:</span> <strong id="bd-music">₹ 1,00,000</strong></li>
+              <li><span>Photography & Drone:</span> <strong id="bd-media">₹ 95,000</strong></li>
+            </ul>
+
+            <a href="#rsvp-sec" class="btn-luxury btn-rose" style="width: 100%; text-align: center;">
+              <i class="fa-solid fa-file-invoice-dollar"></i> Request Official Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       TESTIMONIALS & REAL WEDDINGS
+       ========================================================================= -->
+  <section class="section-padding testimonials-sec">
+    <div class="luxury-container">
+      <div class="section-header">
+        <span class="section-badge">Happy Couples</span>
+        <h2 class="section-title">Words of Love from <span>Our Royal Couples</span></h2>
+        <div class="section-divider-ornament">
+          <span></span>
+          <i class="fa-solid fa-star"></i>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="testimonial-cards-grid">
+        <div class="testimonial-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Forever Love turned our 800-guest wedding into an absolute fairytale. The Italian pasta wheel counter and Punjabi Dhol entry were the biggest highlights among our guests!"
+          </p>
+          <div class="client-meta">
+            <img src="images/resource/bride.jpg" alt="Aarav & Meera" class="client-avatar">
+            <div class="client-info">
+              <h4>Aarav & Meera</h4>
+              <span>Palace Wedding, Udaipur</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "The DJ Nightclub afterparty and the 3D LED dance floor blew everyone away! The multi-country cuisine was 5-star restaurant quality. Everything went smoothly without a single hitch."
+          </p>
+          <div class="client-meta">
+            <img src="images/resource/groom.jpg" alt="Rohan & Ananya" class="client-avatar">
+            <div class="client-info">
+              <h4>Rohan & Ananya</h4>
+              <span>Beach Resort Gala, Goa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "The photography team captured moments we will cherish forever. From the 4K drone footage to the custom wedding cake and soundbar acoustics, they exceeded every expectation!"
+          </p>
+          <div class="client-meta">
+            <img src="images/resource/author1.jpg" alt="Dev & Sneha" class="client-avatar">
+            <div class="client-info">
+              <h4>Dev & Sneha</h4>
+              <span>Grand Ballroom, Mumbai</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       VIP RSVP & CONSULTATION BOOKING FORM
+       ========================================================================= -->
+  <section class="section-padding rsvp-booking-sec" id="rsvp-sec">
+    <div class="luxury-container">
+      <div class="rsvp-card-wrapper">
+        <!-- Side Banner -->
+        <div class="rsvp-side-banner">
+          <div>
+            <span class="section-badge" style="background: rgba(223, 167, 87, 0.2); color: var(--primary-gold-light);">Let's Connect</span>
+            <h3>Book Your VIP Wedding Consultation</h3>
+            <p>
+              Meet with our principal wedding designers and executive master chefs for a complimentary design session and tailored food tasting consultation.
+            </p>
+            <ul class="contact-perks-list">
+              <li><i class="fa-solid fa-circle-check"></i> Free 1-on-1 Bespoke Theme Consultation</li>
+              <li><i class="fa-solid fa-circle-check"></i> Complimentary Food Tasting Session</li>
+              <li><i class="fa-solid fa-circle-check"></i> 3D Virtual Venue & Stage Walkthrough</li>
+              <li><i class="fa-solid fa-circle-check"></i> 100% Guaranteed Transparent Pricing</li>
+            </ul>
+          </div>
+          <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, 0.15);">
+            <p style="font-size: 13px; margin-bottom: 4px; color: rgba(255, 255, 255, 0.7);">Direct Concierge Hotline:</p>
+            <a href="tel:+919876543210" style="color: var(--primary-gold-light); font-weight: 700; font-size: 18px;">
+              <i class="fa-solid fa-phone" style="margin-right: 8px;"></i> +91 98765 43210
+            </a>
+          </div>
+        </div>
+
+        <!-- Form Container -->
+        <div class="rsvp-form-container">
+          <form id="luxury-rsvp-form">
+            <div class="rsvp-form-grid">
+              <div class="form-input-wrap">
+                <label for="f-name">Full Name *</label>
+                <input type="text" id="f-name" name="fullname" class="luxury-input" placeholder="e.g. Priya Sharma" required>
+              </div>
+
+              <div class="form-input-wrap">
+                <label for="f-phone">Phone Number *</label>
+                <input type="tel" id="f-phone" name="phone" class="luxury-input" placeholder="e.g. +91 98765 43210" required>
+              </div>
+
+              <div class="form-input-wrap">
+                <label for="f-email">Email Address</label>
+                <input type="email" id="f-email" name="email" class="luxury-input" placeholder="e.g. priya@gmail.com">
+              </div>
+
+              <div class="form-input-wrap">
+                <label for="f-date">Estimated Wedding Date</label>
+                <input type="date" id="f-date" name="eventdate" class="luxury-input">
+              </div>
+
+              <div class="form-input-wrap">
+                <label for="f-guests">Expected Guests</label>
+                <select id="f-guests" name="guests" class="luxury-input">
+                  <option value="100-250">100 - 250 Guests</option>
+                  <option value="250-500" selected>250 - 500 Guests</option>
+                  <option value="500-1000">500 - 1000 Guests</option>
+                  <option value="1000+">1000+ Grand Guests</option>
+                </select>
+              </div>
+
+              <div class="form-input-wrap">
+                <label for="f-wedding-type">Wedding Style</label>
+                <select id="f-wedding-type" name="weddingstyle" class="luxury-input">
+                  <option value="royal">Royal Mandap Palace Wedding</option>
+                  <option value="beach">Destination Beach Wedding</option>
+                  <option value="ballroom">Modern Ballroom Gala</option>
+                  <option value="white">Christian Classic White Wedding</option>
+                  <option value="boho">Intimate Boho Garden Wedding</option>
+                </select>
+              </div>
+
+              <div class="form-input-wrap form-full-col">
+                <label for="f-notes">Your Vision / Specific Catering or Sound Requirements</label>
+                <textarea id="f-notes" name="notes" class="luxury-input" placeholder="Tell us about your dream theme, favorite global cuisines, DJ setup preferences, etc..."></textarea>
+              </div>
+
+              <div class="form-full-col" style="margin-top: 8px;">
+                <button type="submit" class="btn-luxury btn-rose" style="width: 100%; padding: 14px 28px; font-size: 16px;">
+                  <i class="fa-solid fa-paper-plane"></i> Submit VIP Booking Request
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Toast Notification -->
+  <div class="luxury-toast" id="luxury-toast">
+    <div class="toast-icon">
+      <i class="fa-solid fa-heart"></i>
+    </div>
+    <div id="toast-msg" style="font-size: 14px; font-weight: 600; color: var(--deep-burgundy);">
+      Thank you! Your wedding consultation has been booked.
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       LUXURY FOOTER
+       ========================================================================= -->
+  <footer class="luxury-footer">
+    <div class="luxury-container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <div class="logo-icon">
+              <img src="images/new/love3.gif" alt="Forever Love Logo">
+            </div>
+            <div class="logo-text">
+              <span class="logo-title" style="color: #fff;">Forever <span style="color: var(--primary-gold);">Love</span></span>
+              <span class="logo-subtitle">Luxury Wedding Curators</span>
+            </div>
+          </div>
+          <p>
+            Curating royal, unforgettable, and deeply personal weddings with 5-star global catering, concert audio, high-energy entertainment, and breathtaking decor.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Wedding Styles</h4>
+          <ul class="footer-links-list">
+            <li><a href="#wedding-types-sec">Royal Palace Mandap</a></li>
+            <li><a href="#wedding-types-sec">Destination Beach Weddings</a></li>
+            <li><a href="#wedding-types-sec">Christian White Weddings</a></li>
+            <li><a href="#wedding-types-sec">Modern Ballroom Receptions</a></li>
+            <li><a href="#wedding-types-sec">Boho Lawn & Garden Galas</a></li>
+            <li><a href="#wedding-types-sec">Sangeet & Cocktail Nights</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="footer-col">
+          <h4>Grand Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="#catering-sec">Multi-Country Live Catering</a></li>
+            <li><a href="#entertainment-sec">Punjabi & Nasik Dhol Squad</a></li>
+            <li><a href="#entertainment-sec">Doll Soundbar Acoustic Audio</a></li>
+            <li><a href="#nightclub-sec">VIP DJ & 3D LED Dance Floor</a></li>
+            <li><a href="#photo-sec">4K Aerial Drone & 360 Booth</a></li>
+            <li><a href="#calculator-sec">Wedding Budget Estimator</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <p><i class="fa-solid fa-location-dot" style="color: var(--primary-gold); margin-right: 8px;"></i> Mumbai • Goa • Udaipur • Delhi • Bangalore</p>
+          <p><i class="fa-solid fa-phone" style="color: var(--primary-gold); margin-right: 8px;"></i> +91 98765 43210 / +91 87654 32109</p>
+          <p><i class="fa-solid fa-envelope" style="color: var(--primary-gold); margin-right: 8px;"></i> luxury@foreverloveweddings.com</p>
+          <p><i class="fa-solid fa-clock" style="color: var(--primary-gold); margin-right: 8px;"></i> Mon - Sun: 9:00 AM - 9:00 PM</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Forever Love Luxury Wedding & Events. All Rights Reserved.</p>
+        <p>Crafted with <i class="fa-solid fa-heart" style="color: var(--accent-rose);"></i> by Jebin for unforgettable celebrations.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript Engine -->
+  <script src="js/wedding-app.js"></script>
 </body>
-
-<!-- Mirrored from html.themexriver.com/forever-love/demos/forever-love/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jul 2025 14:34:20 GMT -->
-
 </html>
