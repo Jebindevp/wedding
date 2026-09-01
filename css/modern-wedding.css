@@ -2484,6 +2484,16 @@ textarea.luxury-input {
   gap: 5px;
 }
 
+.styling-card-footer {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(223, 167, 87, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 /* Responsive adjustments for new sections */
 @media screen and (max-width: 992px) {
   .religious-weddings-grid {
